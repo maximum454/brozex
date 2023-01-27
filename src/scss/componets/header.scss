@@ -1,0 +1,33 @@
+.header {
+    &__top {
+        padding:10px 0 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__bottom{
+
+    }
+    &__phone{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+        color: #000000;
+        text-decoration: none;
+        .icon-phone{
+            width: 19px;
+            height: 18px;
+            margin-right: 9px;
+        }
+    }
+    &__retail{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+    }
+}

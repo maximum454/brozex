@@ -1,0 +1,86 @@
+@import "./partials/normalize";
+@import "./partials/formstyler";
+@import "./partials/formstyler.theme";
+@import "./partials/swiper-bundle";
+@import "./partials/remodal";
+@import "./partials/remodal-default-theme";
+@import "mixin";
+@import "fonts";
+@import "buttons";
+@import "form";
+@import "icon";
+@import "remodal";
+@import "table";
+@import "text";
+@import "alert";
+
+
+
+* {
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.wrp {
+	overflow: hidden;
+	position: relative;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.main{
+	padding-bottom: 0;
+}
+
+
+@import "componets/header";
+@import "componets/select-city";
+@import "componets/header-menu";
+@import "componets/footer";
+
+
+
+
+

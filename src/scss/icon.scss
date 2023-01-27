@@ -1,0 +1,75 @@
+.icon {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-dropdown-bottom {
+    background-image: url("../img/icons-sprite.svg#arrow-dropdown-bottom");
+}
+.icon-slider-left-light {
+    background-image: url("../img/icons-sprite.svg#arrow-slider-left-light");
+}
+
+.icon-submit-left {
+    background-image: url("../img/icons-sprite.svg#arrow-submit-left");
+}
+
+.icon-basket {
+    background-image: url("../img/icons-sprite.svg#basket");
+}
+
+.icon-compare {
+    background-image: url("../img/icons-sprite.svg#compare");
+}
+
+.icon-estimate {
+    background-image: url("../img/icons-sprite.svg#estimate");
+}
+
+.icon-favorites {
+    background-image: url("../img/icons-sprite.svg#favorites");
+}
+
+.icon-location {
+    background-image: url("../img/icons-sprite.svg#location");
+}
+
+.icon-phone {
+    background-image: url("../img/icons-sprite.svg#phone");
+}
+
+.icon-search {
+    background-image: url("../img/icons-sprite.svg#search");
+}
+
+.social-telegram-light {
+    background-image: url("../social/social-sprite.svg#social-telegram-light");
+    width: 35px;
+    height: 35px;
+}
+
+.social-vkontakte-light {
+    background-image: url("../social/social-sprite.svg#social-vkontakte-light");
+    width: 35px;
+    height: 35px;
+}
+
+.social-whatsapp-light {
+    background-image: url("../social/social-sprite.svg#social-whatsapp-light");
+    width: 35px;
+    height: 35px;
+}
+
+.social-youtube-light {
+    background-image: url("../social/social-sprite.svg#social-youtube-light");
+    width: 35px;
+    height: 35px;
+}
+
+

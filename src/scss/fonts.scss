@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto-Bold'),
+	url('../fonts/Roboto/Montserrat-Bold.woff2') format('woff2'),
+	url('../fonts/Roboto/Montserrat-Bold.woff') format('woff'),
+	url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto-Regular'),
+	url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+	url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+	url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'MotorCyr';
+	src: local('MotorCyr'),
+	url('../fonts/MotorCyr/Roboto-Regular.woff2') format('woff2'),
+	url('../fonts/MotorCyr/Roboto-Regular.woff') format('woff'),
+	url('../fonts/MotorCyr/MotorCyr.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+$font1: 'Roboto', sans-serif;
+$font2: 'MotorCyr', sans-serif;

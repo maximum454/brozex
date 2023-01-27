@@ -1,0 +1,82 @@
+.remodal {
+    text-align: left;
+    background-color: transparent;
+    padding: 120px 20px 20px;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+        margin: 0 0 74px;
+
+    }
+    .remodal-close {
+        right: 20px;
+        top: 10px;
+        left: auto;
+        width: fit-content;
+        padding-right: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+        &:before {
+            content: '';
+            left: auto;
+            right: 0;
+            top: 50%;
+            margin-top: -6px;
+            background-image: url("../img/icons-sprite.svg#modal-close");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 14px;
+            height: 14px;
+        }
+    }
+    .form-control{
+        padding: 7px 0;
+        color: #333;
+        border-color: #000;
+        text-transform: uppercase;
+    }
+    .btn{
+        width: fit-content;
+        margin: 0 auto;
+        display: block;
+    }
+    @include r(767){
+        padding: 63px 20px 20px;
+        &__title{
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0 0 38px;
+
+        }
+        .remodal-close {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .form-control{
+            border-width: 1px;
+        }
+        .btn{
+            width: 100%;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
+.remodal-wrapper {
+    padding: 0;
+}
+.remodal-overlay{
+    background: rgba(255, 255, 255, 0.9);
+}
