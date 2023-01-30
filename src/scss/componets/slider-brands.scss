@@ -1,0 +1,31 @@
+.slider-brands{
+  margin: 20px 0;
+  .swiper-brands{
+    overflow: hidden;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      width: 51px;
+      height: 100%;
+      z-index: 10;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      width: 51px;
+      height: 100%;
+      transform: rotate(-180deg);
+      z-index: 10;
+    }
+    .swiper-wrapper{
+      align-items: center;
+    }
+  }
+}

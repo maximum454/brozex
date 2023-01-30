@@ -804,3 +804,21 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
     $(window).on('hashchange.' + NAMESPACE, handleHashChangeEvent);
   });
 });
+
+
+
+const swiperMain = new Swiper('.swiper-main', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+})
+
+const swiperBrands = new Swiper('.swiper-brands', {
+    slidesPerView: 7.8,
+    spaceBetween: 53,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+})

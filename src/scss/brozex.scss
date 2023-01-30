@@ -74,10 +74,38 @@ body{
 	padding-bottom: 0;
 }
 
+.swiper-pagination{
+	.swiper-pagination-bullet{
+		width: 20px;
+		height: 20px;
+		background: transparent;
+		opacity: .7;
+		padding: 10px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background-color: #ffffff;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+		}
+		&-active{
+			border: 1px solid #ffffff;
+			opacity: 1;
+		}
+	}
+}
+
 
 @import "componets/header";
 @import "componets/select-city";
-@import "componets/header-menu";
+@import "componets/header-top-menu";
+@import "componets/slider-main";
+@import "componets/slider-brands";
 @import "componets/footer";
 
 
