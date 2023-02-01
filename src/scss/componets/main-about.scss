@@ -13,4 +13,34 @@
     color: #000000;
     margin: 0;
   }
+  &__body{
+    display: flex;
+    p{
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 131.99%;
+      margin: 0 0 20px;
+      &.small{
+        font-size: 15px;
+        line-height: 179.99%;
+        color: #000000;
+      }
+    }
+  }
+  &__left{
+    flex: 1 1 692px;
+    max-width: 692px;
+    &-margin{
+      max-width: 387px;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+  &__right{
+    flex: 1 0 387px;
+    max-width: 387px;
+  }
+  &__num{
+    display: flex;
+  }
 }
