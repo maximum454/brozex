@@ -100,6 +100,57 @@ body{
 	}
 }
 
+.embed-responsive{
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	&:before{
+		display: block;
+		content: "";
+	}
+	&.embed-responsive-21by9{
+		&:before{
+			padding-top: 42.857143%;
+		}
+	}
+	&.embed-responsive-16by9{
+		&:before {
+			padding-top: 56.25%;
+		}
+	}
+	&.embed-responsive-9by16{
+		&:before {
+			padding-top: 109%;
+		}
+	}
+	&.embed-responsive-4by3{
+		&:before{
+			padding-top: 75%;
+		}
+	}
+	&.embed-responsive-1by1{
+		&:before{
+			padding-top: 100%;
+		}
+	}
+	.embed-responsive-item,
+	embed,
+	iframe,
+	object,
+	video{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+}
+
+
 
 @import "componets/header";
 @import "componets/select-city";
@@ -111,6 +162,9 @@ body{
 @import "componets/slider-products";
 @import "componets/main-news";
 @import "componets/main-about";
+@import "componets/product-item";
+@import "componets/product-stock";
+@import "componets/product-counter";
 @import "componets/footer";
 
 

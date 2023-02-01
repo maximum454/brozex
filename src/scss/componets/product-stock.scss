@@ -1,0 +1,27 @@
+.product-stock{
+  display: flex;
+  align-items: center;
+  &__title{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 159.99%;
+    color: #000000;
+    margin-right: 4px;
+  }
+  &__body{
+    display: flex;
+    span{
+      width: 3px;
+      height: 11px;
+      display: block;
+      margin-right: 2px;
+      background-color: #D9D9D9;
+      &:last-of-type{
+        margin-right: 0;
+      }
+      &.active{
+        background-color: #000000;
+      }
+    }
+  }
+}
