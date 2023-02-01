@@ -1,0 +1,28 @@
+.slider-products{
+  margin-bottom: 90px;
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 16px;
+  }
+  &__title{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0;
+  }
+  &__all{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration: none;
+    .icon-dropdown-bottom{
+      width: 7px;
+      height: 13px;
+      transform: rotate(-90deg);
+    }
+  }
+}

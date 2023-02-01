@@ -1,0 +1,16 @@
+.main-about{
+  margin-bottom: 80px;
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px;
+  }
+  &__title{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 103.49%;
+    color: #000000;
+    margin: 0;
+  }
+}
