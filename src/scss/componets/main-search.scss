@@ -1,0 +1,28 @@
+.main-search{
+  flex: 1 1 622px;
+  max-width: 622px;
+  &__form{
+    position: relative;
+    .form-control{
+      padding-left: 35px;
+    }
+  }
+  &__submit{
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    background-color: transparent;
+    background-image: url("../img/icons-sprite.svg#search");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__dropdown{
+    display: none;
+  }
+}

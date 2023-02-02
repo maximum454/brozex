@@ -23,15 +23,39 @@
             <a href="#" class="header__retail">Розничным покупателям</a>
         </div>
         <div class="header__bottom">
-            <div>
-                
+            <div class="header-catalog">
+                <button type="button" class="header-catalog__btn"></button>
+                <span class="header-catalog__name">Каталог товаров</span>
             </div>
-            <form action="">
-                <input type="text" class="form-control" placeholder="Поиск в каталоге">
-                <input type="submit">
-            </form>
-            <div>
+            <div class="main-search">
+                <form action="" class="main-search__form">
+                    <input type="text" class="form-control" placeholder="Поиск в каталоге">
+                    <input class="main-search__submit" type="submit" value="">
+                </form>
+                <div class="main-search__dropdown"></div>
+            </div>
 
+            <div class="menu-control">
+                <a class="menu-control__item" href="">
+                    <i class="icon icon-compare"></i>
+                    <span class="menu-control__name">Сравнить</span>
+                </a>
+                <a class="menu-control__item" href="">
+                    <i class="icon icon-estimate"></i>
+                    <span class="menu-control__name">Смета</span>
+                </a>
+                <a class="menu-control__item" href="">
+                    <i class="icon icon-favorites"></i>
+                    <span class="menu-control__name">Избранное</span>
+                </a>
+                <a class="menu-control__item" href="">
+                    <i class="icon icon-basket"></i>
+                    <span class="menu-control__name">Корзина</span>
+                </a>
+                <a class="menu-control__item" href="">
+                    <i class="icon icon-login"></i>
+                    <span class="menu-control__name">Войти</span>
+                </a>
             </div>
         </div>
     </div>

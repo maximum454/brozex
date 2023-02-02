@@ -1,0 +1,21 @@
+.menu-control{
+  display: flex;
+  &__item{
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 30px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+    .icon{
+      margin: 0 auto 7px;
+    }
+  }
+  &__name{
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+  }
+}
