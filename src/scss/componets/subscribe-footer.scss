@@ -13,18 +13,20 @@
     .form-control{
       background-color: transparent;
       border: 1px solid #FFFFFF;
+      padding: 10px 15px;
       &::placeholder{
         color: #8791BB;
       }
     }
   }
-  &__input{
+  &__submit{
     background-color: #FFFFFF;
     background-image: url("../img/icons-sprite.svg#arrow-submit-left");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 17px;
     border: 1px solid #FFFFFF;
+    flex: 1 0 53px;
     width: 53px;
     height: 53px;
   }

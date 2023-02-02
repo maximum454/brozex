@@ -7,11 +7,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
     .product-item__footer{
       opacity: 1;
-      visibility: visible;
       height: auto;
-      padding: 0 11px 11px;
-      background: #FFFFFF;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
+      visibility: visible;
     }
   }
   &__img,
@@ -90,6 +87,10 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     margin: 0 0 9px;
+    text-decoration: none;
+    &:hover{
+      color: #C60505;
+    }
   }
   &__price{
     font-weight: 400;
@@ -108,7 +109,7 @@
     &-new{
       font-weight: 700;
       font-size: 22px;
-      line-height: 149.49%;
+      line-height: 33px;
       letter-spacing: -0.03em;
       color: #FF0000;
     }
@@ -119,15 +120,25 @@
       text-decoration-line: line-through;
       color: #737373;
     }
+    &-cur{
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: -0.03em;
+      color: #000000;
+    }
   }
   &__footer{
     position: absolute;
     top: 100%;
     overflow: hidden;
     width: 100%;
-    height: 0;
     opacity: 0;
+    height: 0;
     visibility: hidden;
+    padding: 0 11px 11px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
+    background-color: #FFFFFF;
   }
   &__stock{
     display: flex;
@@ -135,14 +146,14 @@
     align-items: baseline;
     font-weight: 400;
     font-size: 13px;
-    line-height: 159.99%;
+    line-height: 21px;
     color: #000000;
   }
   &__basket{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 6px;
+    margin-top: 8px;
     .btn{
       flex: 1 0 129px;
       max-width: 129px;
