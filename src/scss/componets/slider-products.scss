@@ -1,5 +1,5 @@
 .slider-products{
-  margin-bottom: 90px;
+  margin-bottom:0;
   &__header{
     display: flex;
     align-items: center;
@@ -24,5 +24,35 @@
       height: 15px;
       transform: rotate(-90deg);
     }
+  }
+  &__body{
+    position: relative;
+  }
+  .swiper-products{
+    padding-bottom: 110px;
+    overflow: hidden;
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    width: 49px;
+    height: 49px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    background-image: url("../img/icons-sprite.svg#arrow-slider-left-light");
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: center;
+    margin-top: 0;
+    top: 130px;
+    &:after{
+      display: none;
+    }
+  }
+  .swiper-button-prev{
+    left: -25px;
+    transform: rotate(180deg);
+  }
+  .swiper-button-next{
+    right: -25px;
   }
 }
