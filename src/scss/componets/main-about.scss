@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 10px;
+    margin: 0 0 13px;
   }
   &__title{
     font-weight: 400;
@@ -19,7 +19,7 @@
       font-weight: 400;
       font-size: 25px;
       line-height: 131.99%;
-      margin: 0 0 20px;
+      margin: 0 0 27px;
       &.small{
         font-size: 15px;
         line-height: 179.99%;
@@ -34,13 +34,40 @@
       max-width: 387px;
       margin-right: 0;
       margin-left: auto;
+      margin-bottom: 40px;
     }
   }
   &__right{
     flex: 1 0 387px;
     max-width: 387px;
+    margin-left: 120px;
+    p{
+      max-width: 290px;
+    }
   }
   &__num{
     display: flex;
+    margin-bottom: 20px;
+    &:first-of-type{
+      margin-top: 40px;
+    }
+    &-count{
+      font-family: $font2;
+      font-size: 92px;
+      line-height: 72px;
+      letter-spacing: -2px;
+      color: #FF0000;
+      flex: 1 0 230px;
+      max-width: 230px;
+      text-align: right;
+      margin-left: -7px;
+    }
+    &-name{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 100%;
+      color: #000000;
+      margin-left: 18px;
+    }
   }
 }
