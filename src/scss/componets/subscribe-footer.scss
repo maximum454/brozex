@@ -1,0 +1,38 @@
+.subscribe-footer{
+  margin-top: 20px;
+  &__title{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 149.99%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  &__form{
+    display: flex;
+    position: relative;
+    .form-control{
+      background-color: transparent;
+      border: 1px solid #FFFFFF;
+      &::placeholder{
+        color: #8791BB;
+      }
+    }
+  }
+  &__input{
+    background-color: #FFFFFF;
+    background-image: url("../img/icons-sprite.svg#arrow-submit-left");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+    border: 1px solid #FFFFFF;
+    width: 53px;
+    height: 53px;
+  }
+  &__agree{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 123.99%;
+    color: #FFFFFF;
+  }
+}
