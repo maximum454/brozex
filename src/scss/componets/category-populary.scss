@@ -1,6 +1,58 @@
 .category-populary{
   margin-bottom: 80px;
   &__body{
-
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    background-color: #F4F4F4;
+    background-image: url("../img/category-populary-bg.png");
+    padding: 29px 32px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex: 1 0 692px;
+    max-width: 692px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:nth-child(2){
+      flex: 1 0 488px;
+      max-width: 488px;
+      margin-right: 0;
+    }
+    &:nth-child(3){
+      flex: 1 0 488px;
+      max-width: 488px;
+    }
+    &:nth-child(4){
+      flex: 1 0 285px;
+      max-width: 285px;
+    }
+    &:nth-child(5){
+      flex: 1 0 386px;
+      max-width: 386px;
+      margin-right: 0;
+    }
+  }
+  &__tags{
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__link{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    border: 0.5px solid #8B8B8B;
+    margin: 0 5px 5px 0;
+    padding: 5px 7px 6px;
+    text-decoration: none;
+    &:first-of-type{
+      flex: 1 0 100%;
+      max-width: fit-content;
+    }
   }
 }
