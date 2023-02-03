@@ -3570,6 +3570,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__phone {
@@ -3601,6 +3604,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__search {
+  margin: 0 20px;
+}
+
+.header__catalog {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .header-catalog {
@@ -3996,14 +4008,15 @@ body {
 .category-populary__item {
   background-color: #F4F4F4;
   background-image: url("../img/category-populary-bg.png");
+  background-size: cover;
   padding: 29px 32px 24px;
-  margin-bottom: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(59.4% - 20px);
           flex: 1 0 calc(59.4% - 20px);
   max-width: calc(59.4% - 20px);
   height: 285px;
   position: relative;
+  overflow: hidden;
 }
 
 .category-populary__item:nth-child(2) {
@@ -4029,9 +4042,9 @@ body {
 
 .category-populary__item:nth-child(4) {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 23.75%;
-          flex: 1 0 23.75%;
-  max-width: 23.75%;
+      -ms-flex: 1 0 calc(24.4638728324% - 20px);
+          flex: 1 0 calc(24.4638728324% - 20px);
+  max-width: calc(24.4638728324% - 20px);
 }
 
 .category-populary__item:nth-child(4) .category-populary__figure {
@@ -4042,9 +4055,9 @@ body {
 
 .category-populary__item:nth-child(5) {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 32.166%;
-          flex: 1 0 32.166%;
-  max-width: 32.166%;
+      -ms-flex: 1 0 calc(34.936% - 20px);
+          flex: 1 0 calc(34.936% - 20px);
+  max-width: calc(34.936% - 20px);
   margin-right: 0;
 }
 
@@ -4983,6 +4996,16 @@ body {
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .category-populary__item {
+    padding: 29px 25px 24px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(59.4% - 20px);
+            flex: 1 0 calc(59.4% - 20px);
+    max-width: calc(59.4% - 20px);
   }
 }
 
