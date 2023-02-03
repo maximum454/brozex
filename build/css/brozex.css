@@ -3706,6 +3706,42 @@ body {
   color: #000000;
 }
 
+.menu-control__icon {
+  position: relative;
+}
+
+.menu-control .icon {
+  position: relative;
+}
+
+.menu-control__count {
+  position: absolute;
+  top: -3px;
+  right: -6px;
+  z-index: 10;
+  background-color: #FF0000;
+  border: 1px solid #FFFFFF;
+  border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  padding: 0 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  font-style: normal;
+}
+
 .select-city {
   position: relative;
   padding: 2px 18px 2px 26px;
