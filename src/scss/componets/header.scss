@@ -1,7 +1,7 @@
 .header {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     &__top {
-        padding:10px 0 8px;
+        padding:11px 0 8px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -16,6 +16,7 @@
         line-height: 17px;
         color: #000000;
         text-decoration: none;
+        margin-left: 15px;
         .icon-phone{
             width: 19px;
             height: 18px;

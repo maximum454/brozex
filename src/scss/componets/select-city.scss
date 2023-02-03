@@ -1,11 +1,18 @@
 .select-city{
     position: relative;
-    padding-left: 26px;
-    padding-right: 18px;
-    background: url("../img/icons-sprite.svg#location") no-repeat, url("../img/icons-sprite.svg#arrow-dropdown-bottom") right  no-repeat;
+    padding: 2px 18px 2px 26px;
+    background-image: url("../img/icons-sprite.svg#location");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: left center;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
     color: #000000;
     width: fit-content;
+    .icon{
+        width: 9px;
+        height: 6px;
+        margin: 0;
+    }
 }
