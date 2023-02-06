@@ -56,7 +56,7 @@
                 <img class="img-fluid" src="../img/logo-brozex-color.svg" width="103" height="36" alt="Logo Brozex">
             </a>
             <div class="header__info">
-                <div class="select-city">
+                <div class="select-city" data-remodal-target="modal-city">
                     Екатеринбург <i class="icon icon-dropdown-bottom"></i>
                 </div>
 
@@ -220,27 +220,48 @@
         </div>
     </div>
 </div>
-    <div class="remodal" data-remodal-id="modal-partner">
-    <button data-remodal-action="close" class="remodal-close">закрыть</button>
-    <h1 class="remodal__title">стать партнером</h1>
-    <div class="remodal__body">
-        <form class="form" action="">
-            <div class="form-group">
-                <input class="form-control" type="text" placeholder="имя" required>
+    <div class="remodal" data-remodal-id="modal-city">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Выбор города</div>
+        </div>
+        <div class="remodal__body">
+
+            <form class="select-city__form" action="">
+                <input class="form-control" type="text" value="" placeholder="Поиск">
+            </form>
+            <div class="select-city__col">
+                <a href="#">г. Москва</a>
+                <a href="#">г. Санкт-Петербург</a>
+                <a href="#">г. Барнаул г. Владивосток</a>
+                <a href="#">г. Волгоград</a>
+                <a href="#">г Воронеж</a>
+                <a href="#">г. Екатеринбург</a>
+                <a href="#">г. Ижевск</a>
+                <a href="#">г. Иркутск</a>
+                <a href="#">г. Казань</a>
+                <a href="#">г. Кемерово</a>
+                <a href="#">г. Краснодар</a>
+                <a href="#">г. Красноярск г. Махачкала</a>
+                <a href="#">г. Нижний Новгород</a>
+
+                <a href="#">г. Новосибирск</a>
+                <a href="#">г. Омск г. Оренбург</a>
+                <a href="#">г. Премь</a>
+                <a href="#">г. Ростов-на-Дону</a>
+                <a href="#">г. Самара</a>
+                <a href="#">г. Саратов</a>
+                <a href="#">г. Тольятти</a>
+                <a href="#">г. Томск</a>
+                <a href="#">г. Тюмень</a>
+                <a href="#">г. Ульяновск</a>
+                <a href="#">г. Уфа</a>
+                <a href="#">г. Хабаровск</a>
+                <a href="#">г. Челябинск</a>
+                <a href="#">г. Ярославль</a>
             </div>
-            <div class="form-group">
-                <input class="form-control" type="text" placeholder="город">
-            </div>
-            <div class="form-group">
-                <input class="form-control js-phone-mask" type="text" placeholder="телефон">
-            </div>
-            <div class="form-group">
-                <input class="form-control" type="email" placeholder="e-mail" required>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-outline-primary">отправить заявку</button>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 </div>

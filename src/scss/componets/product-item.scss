@@ -133,9 +133,9 @@
     top: 100%;
     overflow: hidden;
     width: 100%;
-    opacity: 0;
-    height: 0;
-    visibility: hidden;
+    opacity: 1;
+    height: auto;
+    visibility: visible;
     padding: 0 11px 11px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
     background-color: #FFFFFF;
@@ -155,7 +155,7 @@
     justify-content: space-between;
     margin-top: 8px;
     .btn{
-      flex: 1 0 129px;
+      flex: 1 0 50%;
       max-width: 129px;
       padding: 20px;
       text-transform: uppercase;

@@ -10,9 +10,34 @@
     line-height: 15px;
     color: #000000;
     width: fit-content;
+    cursor: pointer;
+    &:hover{
+        color: #FF0000;
+    }
     .icon{
         width: 9px;
         height: 6px;
         margin: 0;
+    }
+    &__modal{
+        max-width: 426px;
+        margin: 0 auto;
+    }
+    &__form{
+        margin-bottom: 16px;
+    }
+    &__col{
+        column-count: 2;
+        max-height: 465px;
+        overflow: auto;
+        a{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 31px;
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0;
+        }
     }
 }

@@ -5,10 +5,9 @@
   font-family: $font1;
   font-weight: 400;
   font-size: 14px;
-  line-height: 149.49%;
+  line-height: 21px;
   text-align: center;
   color: #000000;
-  max-width: 90px;
   &__control{
     width: 18px;
     height: 18px;
@@ -36,13 +35,14 @@
   &__unit{
     font-weight: 400;
     font-size: 14px;
-    line-height: 149.49%;
+    line-height: 21px;
     color: #000000;
   }
   &__input{
     border: none;
     text-align: right;
     max-width: 40px;
+    width: auto;
     outline: none;
   }
 }
