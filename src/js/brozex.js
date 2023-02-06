@@ -34,3 +34,21 @@ if(document.querySelector('.swiper-products')) {
         });
     });
 }
+
+const menuCatalogBtn = document.getElementById('js-menu-catalog')
+menuCatalogBtn.addEventListener('click', menuCatalog)
+
+function menuCatalog(){
+    const target = this;
+    const overlay = document.querySelector('.wrp__overlay');
+    const menuCatalog = document.querySelector('.menu-catalog');
+    if(this.classList.contains('active')){
+        this.classList.remove('active')
+        overlay.classList.remove('active')
+        menuCatalog.classList.remove('active')
+    }else{
+        this.classList.add('active')
+        overlay.classList.add('active')
+        menuCatalog.classList.add('active')
+    }
+}
