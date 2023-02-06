@@ -1,5 +1,11 @@
 .header {
     margin-bottom: 27px;
+    position: relative;
+    z-index: 20;
+    background-color: #ffffff;
+    &__body{
+        position: relative;
+    }
     &__top {
         padding:11px 0 8px;
         display: flex;
@@ -10,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 14px;
     }
     &__phone{
         font-weight: 400;

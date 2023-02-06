@@ -29,6 +29,17 @@ body{
 .wrp {
 	overflow: hidden;
 	position: relative;
+	&__overlay{
+		background-color: rgba(0,0,0,.15);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 15;
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
 }
 
 .d-none {
@@ -158,6 +169,8 @@ body{
 @import "componets/menu-control";
 @import "componets/select-city";
 @import "componets/header-top-menu";
+@import "componets/menu-catalog";
+@import "componets/banner-menu-catalog";
 @import "componets/slider-main";
 @import "componets/slider-brands";
 @import "componets/category-populary";
