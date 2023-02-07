@@ -5417,6 +5417,63 @@ body {
   margin: 0;
 }
 
+.page {
+  margin-bottom: 70px;
+}
+
+.page__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.page__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.page__title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  margin: 0 0 30px;
+}
+
+.page__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 793px;
+          flex: 1 0 793px;
+  max-width: 793px;
+}
+
+.page__content figure {
+  margin: 0 0 26px;
+}
+
+.page__content figure img {
+  display: block;
+}
+
+.page__content h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  margin: 0 0 23px;
+}
+
+.page__content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: justify;
+  color: #000000;
+  margin: 0 0 26px;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
