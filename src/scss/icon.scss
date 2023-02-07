@@ -19,6 +19,9 @@
 .icon-submit-left {
     background-image: url("../img/icons-sprite.svg#arrow-submit-left");
 }
+.icon-submit-left-light {
+    background-image: url("../img/icons-sprite.svg#arrow-submit-left-light");
+}
 
 .icon-basket {
     background-image: url("../img/icons-sprite.svg#basket");
@@ -100,10 +103,35 @@
     height: 35px;
 }
 
+
+.icon-telegram-dark {
+    background-image: url("../img/icons-sprite.svg#telegram-dark");
+    width: 40px;
+    height: 40px;
+}
+
+.icon-vkontakte-dark {
+    background-image: url("../img/icons-sprite.svg#vkontakte-dark");
+    width: 40px;
+    height: 40px;
+}
+
+.icon-whatsapp-dark {
+    background-image: url("../img/icons-sprite.svg#whatsapp-dark");
+    width: 40px;
+    height: 40px;
+}
+
 .icon-close {
-    background-image: url("../img/social-sprite.svg#close");
-    width: 35px;
-    height: 35px;
+    background-image: url("../img/icons-sprite.svg#close");
+    width: 40px;
+    height: 40px;
+}
+
+.icon-breadcrumb {
+    background-image: url("../img/icons-sprite.svg#arrow-breadcrumb");
+    width: 6px;
+    height: 12px;
 }
 
 

@@ -1,0 +1,18 @@
+.share{
+    flex-shrink: 0;
+    &__title{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #000000;
+        margin: 0 0 12px;
+    }
+    &__body{}
+    &__item{
+        text-decoration: none;
+        margin-right: 6px;
+    }
+    .icon{
+        margin: 0;
+    }
+}

@@ -1,9 +1,35 @@
-.subscribe-footer{
+.subscribe{
   margin-top: 20px;
+  &--page{
+    margin-top: 0;
+    flex: 1 0 387px;
+    max-width: 387px;
+    .subscribe__submit{
+      background-color: #192864;
+      background-image: url("../img/icons-sprite.svg#arrow-submit-left-light");
+      background-size: 17px;
+      border: 1px solid #192864;
+    }
+    .subscribe__form{
+      .form-control{
+        border: 1px solid #192864;
+        &::placeholder{
+          color: #ABABAB;
+        }
+      }
+    }
+    .subscribe__title{
+      color: #000000;
+    }
+    .subscribe__agree{
+      color: #000000;
+    }
+
+  }
   &__title{
     font-weight: 400;
     font-size: 15px;
-    line-height: 149.99%;
+    line-height: 22px;
     color: #FFFFFF;
     margin-bottom: 10px;
   }
@@ -34,7 +60,7 @@
     margin-top: 5px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 123.99%;
+    line-height: 15px;
     color: #FFFFFF;
   }
 }
