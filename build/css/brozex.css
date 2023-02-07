@@ -2714,10 +2714,6 @@ html.remodal-is-locked {
           box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
-.form-w410 {
-  max-width: 410px;
-}
-
 .form-bg {
   background: #f1f5f9;
   border-radius: 4px;
@@ -2725,7 +2721,7 @@ html.remodal-is-locked {
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form-group.mb-60 {
@@ -2761,14 +2757,13 @@ html.remodal-is-locked {
       align-self: center;
 }
 
-.form-group .form-label {
+.form-label {
   display: inline-block;
   margin-bottom: 6px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
 }
 
 .form-group .form-title {
@@ -3353,9 +3348,23 @@ th {
   padding: 20px;
 }
 
+.remodal.form-auth {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .remodal__header {
   position: relative;
   margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .remodal__title {
@@ -3366,6 +3375,48 @@ th {
   line-height: 45px;
   color: #000000;
   margin: 0;
+}
+
+.remodal__link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.remodal__link:hover {
+  color: #FF0000;
+}
+
+.remodal__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.remodal__btn .btn {
+  width: 100%;
+  max-width: 202px;
+  text-transform: uppercase;
+  padding: 20px 23px;
+}
+
+.remodal__btn .small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
 }
 
 .remodal .remodal-close {
@@ -3396,14 +3447,6 @@ th {
 
 .remodal .form-control {
   padding: 18px 15px;
-}
-
-.remodal .btn {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  display: block;
 }
 
 .remodal-wrapper {
