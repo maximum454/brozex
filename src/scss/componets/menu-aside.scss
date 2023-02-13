@@ -1,0 +1,51 @@
+.menu-aside{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 286px;
+    li{
+        margin-bottom: 12px;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+        &>ul{
+            margin: 12px 0;
+            padding-left: 10px;
+            list-style: none;
+            li{
+                margin-bottom: 17px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+                a{
+                    font-family: $font1;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+    a{
+        display: block;
+        position: relative;
+        padding-right: 20px;
+        font-family: $font1;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+        &:hover,
+        &.active{
+            color: #FF0000;
+        }
+    }
+    .icon-dropdown-bottom{
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        margin: 0;
+        top: 9px;
+        right: 0;
+    }
+}

@@ -3499,6 +3499,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .wrp {
   overflow: hidden;
   position: relative;
@@ -5428,18 +5441,18 @@ body {
   gap: 20px;
 }
 
-.page__menu {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
 .page__title {
   font-weight: 400;
   font-size: 25px;
   line-height: 29px;
   color: #000000;
   margin: 0 0 30px;
+}
+
+.page__aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .page__content {
@@ -5472,6 +5485,67 @@ body {
   text-align: justify;
   color: #000000;
   margin: 0 0 26px;
+}
+
+.menu-aside {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 286px;
+}
+
+.menu-aside li {
+  margin-bottom: 12px;
+}
+
+.menu-aside li:last-of-type {
+  margin-bottom: 0;
+}
+
+.menu-aside li > ul {
+  margin: 12px 0;
+  padding-left: 10px;
+  list-style: none;
+}
+
+.menu-aside li > ul li {
+  margin-bottom: 17px;
+}
+
+.menu-aside li > ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.menu-aside li > ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.menu-aside a {
+  display: block;
+  position: relative;
+  padding-right: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.menu-aside a:hover,
+.menu-aside a.active {
+  color: #FF0000;
+}
+
+.menu-aside .icon-dropdown-bottom {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  margin: 0;
+  top: 9px;
+  right: 0;
 }
 
 @media only screen and (min-width: 641px) {
