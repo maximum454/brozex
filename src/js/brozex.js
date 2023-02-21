@@ -16,7 +16,23 @@ if(document.querySelector('.swiper-main')) {
 if(document.querySelector('.swiper-brands')) {
     const swiperBrands = new Swiper('.swiper-brands', {
         slidesPerView: 7.8,
+        centeredSlides: true,
+        freeMode: true,
+        initialSlide: 3,
         spaceBetween: 53,
+        breakpoints: {
+            320: {
+                slidesPerView: 4,
+                spaceBetween: 35
+            },
+            768: {
+                slidesPerView: 4.3,
+                spaceBetween: 53
+            },
+            1024: {
+                slidesPerView: 7.8,
+            }
+        }
     })
 }
 
@@ -31,6 +47,20 @@ if(document.querySelector('.swiper-products')) {
                 nextEl: n.querySelector('.swiper-button-next'),
                 prevEl: n.querySelector('.swiper-button-prev'),
             },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 13
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                }
+            }
         });
     });
 }

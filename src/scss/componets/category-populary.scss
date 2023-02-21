@@ -94,4 +94,45 @@
       max-width: calc(59.4% - 20px);
     }
   }
+  @include r(1023){
+    &__item{
+      padding: 29px 25px 24px;
+      flex: 1 0 100%;
+      max-width: 100%;
+      &:nth-child(2){
+        flex: 1 0 100%;
+        max-width: 100%;
+      }
+      &:nth-child(3){
+        flex: 1 0 100%;
+        max-width: 100%;
+      }
+      &:nth-child(4){
+        flex: 1 0 calc(50% - 20px);
+        max-width: 50%;
+      }
+      &:nth-child(5){
+        flex: 1 0 calc(50% - 20px);
+        max-width: 50%;
+      }
+    }
+  }
+  @include r(767){
+    &__item{
+      padding: 29px 16px 24px;
+      height: 149px;
+    }
+    &__figure{
+      max-width: 43%;
+      height: 100%;
+    }
+    &__title{
+      font-size: 18px;
+      line-height: 21px;
+      max-width: 160px;
+    }
+    &__tags{
+      display: none;
+    }
+  }
 }

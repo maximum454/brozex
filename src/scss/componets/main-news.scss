@@ -37,14 +37,15 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    background-color: #F4F4F4;
     &--big{
       flex: 1 0 calc(793px - 20px);
       max-width: 793px;
+      padding: 0;
       .main-news__content{
         position: absolute;
         bottom: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000000 63.2%);
-        opacity: 0.35;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .35) 63.2%);
         padding: 26px 35px 40px;
       }
       .main-news__date{
@@ -67,9 +68,8 @@
         color: #000000;
       }
     }
-    &:nth-child(2){
-      background-color: #F4F4F4;
-      padding: 26px 28px 40px;
+    &:nth-child(3){
+      display: none;
     }
     .btn{
       margin-top: auto;
@@ -89,7 +89,7 @@
     }
   }
   &__content{
-    padding: 26px 0 20px;
+    padding: 26px 28px 40px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@
   &__name{
     font-weight: 400;
     font-size: 17px;
-    line-height: 147.49%;
+    line-height: 25px;
     color: #000000;
     margin-bottom: 12px;
     height: 45px;
@@ -122,6 +122,58 @@
       font-size: 13px;
       line-height: 13px;
       text-transform: uppercase;
+    }
+  }
+  @include r(1023){
+    &__item{
+      flex: 1 0 calc(50% - 20px);
+      max-width: 50%;
+      &--big{
+        flex: 1 0 100%;
+        max-width: 100%;
+      }
+      &:nth-child(3){
+        display: block;
+      }
+    }
+    &__content{
+      padding: 26px 28px 25px;
+    }
+  }
+  @include r(767){
+    &__title{
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__item{
+      &--big{
+        .main-news__content{
+          padding: 13px 20px 28px;
+        }
+        .main-news__date{
+          font-size: 11px;
+          line-height: 18px;
+        }
+        .main-news__name{
+          font-size: 23px;
+          line-height: 24px;
+          margin-bottom: 0;
+        }
+      }
+      .btn{
+        display: none;
+      }
+    }
+    &__content{
+      padding: 13px 15px 22px;
+    }
+    &__name{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19px;
+      margin-bottom: 0;
+      height: 55px;
+      -webkit-line-clamp: 3;
     }
   }
 }

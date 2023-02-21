@@ -1,6 +1,7 @@
 .product-counter{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 21px;
   font-family: $font1;
   font-weight: 400;
@@ -33,16 +34,23 @@
     justify-content: center;
   }
   &__unit{
+    flex: 1 0 22px;
+    max-width: 22px;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: #000000;
   }
+  &__wrp-input{
+    flex: 0 1 40px;
+    max-width: 60px;
+  }
   &__input{
     border: none;
     text-align: right;
-    max-width: 40px;
-    width: auto;
+    width: 100%;
     outline: none;
+    flex: 1;
+    background-color: transparent;
   }
 }

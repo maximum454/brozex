@@ -77,5 +77,26 @@
       bottom: 30px;
     }
   }
-
+  @include r(1023){
+    &__banner{
+      display: none;
+    }
+  }
+  @include r(767){
+    &__item{
+      height: 300px;
+    }
+    &__title{
+      font-size: 32px;
+      line-height: 36px;
+    }
+    &__subtitle{
+      font-size: 10px;
+      line-height: 14px;
+    }
+    &__price{
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
 }
