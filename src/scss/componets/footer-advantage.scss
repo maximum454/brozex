@@ -1,5 +1,6 @@
 .footer-advantage{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 18px;
   border-bottom: 1px solid #fff;
@@ -8,13 +9,45 @@
     max-width: 25%;
     font-family: $font2;
     font-size: 20px;
-    line-height: 112.99%;
+    line-height: 23px;
     text-align: center;
     color: #FFFFFF;
     padding: 29px;
     border-right: 1px solid #fff;
     &:last-of-type{
       border-right: 0;
+    }
+  }
+  @include r(1023){
+    &__item{
+      font-size: 15px;
+      line-height: 17px;
+      padding: 17px 10px;
+    }
+  }
+  @include r(767){
+    border-bottom: none;
+    &__item{
+      flex: 1 0 50%;
+      max-width: 50%;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 17px 10px;
+      border: 0;
+      &:nth-child(odd){
+        border-right: 1px solid #fff;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+  @include r(374){
+    &__item{
+      font-size: 12px;
+      line-height: 14px;
+      padding: 12px 5px;
     }
   }
 }

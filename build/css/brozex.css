@@ -5167,6 +5167,12 @@ a:hover {
           justify-content: space-between;
 }
 
+.footer__logo {
+  margin-right: 32px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .footer__about {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 410px;
@@ -5176,12 +5182,9 @@ a:hover {
 
 .footer__about p {
   margin: 50px 0 0;
-}
-
-.footer__about p.small {
   font-weight: 400;
   font-size: 10px;
-  line-height: 150%;
+  line-height: 15px;
   color: #C6C6C6;
 }
 
@@ -5226,6 +5229,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -5251,6 +5256,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -5265,7 +5272,7 @@ a:hover {
   max-width: 25%;
   font-family: "MotorCyr", sans-serif;
   font-size: 20px;
-  line-height: 112.99%;
+  line-height: 23px;
   text-align: center;
   color: #FFFFFF;
   padding: 29px;
@@ -5765,6 +5772,46 @@ a:hover {
     font-size: 17px;
     margin-left: 15px;
   }
+
+  .footer__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer__about {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .footer__about p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #C6C6C6;
+    margin: 0;
+  }
+
+  .footer__copy {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 20px;
+  }
+
+  .footer-advantage__item {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 17px 10px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -5917,6 +5964,30 @@ a:hover {
     font-size: 18px;
     line-height: 24px;
   }
+
+  .footer-advantage {
+    border-bottom: none;
+  }
+
+  .footer-advantage__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    max-width: 50%;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 17px 10px;
+    border: 0;
+  }
+
+  .footer-advantage__item:nth-child(odd) {
+    border-right: 1px solid #fff;
+  }
+
+  .footer-advantage__item:nth-child(1),
+  .footer-advantage__item:nth-child(2) {
+    border-bottom: 1px solid #fff;
+  }
 }
 
 @media only screen and (max-width: 374px) {
@@ -5927,5 +5998,11 @@ a:hover {
         -ms-flex: 1 0 150px;
             flex: 1 0 150px;
     max-width: 150px;
+  }
+
+  .footer-advantage__item {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 12px 5px;
   }
 }

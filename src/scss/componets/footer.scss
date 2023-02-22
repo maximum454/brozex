@@ -7,17 +7,19 @@
     display: flex;
     justify-content: space-between;
   }
+  &__logo{
+    margin-right: 32px;
+    flex-shrink: 0;
+  }
   &__about{
     flex: 1 0 410px;
     max-width: 410px;
     p{
       margin: 50px 0 0;
-      &.small{
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 150%;
-        color: #C6C6C6;
-      }
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 15px;
+      color: #C6C6C6;
     }
   }
   &__contacts{
@@ -52,6 +54,7 @@
   }
   &__footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
@@ -68,4 +71,29 @@
       margin: auto;
     }
   }
+  @include r(1023){
+    &__body{
+      flex-wrap: wrap;
+    }
+    &__about{
+      flex: 1 0 100%;
+      max-width: 100%;
+      display: flex;
+      margin-bottom: 50px;
+      p{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 150%;
+        color: #C6C6C6;
+        margin: 0;
+      }
+    }
+    &__copy{
+      flex: 1 0 100%;
+      order: 2;
+      margin-top: 20px;
+    }
+  }
+  @include r(767){}
+  @include r(374){}
 }
