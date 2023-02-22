@@ -4687,7 +4687,7 @@ a:hover {
 }
 
 .main-about {
-  margin-bottom: 55px;
+  margin-bottom: 80px;
 }
 
 .main-about__header {
@@ -4706,7 +4706,7 @@ a:hover {
 .main-about__title {
   font-weight: 400;
   font-size: 45px;
-  line-height: 103.49%;
+  line-height: 47px;
   color: #000000;
   margin: 0;
 }
@@ -4715,25 +4715,24 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-about__body p {
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 131.99%;
-  margin: 0 0 27px;
-}
-
-.main-about__body p.small {
   font-size: 15px;
-  line-height: 179.99%;
+  line-height: 27px;
   color: #000000;
+  margin: 0 0 40px;
 }
 
 .main-about__left {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 692px;
-          flex: 1 1 692px;
+      -ms-flex: 1 1 calc(57.6% - 20px);
+          flex: 1 1 calc(57.6% - 20px);
   max-width: 692px;
 }
 
@@ -4746,10 +4745,9 @@ a:hover {
 
 .main-about__right {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 387px;
-          flex: 1 0 387px;
+      -ms-flex: 1 0 calc(32.25% - 20px);
+          flex: 1 0 calc(32.25% - 20px);
   max-width: 387px;
-  margin-left: 120px;
 }
 
 .main-about__right p {
@@ -4787,6 +4785,17 @@ a:hover {
   line-height: 100%;
   color: #000000;
   margin-left: 18px;
+}
+
+.main-about__footer {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 692px;
+          flex: 1 1 692px;
+  max-width: 692px;
+  margin-top: -100px;
 }
 
 .product-item {
@@ -5697,6 +5706,65 @@ a:hover {
   .main-news__content {
     padding: 26px 28px 25px;
   }
+
+  .main-about {
+    margin-bottom: 100px;
+  }
+
+  .main-about__header {
+    margin: 0 0 40px;
+  }
+
+  .main-about__body {
+    gap: 20px;
+  }
+
+  .main-about__left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(50% - 20px);
+            flex: 1 1 calc(50% - 20px);
+    max-width: 50%;
+  }
+
+  .main-about__left-margin {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+
+  .main-about__right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(50% - 20px);
+            flex: 1 1 calc(50% - 20px);
+    max-width: 50%;
+    margin-left: 0;
+  }
+
+  .main-about__right p {
+    max-width: 290px;
+  }
+
+  .main-about__footer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .main-about__num-count {
+    font-size: 80px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 200px;
+            flex: 1 0 200px;
+    max-width: 200px;
+  }
+
+  .main-about__num-name {
+    font-size: 17px;
+    margin-left: 15px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -5790,5 +5858,74 @@ a:hover {
     margin-bottom: 0;
     height: 55px;
     -webkit-line-clamp: 3;
+  }
+
+  .main-about {
+    margin-bottom: 40px;
+  }
+
+  .main-about__header {
+    margin: 0 0 15px;
+  }
+
+  .main-about__title {
+    font-size: 23px;
+    line-height: 24px;
+  }
+
+  .main-about__body {
+    gap: 0;
+  }
+
+  .main-about__body p {
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0 0 21px;
+  }
+
+  .main-about__left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .main-about__left-margin {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .main-about__right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .main-about__right p {
+    max-width: 100%;
+  }
+
+  .main-about__num {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .main-about__footer {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .main-about__num-count {
+    font-size: 62px;
+    line-height: 52px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 150px;
+            flex: 1 0 150px;
+    max-width: 150px;
   }
 }
