@@ -6,6 +6,9 @@
   z-index: 11;
   background-color: #F8F8F8;
   padding: 13px 30px;
-  display: flex;
+  display: none;
   justify-content: space-between;
+  @include r(1023){
+    display: flex;
+  }
 }

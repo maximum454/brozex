@@ -3775,9 +3775,7 @@ a:hover {
   z-index: 11;
   background-color: #F8F8F8;
   padding: 13px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -5728,6 +5726,12 @@ a:hover {
 
   .header__logo img {
     display: block;
+  }
+
+  .panel-smart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .slider-main__banner {
