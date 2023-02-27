@@ -3763,6 +3763,22 @@ a:hover {
   color: #000000;
 }
 
+.panel-smart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  background-color: #F8F8F8;
+  padding: 13px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .main-search {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 622px;
@@ -5653,6 +5669,59 @@ a:hover {
 }
 
 @media only screen and (max-width: 1023px) {
+  .header__bottom {
+    display: none;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__retail {
+    display: none;
+  }
+
+  .header__select-city {
+    display: none;
+  }
+
+  .header__phone {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+
+  .header__phone span {
+    display: none;
+  }
+
+  .header__phone .icon-phone {
+    width: 19px;
+    height: 18px;
+    margin-right: 2px;
+  }
+
+  .header__logo {
+    max-width: 102px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
+  .header__logo img {
+    display: block;
+  }
+
   .slider-main__banner {
     display: none;
   }

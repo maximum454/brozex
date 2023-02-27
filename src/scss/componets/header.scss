@@ -48,4 +48,43 @@
     &__catalog{
         flex-shrink: 0;
     }
+    @include r(1023){
+        &__bottom{
+            display: none;
+        }
+        &__menu{
+            display: none;
+        }
+        &__retail{
+            display: none;
+        }
+        &__select-city{
+            display: none;
+        }
+        &__phone{
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            span{
+                display: none;
+            }
+            .icon-phone{
+                width: 19px;
+                height: 18px;
+                margin-right: 2px;
+            }
+        }
+        &__logo{
+            max-width: 102px;
+            flex-shrink: 0;
+            img{
+                display: block;
+            }
+        }
+    }
 }

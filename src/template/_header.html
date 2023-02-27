@@ -1,3 +1,40 @@
+<div class="panel-smart">
+    <div id="js-menu-catalog" class="header__catalog header-catalog">
+        <button type="button" class="header-catalog__btn"></button>
+        <span class="header-catalog__name">Каталог товаров</span>
+    </div>
+
+    <div class="menu-control">
+        <a class="menu-control__item" href="">
+            <i class="icon icon-compare"></i>
+            <span class="menu-control__name">Сравнить</span>
+        </a>
+        <a class="menu-control__item" href="">
+            <i class="icon icon-estimate"></i>
+            <span class="menu-control__name">Смета</span>
+        </a>
+        <a class="menu-control__item" href="">
+            <i class="icon icon-favorites">
+                <span class="menu-control__count">3</span>
+            </i>
+            <span class="menu-control__name">Избранное</span>
+        </a>
+        <a class="menu-control__item" href="">
+            <div class="menu-control__icon">
+
+                <i class="icon icon-basket">
+                    <span class="menu-control__count">1</span>
+                </i>
+            </div>
+            <span class="menu-control__name">Корзина</span>
+        </a>
+        <a class="menu-control__item" href="" data-remodal-target="modal-login">
+            <i class="icon icon-login"></i>
+            <span class="menu-control__name">Войти</span>
+        </a>
+    </div>
+</div>
+
 <header class="header">
     <div class="container">
         <div class="header__body">
@@ -5,14 +42,21 @@
                 <a href="" class="header__logo">
                     <img class="img-fluid" src="../img/logo-brozex-color.svg" width="103" height="36" alt="Logo Brozex">
                 </a>
+                <div class="header__search main-search">
+                    <form action="" class="main-search__form">
+                        <input type="text" class="form-control" placeholder="Поиск в каталоге">
+                        <input class="main-search__submit" type="submit" value="">
+                    </form>
+                    <div class="main-search__dropdown"></div>
+                </div>
                 <div class="header__info">
-                    <div class="select-city" data-remodal-target="modal-city">
+                    <div class="header__select-city select-city" data-remodal-target="modal-city">
                         Екатеринбург <i class="icon icon-dropdown-bottom"></i>
                     </div>
 
-                    <a href="tel:+73433452000" class="header__phone"><i class="icon icon-phone"></i>+7 (343) 345 20 00</a>
+                    <a href="tel:+73433452000" class="header__phone"><i class="icon icon-phone"></i><span>+7 (343) 345 20 00</span></a>
                 </div>
-                <div class="header-top-menu">
+                <div class="header__menu header-top-menu">
                     <ul class="header-top-menu__list">
                         <li class="header-top-menu__item">
                             <a class="header-top-menu__link" href="#">О компании <i
@@ -28,7 +72,6 @@
                         <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Контакты</a></li>
                     </ul>
                 </div>
-
                 <a href="#" class="header__retail">Розничным покупателям</a>
             </div>
             <div class="header__bottom">

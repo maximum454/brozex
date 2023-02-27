@@ -1,0 +1,11 @@
+.panel-smart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  background-color: #F8F8F8;
+  padding: 13px 30px;
+  display: flex;
+  justify-content: space-between;
+}
