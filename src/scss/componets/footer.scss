@@ -71,6 +71,13 @@
       margin: auto;
     }
   }
+  &__links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: auto;
+  }
   @include r(1023){
     &__body{
       flex-wrap: wrap;
@@ -91,9 +98,71 @@
     &__copy{
       flex: 1 0 100%;
       order: 2;
-      margin-top: 20px;
+    }
+    &__footer{
+      gap: 20px 60px;
+    }
+    &__links{
+      justify-content: space-between;
     }
   }
-  @include r(767){}
+  @include r(767){
+    &__body{
+      display: grid;
+      grid-template-columns: 85px 1fr;
+      grid-gap: 20px 40px;
+      grid-template-areas: 'about about' 'menu1 contact' 'menu2 contact';
+    }
+    &__about{
+      grid-area: about;
+      margin-bottom: 20px;
+    }
+    &__contacts{
+      grid-area: contact;
+      font-size: 13px;
+      line-height: 19px;
+    }
+    &__menu{
+      &.area1{
+        grid-area: menu1;
+      }
+      &.area2{
+        grid-area: menu2;
+      }
+    }
+    &__title{
+      font-size: 13px;
+      line-height: 19px;
+      margin-bottom: 10px;
+    }
+    &__logo{
+      max-width: 93px;
+    }
+    &__footer{
+      gap: 20px;
+      align-items: flex-start;
+    }
+    &__link{
+      font-size: 13px;
+      line-height: 19px;
+    }
+    &__links{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 10px;
+      line-height: 15px;
+    }
+    &__social{
+      flex: 1 0 50%;
+      max-width: fit-content;
+      a{
+        display: inline-block;
+      }
+      .icon{
+        margin: auto;
+      }
+    }
+  }
   @include r(374){}
 }

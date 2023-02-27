@@ -63,4 +63,14 @@
     line-height: 15px;
     color: #FFFFFF;
   }
+  @include r(767){
+    &__title{
+      font-size: 13px;
+      line-height: 19px;
+    }
+    &__agree{
+      line-height: 12px;
+      margin-top: 10px;
+    }
+  }
 }
