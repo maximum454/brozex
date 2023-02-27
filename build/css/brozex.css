@@ -3668,6 +3668,10 @@ a:hover {
           justify-content: space-between;
 }
 
+.header__top .header__search {
+  display: none;
+}
+
 .header__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5669,6 +5673,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 1023px) {
+  .header__top .header__search {
+    display: block;
+  }
+
   .header__bottom {
     display: none;
   }
