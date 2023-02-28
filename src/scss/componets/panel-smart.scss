@@ -3,12 +3,57 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 11;
+  z-index: 30;
   background-color: #F8F8F8;
   padding: 13px 30px;
   display: none;
-  justify-content: space-between;
-  @include r(1023){
+
+  &__body{
     display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__count{
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    z-index: 10;
+    background-color: #FF0000;
+    border: 1px solid #FFFFFF;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    padding: 0 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    font-style: normal;
+  }
+  .icon{
+    margin: 0 0 3px;
+    height: 24px;
+    position: relative;
+  }
+  @include r(1023){
+    display: block;
+  }
+  @include r(767){
+
   }
 }

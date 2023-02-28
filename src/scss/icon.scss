@@ -26,6 +26,9 @@
 .icon-basket {
     background-image: url("../img/icons-sprite.svg#basket");
 }
+.icon-basket-gray {
+    background-image: url("../img/icons-sprite.svg#basket-gray");
+}
 
 .icon-compare {
     background-image: url("../img/icons-sprite.svg#compare");
@@ -67,9 +70,15 @@
 .icon-login {
     background-image: url("../img/icons-sprite.svg#login");
 }
+.icon-login-gray {
+    background-image: url("../img/icons-sprite.svg#login-gray");
+}
 
 .icon-burger {
     background-image: url("../img/icons-sprite.svg#burger");
+}
+.icon-burger-gray {
+    background-image: url("../img/icons-sprite.svg#burger-gray");
 }
 
 .icon-minus {
@@ -132,6 +141,12 @@
     background-image: url("../img/icons-sprite.svg#arrow-breadcrumb");
     width: 6px;
     height: 12px;
+}
+
+.icon-more-gray {
+    background-image: url("../img/icons-sprite.svg#more-gray");
+    width: 25px;
+    height: 5px;
 }
 
 
