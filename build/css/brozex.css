@@ -2966,7 +2966,7 @@ html.remodal-is-locked {
 
 .checkbox-other {
   display: block;
-  margin: 0 0 10px 0;
+  margin: 0 0 16px 0;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2987,31 +2987,31 @@ html.remodal-is-locked {
 .checkbox-other span {
   display: inline-block;
   position: relative;
-  padding: 0 0 0 25px;
+  padding: 2px 0 2px 33px;
   line-height: 18px;
 }
 
 .checkbox-other span:before {
   content: "";
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 0;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
-  background-color: #EEEEEE;
-  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #000000;
 }
 
 /* Checked */
 
 .checkbox-other input[type=checkbox]:checked + span:before {
-  background-color: #FD7400;
-  background-image: url(../img/chekbox-active.svg);
-  background-size: 11px 9px;
+  background-color: #192864;
+  background-image: url("../img/icons-sprite.svg#chekbox-active");
+  background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -3026,11 +3026,11 @@ html.remodal-is-locked {
 /* Hover */
 
 .checkbox-other span:hover:before {
-  background-image: url(../img/chekbox-active.svg);
-  background-size: 11px 9px;
+  background-image: url("../img/icons-sprite.svg#chekbox-active");
+  background-size: 13px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #FD7400;
+  background-color: #192864;
 }
 
 /* Active */
@@ -5039,6 +5039,7 @@ a:hover {
   opacity: 1;
   height: auto;
   visibility: visible;
+  z-index: 10;
 }
 
 .product-item__img,
@@ -5057,7 +5058,7 @@ a:hover {
   position: absolute;
   top: 15px;
   left: 20px;
-  z-index: 10;
+  z-index: 1;
   font-weight: 400;
   font-size: 13px;
   line-height: 159.99%;
@@ -5083,7 +5084,7 @@ a:hover {
   position: absolute;
   top: 14px;
   right: 14px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .product-item__info .btn {
@@ -5646,6 +5647,43 @@ a:hover {
   line-height: 12px;
 }
 
+.breadcrumb__title {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0;
+}
+
+.breadcrumb__prev {
+  padding-left: 20px;
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.breadcrumb__prev:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-image: url("../img/icons-sprite.svg#arrow-dropdown-bottom");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 12px;
+  height: 22px;
+}
+
 .breadcrumb a {
   color: #B9B9B9;
   text-decoration: none;
@@ -5867,18 +5905,44 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 20px;
 }
 
 .catalog-list__aside {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 285px;
           flex: 1 0 285px;
+  max-width: 285px;
 }
 
 .catalog-list__section {
   -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.catalog-list__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+.catalog-list__title {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  margin: 0;
 }
 
 .catalog-list__products {
@@ -5982,6 +6046,73 @@ a:hover {
   line-height: 13px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.accordion {
+  margin-bottom: 32px;
+}
+
+.accordion[open] .accordion__header:before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.accordion__header:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-image: url("../img/icons-sprite.svg#arrow-dropdown-bottom");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 19px;
+}
+
+.accordion__title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  margin: 0;
+}
+
+.accordion__body {
+  margin-top: 24px;
+}
+
+.accordion__body::-webkit-scrollbar {
+  width: 3px;
+}
+
+.accordion__body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.accordion__body::-webkit-scrollbar-thumb {
+  background: #B9B9B9;
+}
+
+.accordion__body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.accordion__body--scroll {
+  max-height: 456px;
+  overflow-x: auto;
 }
 
 @media only screen and (min-width: 641px) {

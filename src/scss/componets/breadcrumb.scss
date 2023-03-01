@@ -3,6 +3,38 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+    &__title{
+        font-family: 'Arial';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        color: #000000;
+        margin: 0;
+    }
+    &__prev{
+        padding-left: 20px;
+        display: block;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #000000;
+        position: relative;
+        margin-bottom: 10px;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(90deg);
+            background-image: url("../img/icons-sprite.svg#arrow-dropdown-bottom");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            width: 12px;
+            height: 22px;
+        }
+    }
     a{
         color: #B9B9B9;
         text-decoration: none;

@@ -205,7 +205,7 @@
 
 .checkbox-other {
     display: block;
-    margin: 0 0 10px 0;
+    margin: 0 0 16px 0;
     cursor: pointer;
     user-select: none;
     position: relative;
@@ -221,27 +221,27 @@
 .checkbox-other span {
     display: inline-block;
     position: relative;
-    padding: 0 0 0 25px;
+    padding: 2px 0 2px 33px;
     line-height: 18px;
 }
 .checkbox-other span:before {
     content: "";
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 0;
     transition: background-color 0.3s ease;
-    background-color: #EEEEEE;
-    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #000000;
 }
 
 /* Checked */
 .checkbox-other input[type=checkbox]:checked + span:before {
-    background-color: #FD7400;
-    background-image: url(../img/chekbox-active.svg);
-    background-size: 11px 9px;
+    background-color: #192864;
+    background-image: url("../img/icons-sprite.svg#chekbox-active");
+    background-size: 16px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -253,11 +253,11 @@
 
 /* Hover */
 .checkbox-other span:hover:before {
-    background-image: url(../img/chekbox-active.svg);
-    background-size: 11px 9px;
+    background-image: url("../img/icons-sprite.svg#chekbox-active");
+    background-size: 13px;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #FD7400;
+    background-color: #192864;
 }
 
 /* Active */
