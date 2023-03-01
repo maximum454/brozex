@@ -1,0 +1,56 @@
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__page{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  &__count{}
+  &__num{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.active{
+      border: 1px solid #000000;
+    }
+    &:hover{
+      color: #FF0000;
+    }
+  }
+  &__prev{
+    transform: rotate(90deg);
+    background-image: url("../img/icons-sprite.svg#arrow-dropdown-bottom");
+    background-repeat: no-repeat;
+    background-size: 13px 16px;
+    background-position: center;
+    width: 37px;
+    height: 37px;
+  }
+  &__next{
+    transform: rotate(-90deg);
+    background-image: url("../img/icons-sprite.svg#arrow-dropdown-bottom");
+    background-repeat: no-repeat;
+    background-size: 13px 16px;
+    background-position: center;
+    width: 37px;
+    height: 37px;
+  }
+  &__more{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}

@@ -82,3 +82,19 @@ function menuCatalog(){
         menuCatalog.classList.add('active')
     }
 }
+
+
+$(function (){
+    $('.menu-catalog-mobile__item').on('click', function (e){
+        let target = $(this);
+        let dropdown = target.children('.menu-catalog-mobile__dropdown');
+        console.log(target)
+        console.log(dropdown)
+        if(dropdown){
+            dropdown.addClass('active')
+            return false;
+        }else{
+            console.log('2')
+        }
+    })
+})
