@@ -275,3 +275,155 @@
     opacity: 0.6;
 }
 
+
+.jq-selectbox {
+    vertical-align: middle;
+    cursor: pointer;
+    display: block;
+    &:hover{
+        .jq-selectbox__trigger-arrow {
+            border-top-color: #000;
+        }
+    }
+    &.focused{
+        .jq-selectbox__select {
+            border:none;
+        }
+    }
+    &.opened{
+        .jq-selectbox__trigger-arrow {
+            transform: translate(0, -50%) rotate(180deg);
+        }
+    }
+    &.disabled{
+        .jq-selectbox__select {
+            border-color: #ccc;
+            background: #f5f5f5;
+            box-shadow: none;
+            color: #888;
+        }
+        .jq-selectbox__trigger-arrow {
+            border-top-color: #aaa;
+        }
+    }
+    &__select {
+        height: 44px;
+        padding: 0 23px 0 0;
+        border-bottom-color: #b3b3b3;
+        border-radius: 4px;
+        background: #ffffff;
+        border: none;
+        box-sizing: border-box;
+        box-shadow: none;
+        font: 14px/44px Arial, sans-serif;
+        color: #333;
+        text-shadow: none;
+        &:hover {
+            background: #fff;
+        }
+        &:active {
+            background: #fff;
+            box-shadow: none;
+        }
+    }
+    &__select-text {
+        display: block;
+        width: 100%;
+        font-family: 'Arial';
+        font-weight: 400;
+        font-size: 15px;
+        color: #000000;
+    }
+    &__trigger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 23px;
+        height: 100%;
+        border-left: none;
+    }
+    &__trigger-arrow {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        width: 13px;
+        height: 19px;
+        background-image: url("../img/icons-sprite.svg#arrow-dropdown-bottom");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: none;
+    }
+    &__dropdown {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 2px 0 0;
+        padding: 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        font: 14px/18px Arial, sans-serif;
+    }
+    &__search {
+        margin: 5px;
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0;
+            padding: 5px 27px 6px 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            outline: none;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNqU078LAXEYx/FzYfNzk5TJaFNKYjFYSQZ/hvwBsvg1UCY2xT9gM8hukQGThWRjkcFw3pdnujhfT736Xn2fPvfc3fd07V0OFDDFAnM0ENYsZRiGLSc9OpqIYIA9fMhhjCrW2h9VlMlcH/aymMGtOqEugX08PwQucUZKdTozMIqdTc9WepQD7wjY9ARx+ydwhfyXfS+S0qMcOEQJGcueB3VccFINdMgal6NzkmPjRwJXxDBB7/2RDdtAp6wb+dpphHDASG5QQ0V6u2aoSqBZD/lDrNWRJynLK2qpBn4rc6K2XB9/Nb8EGABtf1thzY6X2AAAAABJRU5ErkJggg==")
+            no-repeat 100% 50%;
+            box-shadow: inset 1px 1px #f1f1f1;
+            color: #333;
+        }
+    }
+    &__not-found {
+        margin: 5px;
+        padding: 5px 8px 6px;
+        background: #f0f0f0;
+        font-size: 13px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            min-height: 18px;
+            padding: 5px 10px 6px;
+            color: #231f20;
+            &:hover {
+                background-color: #0069d9;
+                color: #fff;
+            }
+            &.selected {
+                background-color: rgba(#0069d9, 0.6);
+                color: #fff;
+            }
+            &.disabled {
+                color: #aaa;
+                &:hover {
+                    background: none;
+                }
+            }
+            &.optgroup {
+                font-weight: bold;
+                &:hover {
+                    background: none;
+                    color: #231f20;
+                    cursor: default;
+                }
+            }
+            &.option {
+                padding-left: 25px;
+            }
+        }
+    }
+    .placeholder {
+        color: #888;
+    }
+}
+

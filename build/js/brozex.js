@@ -888,6 +888,9 @@ function menuCatalog(){
 
 
 $(function (){
+    setTimeout(function() {
+        $('.js-select').styler();
+    }, 100)
     $('.menu-catalog-mobile__item').on('click', function (e){
         let target = $(this);
         let dropdown = target.children('.menu-catalog-mobile__dropdown');
