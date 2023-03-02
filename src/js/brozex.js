@@ -88,6 +88,12 @@ $(function (){
     setTimeout(function() {
         $('.js-select').styler();
     }, 100)
+
+    $('.tabs__caption').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('.tabs').children('.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    });
     $('.menu-catalog-mobile__item').on('click', function (e){
         let target = $(this);
         let dropdown = target.children('.menu-catalog-mobile__dropdown');
@@ -100,4 +106,6 @@ $(function (){
             console.log('2')
         }
     })
+
+
 })

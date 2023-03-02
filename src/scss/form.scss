@@ -112,13 +112,12 @@
     }
 }
 .form-text {
-    display: block;
+    font-family: 'Arial';
     font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #a4a9bb;
-    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
 }
 .form-check {
     position: relative;
