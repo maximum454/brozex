@@ -169,6 +169,32 @@ a{
 	}
 }
 
+.show-expand{
+	&__body{
+		height: 248px;
+		overflow: hidden;
+		&.show{
+			height: auto;
+			transition: all .3s ease;
+		}
+	}
+	&__more{
+		font-family: 'Arial';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 13px;
+		text-transform: uppercase;
+		color: #000000;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		.icon{
+			width: 13px;
+			margin: 0;
+		}
+	}
+}
 
 
 @import "componets/header";
@@ -202,6 +228,7 @@ a{
 @import "componets/catalog-detail";
 @import "componets/catalog-detail-delivery";
 @import "componets/catalog-detail-description";
+@import "componets/catalog-detail-characteristic";
 @import "componets/pagination";
 @import "componets/accordion";
 @import "componets/seo-text";

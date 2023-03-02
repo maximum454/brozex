@@ -1,7 +1,6 @@
 .catalog-detail-description{
     &__body{
-        height: 248px;
-        overflow: hidden;
+
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
@@ -10,10 +9,7 @@
         color: #000000;
         margin-bottom: 20px;
         transition: all .3s ease;
-        &.show{
-            height: auto;
-            transition: all .3s ease;
-        }
+
         ul{
             padding: 0;
             margin-left: 10px;
@@ -31,20 +27,5 @@
             }
         }
     }
-    &__more{
-        font-family: 'Arial';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 13px;
-        text-transform: uppercase;
-        color: #000000;
-        padding: 0;
-        background-color: transparent;
-        border: none;
-        .icon{
-            width: 13px;
-            margin: 0;
-        }
-    }
+
 }

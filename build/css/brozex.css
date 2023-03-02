@@ -3940,6 +3940,36 @@ a:hover {
   border: 0;
 }
 
+.show-expand__body {
+  height: 248px;
+  overflow: hidden;
+}
+
+.show-expand__body.show {
+  height: auto;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.show-expand__more {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.show-expand__more .icon {
+  width: 13px;
+  margin: 0;
+}
+
 .header {
   margin-bottom: 27px;
   position: relative;
@@ -6458,8 +6488,6 @@ a:hover {
 }
 
 .catalog-detail-description__body {
-  height: 248px;
-  overflow: hidden;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -6467,13 +6495,6 @@ a:hover {
   line-height: 27px;
   color: #000000;
   margin-bottom: 20px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.catalog-detail-description__body.show {
-  height: auto;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -6498,22 +6519,59 @@ a:hover {
   font-size: 20px;
 }
 
-.catalog-detail-description__more {
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 13px;
-  text-transform: uppercase;
-  color: #000000;
-  padding: 0;
-  background-color: transparent;
-  border: none;
+.catalog-detail-characteristic {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  max-width: none;
+  min-width: 250px;
 }
 
-.catalog-detail-description__more .icon {
-  width: 13px;
+.catalog-detail-characteristic__list {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 50%;
+}
+
+.catalog-detail-characteristic__item {
+  display: block;
+  position: relative;
+  margin: 0 5px;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.catalog-detail-characteristic__label {
+  margin-right: -60%;
+  width: 59%;
+  vertical-align: top;
+  overflow: hidden;
+  display: inline-block;
+  color: #626262;
+}
+
+.catalog-detail-characteristic__label:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  margin: 0 -99% 0 3px;
+  vertical-align: baseline;
+  border-bottom: 1px dashed #000;
+}
+
+.catalog-detail-characteristic__value {
+  display: inline-block;
+  letter-spacing: normal;
+  padding-left: 3px;
+  vertical-align: bottom;
+  margin-left: 60%;
+  width: 40%;
 }
 
 .pagination {

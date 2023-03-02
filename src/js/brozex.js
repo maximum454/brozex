@@ -1,4 +1,3 @@
-@@include('./partials/jquery.min.js')
 @@include('./partials/swiper-bundle.min.js')
 @@include('./partials/jquery.formstyler.min.js')
 @@include('./partials/remodal.js')
@@ -144,9 +143,19 @@ $(function (){
         }
     })
 
-    $('.js-show-description').on('click', function (){
+
+    if($('.show-expand')){
+        $('.show-expand__body').each(function(i,elem) {
+            let bodyHeight = elem.offsetHeight
+            console.log(elem.next())
+            if(bodyHeight <= 248){
+                elem.next('.show-expand__more').hide()
+            }
+        });
+    }
+    $('.js-show-expand').on('click', function (){
         $(this).hide();
-        $('.catalog-detail-description__body').addClass('show');
+        $(this).parent().children('.show-expand__body').addClass('show');
     })
 
 
