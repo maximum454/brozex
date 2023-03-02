@@ -1,6 +1,9 @@
 # brozex
 Домострой
 
+###Плагины:
+swiper, formstyler, remodal
+
 ###Главная
 https://maximum454.github.io/brozex/build/
 

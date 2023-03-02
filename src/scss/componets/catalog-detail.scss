@@ -1,0 +1,111 @@
+.catalog-detail {
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 55px;
+        margin-bottom: 50px;
+    }
+    &__slider{
+        flex: 1 0 592px;
+        max-width: 592px;
+        height: 530px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        overflow: hidden;
+    }
+    &__content{
+        flex: 1 0 555px;
+    }
+    &__title{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: #000000;
+        margin: 0 0 10px;
+    }
+    &__stock{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        span{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 21px;
+            color: #808080;
+        }
+    }
+    &__price{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 67px;
+        letter-spacing: -0.03em;
+        color: #000000;
+        margin: 0 0 8px;
+        span{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 21px;
+            color: #808080;
+        }
+    }
+    &__basket{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 8px;
+        margin-bottom: 30px;
+        .product-counter{
+            flex: 1 0 241px;
+            max-width: 241px;
+            border: 1px solid #000;
+            height: 53px;
+            padding: 15px;
+        }
+        .btn{
+            flex: auto;
+        }
+    }
+    &__favorites{
+        flex-shrink: 0;
+        width: 53px;
+        height: 53px;
+        border: 1px solid #000000;
+        background-image: url("../img/icons-sprite.svg#favorites");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px 31px;
+    }
+    &__banner{
+        margin-bottom: 10px;
+    }
+    &__tabs{}
+    &__calc{}
+
+    .swiper-thumbs{
+        flex: 1 0 100%;
+        max-width: 82px;
+        overflow: hidden;
+    }
+    .swiper-main{
+        flex: 1 1 auto;
+        max-width: 490px;
+        overflow: hidden;
+    }
+    .swiper-slide{
+        background: #FFFFFF;
+        border: 1px solid #B1B1B1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
