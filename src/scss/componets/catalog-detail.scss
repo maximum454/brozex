@@ -116,7 +116,24 @@
             }
         }
     }
-    &__calc{}
+    &__sertificat-item{
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: #000000;
+        margin: 0 0 10px;
+        text-decoration: none;
+        .icon{
+            margin-left: 15px;
+            margin-right: 0;
+        }
+    }
+    &__calc{
+        margin-bottom: 88px;
+    }
+
 
     .swiper-thumbs{
         flex: 1 0 100%;

@@ -1,0 +1,79 @@
+.reviews{
+    width: 50%;
+    &__itog{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+        .icon{
+            width: 18px;
+            height: 18px;
+            margin-right: 3px;
+        }
+    }
+    &__stat{
+        margin-bottom: 37px;
+    }
+    &__line{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        color: #000000;
+        margin: 0 0 5px;
+        progress{
+            height: 2px;
+            flex: auto;
+            border: 0;
+            border-radius: 0;
+            &[value]::-webkit-progress-bar {
+                background-color: #AAAAAA;
+                border-radius: 0;
+            }
+            &[value]::-webkit-progress-value {
+                background-color: #FF0000;
+            }
+        }
+    }
+    &__list{
+        margin-top: 37px;
+    }
+    &__item{
+        margin-bottom: 10px;
+    }
+    &__name{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: #000000;
+        margin: 0;
+        span{
+            font-family: 'Arial';
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 21px;
+            color: #808080;
+        }
+    }
+    &__rate{
+        margin-bottom: 4px;
+        .icon{
+            width: 15px;
+            height: 15px;
+            margin-right: 2px;
+        }
+    }
+    &__anons{
+        font-family: 'Arial';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #030303;
+        margin-bottom: 20px;
+    }
+}
