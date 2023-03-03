@@ -911,6 +911,31 @@ function menuCatalog(){
 }
 
 
+
+function expand(){
+    const showExpands = document.querySelectorAll('.show-expand');
+
+    if(showExpands.length){
+        for (let showExpand of showExpands){
+            const more = showExpand.querySelector('.show-expand__more');
+            const body = showExpand.querySelector('.show-expand__body');
+            const bodyHeight = body.clientHeight;
+            console.log(bodyHeight)
+            if(bodyHeight > 248){
+                body.classList.add('height')
+            }else{
+                more.classList.add('d-none')
+            }
+            more.addEventListener('click', function (){
+                body.classList.remove('height')
+                more.classList.add('d-none')
+            })
+        }
+    }
+}
+
+
+
 $(function (){
     setTimeout(function() {
         $('.js-select').styler();
@@ -941,21 +966,5 @@ $(function (){
             console.log('2')
         }
     })
-
-
-    if($('.show-expand')){
-        $('.show-expand__body').each(function(i,elem) {
-            let bodyHeight = elem.offsetHeight
-            console.log(elem.next())
-            if(bodyHeight <= 248){
-                elem.next('.show-expand__more').hide()
-            }
-        });
-    }
-    $('.js-show-expand').on('click', function (){
-        $(this).hide();
-        $(this).parent().children('.show-expand__body').addClass('show');
-    })
-
 
 })

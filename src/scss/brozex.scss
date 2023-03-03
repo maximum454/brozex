@@ -171,8 +171,10 @@ a{
 
 .show-expand{
 	&__body{
-		height: 248px;
 		overflow: hidden;
+		&.height{
+			max-height: 248px;
+		}
 		&.show{
 			height: auto;
 			transition: all .3s ease;
@@ -189,9 +191,13 @@ a{
 		padding: 0;
 		background-color: transparent;
 		border: none;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
 		.icon{
-			width: 13px;
-			margin: 0;
+			width: 10px;
+			height: 8px;
+			margin: 0 0 0 6px;
 		}
 	}
 }
@@ -227,12 +233,12 @@ a{
 @import "componets/catalog-list";
 @import "componets/catalog-detail";
 @import "componets/catalog-detail-delivery";
-@import "componets/catalog-detail-description";
 @import "componets/catalog-detail-characteristic";
 @import "componets/pagination";
 @import "componets/accordion";
 @import "componets/seo-text";
 @import "componets/review-star";
+@import "componets/product-calc";
 
 
 
