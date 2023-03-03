@@ -1,0 +1,28 @@
+.order-total{
+    &__title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+    }
+    &__price{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 67px;
+        letter-spacing: -0.03em;
+        color: #000000;
+    }
+    &__count{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        color: #000000;
+        margin: 0 0 28px;
+    }
+}

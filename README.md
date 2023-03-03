@@ -25,3 +25,6 @@ https://maximum454.github.io/brozex/build/catalog-detail.html
 ### Каталог Детальная
 https://maximum454.github.io/brozex/build/catalog-detail.html
 
+### Корзина
+https://maximum454.github.io/brozex/build/basket.html
+
