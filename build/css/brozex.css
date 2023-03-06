@@ -3052,6 +3052,73 @@ html.remodal-is-locked {
   opacity: 0.6;
 }
 
+.custom-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #FF0000;
+}
+
+.custom-radio > input:not(:disabled):active + span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.custom-radio > input:focus + span::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(25, 40, 100, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(25, 40, 100, 0.25);
+}
+
+.custom-radio > input:focus:not(:checked) + span::before {
+  border-color: #80bdff;
+}
+
+.custom-radio > input:checked + span::before {
+  background-color: #192864;
+  background-image: url("../img/icons-sprite.svg#chekbox-active");
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-radio > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+
+.custom-radio > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.custom-radio > span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #000000;
+  border-radius: 0;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
 .jq-selectbox {
   vertical-align: middle;
   cursor: pointer;
@@ -3409,6 +3476,12 @@ html.remodal-is-locked {
   height: 25px;
 }
 
+.icon-track-red {
+  background-image: url("../img/icons-sprite.svg#truck-red");
+  width: 25px;
+  height: 25px;
+}
+
 .icon-download {
   background-image: url("../img/icons-sprite.svg#download");
   width: 19px;
@@ -3417,7 +3490,7 @@ html.remodal-is-locked {
 
 .icon-clear {
   background-image: url("../img/icons-sprite.svg#clear");
-  width: 17px;
+  width: 21px;
   height: 23px;
 }
 
@@ -3425,6 +3498,24 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#close-gray");
   width: 13px;
   height: 13px;
+}
+
+.icon-rub-red {
+  background-image: url("../img/icons-sprite.svg#rub-red");
+  width: 17px;
+  height: 21px;
+}
+
+.icon-pay-check-red {
+  background-image: url("../img/icons-sprite.svg#pay-check-red");
+  width: 17px;
+  height: 21px;
+}
+
+.icon-map-pin-red {
+  background-image: url("../img/icons-sprite.svg#map-pin-red");
+  width: 17px;
+  height: 21px;
 }
 
 .table {
@@ -7335,6 +7426,98 @@ a:hover {
 
 .basket__del .icon {
   margin: 0;
+}
+
+.basket__clear {
+  margin-top: 20px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order__item {
+  background-color: #FAFAFA;
+  padding: 16px 20px 28px;
+  margin-bottom: 10px;
+}
+
+.order__title {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  margin: 0 0 20px;
+}
+
+.order__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.order .form-control {
+  padding: 18px 15px;
+}
+
+.order textarea.form-control {
+  max-height: 159px;
+}
+
+.order .custom-radio {
+  border: 1px solid #000000;
+  padding: 16px 20px 20px;
+  height: 104px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 20px);
+          flex: 1 0 calc(50% - 20px);
+  max-width: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.order .custom-radio__icon {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background-color: #FFFFFF;
+  width: 43px;
+  height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order .custom-radio__icon .icon {
+  margin: auto;
+}
+
+.order .custom-radio__name {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #000000;
+  position: absolute;
+  bottom: 13px;
 }
 
 @media only screen and (min-width: 641px) {

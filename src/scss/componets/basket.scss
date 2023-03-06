@@ -103,5 +103,17 @@
             margin: 0;
         }
     }
-
+    &__clear{
+        margin-top: 20px;
+        padding: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #000000;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
 }

@@ -167,6 +167,12 @@
     height: 25px;
 }
 
+.icon-track-red {
+    background-image: url("../img/icons-sprite.svg#truck-red");
+    width: 25px;
+    height: 25px;
+}
+
 .icon-download {
     background-image: url("../img/icons-sprite.svg#download");
     width: 19px;
@@ -174,7 +180,7 @@
 }
 .icon-clear {
     background-image: url("../img/icons-sprite.svg#clear");
-    width: 17px;
+    width: 21px;
     height: 23px;
 }
 
@@ -182,6 +188,23 @@
     background-image: url("../img/icons-sprite.svg#close-gray");
     width: 13px;
     height: 13px;
+}
+
+.icon-rub-red {
+    background-image: url("../img/icons-sprite.svg#rub-red");
+    width: 17px;
+    height: 21px;
+}
+.icon-pay-check-red {
+    background-image: url("../img/icons-sprite.svg#pay-check-red");
+    width: 17px;
+    height: 21px;
+}
+
+.icon-map-pin-red {
+    background-image: url("../img/icons-sprite.svg#map-pin-red");
+    width: 17px;
+    height: 21px;
 }
 
 

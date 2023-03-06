@@ -1,0 +1,58 @@
+.order{
+    &__item{
+        background-color: #FAFAFA;
+        padding:16px 20px 28px;
+        margin-bottom: 10px;
+    }
+    &__title{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+        margin: 0 0 20px;
+    }
+    &__row{
+        display: flex;
+        gap: 20px;
+    }
+    .form-control{
+        padding: 18px 15px;
+    }
+    textarea.form-control{
+        max-height: 159px;
+    }
+    .custom-radio{
+        border: 1px solid #000000;
+        padding:16px 20px 20px;
+        height: 104px;
+        flex: 1 0 calc(50% - 20px);
+        max-width: 50%;
+        position: relative;
+        cursor: pointer;
+        &__icon{
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background-color: #FFFFFF;
+            width: 43px;
+            height: 43px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon{
+                margin: auto;
+            }
+        }
+        &__name{
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 27px;
+            color: #000000;
+            position: absolute;
+            bottom: 13px;
+
+        }
+    }
+}
