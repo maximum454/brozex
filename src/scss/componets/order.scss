@@ -1,4 +1,5 @@
 .order{
+    max-width: 793px;
     &__item{
         background-color: #FAFAFA;
         padding:16px 20px 28px;
@@ -16,8 +17,18 @@
         display: flex;
         gap: 20px;
     }
+    &__add{
+        width: 263px;
+        padding: 18px 15px;
+        .icon{
+            width: 16px;
+            height: 16px;
+            vertical-align: bottom;
+        }
+    }
     .form-control{
         padding: 18px 15px;
+        background-color: transparent;
     }
     textarea.form-control{
         max-height: 159px;

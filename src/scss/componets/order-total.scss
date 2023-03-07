@@ -25,4 +25,15 @@
         color: #000000;
         margin: 0 0 28px;
     }
+    &__btn{
+        width: 100%;
+        display: block;
+    }
+    &__text-small{
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+    }
 }

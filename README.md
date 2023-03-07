@@ -28,3 +28,7 @@ https://maximum454.github.io/brozex/build/catalog-detail.html
 ### Корзина
 https://maximum454.github.io/brozex/build/basket.html
 
+### Оформление заказа
+https://maximum454.github.io/brozex/build/order.html
+https://maximum454.github.io/brozex/build/order-add-org.html
+

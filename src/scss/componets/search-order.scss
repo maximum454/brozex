@@ -1,0 +1,46 @@
+.search-order{
+  position: relative;
+  display: none;
+  &.active{
+    display: block;
+  }
+  &__body{
+    position: relative;
+  }
+  &__submit{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0,-50%);
+    background-image: url("../img/icons-sprite.svg#search");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+  }
+  &__dropdown{
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+  &__btn{
+    width: 263px;
+    margin-top: 20px;
+  }
+}

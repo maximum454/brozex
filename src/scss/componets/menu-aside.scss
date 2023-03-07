@@ -12,6 +12,10 @@
             margin: 12px 0;
             padding-left: 10px;
             list-style: none;
+            display: none;
+            &.active{
+                display: block;
+            }
             li{
                 margin-bottom: 17px;
                 &:last-of-type{
@@ -38,6 +42,9 @@
         &:hover,
         &.active{
             color: #FF0000;
+            &>.icon-dropdown-bottom{
+                transform: rotate(-180deg);
+            }
         }
     }
     .icon-dropdown-bottom{

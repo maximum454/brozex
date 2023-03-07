@@ -909,9 +909,6 @@ function menuCatalog(){
         menuCatalog.classList.add('active')
     }
 }
-
-
-
 function expand(){
     const showExpands = document.querySelectorAll('.show-expand');
 
@@ -934,14 +931,39 @@ function expand(){
     }
 }
 
-
+/*Юоковое меню*/
+const menuAsides = document.querySelectorAll('.menu-aside')
+for (let menuAside of menuAsides){
+    menuAside.addEventListener('click', function (e){
+        const target = e.target;
+        const dropdown = target.nextElementSibling;
+        if(dropdown){
+            e.preventDefault();
+            target.classList.toggle('active')
+            dropdown.classList.toggle('active')
+            console.log(target, dropdown)
+        }
+    })
+}
+/*Конец бокоое меню*/
 
 $(function (){
     setTimeout(function() {
         $('.js-select').styler();
     }, 100)
 
+    $('.js-open-org').on('click', function (){
+        $(this).remove()
+        $('.order__search').addClass('active')
+    })
 
+    $('.js-input-org').on('keyup', function (){
+        if($(this).val()){
+            $('.search-order__dropdown').addClass('active')
+        }else{
+            $('.search-order__dropdown').removeClass('active')
+        }
+    })
 
     $('.tabs .tabs__caption li').on('click', function(){
         let name = $(this).children('a').attr('href');
