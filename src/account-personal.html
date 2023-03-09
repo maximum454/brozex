@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "Новости детальная - brozex",
+    "description": "brozex - Домострой ", })
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/brozex.css">
+</head>
+
+<body>
+<div class="wrp">
+    <div class="wrp__overlay"></div>
+    @@include('./template/_header.html')
+    <main>
+        <section class="page">
+            <div class="container">
+                <div class="page__body">
+                    <aside class="page__aside">
+                        <h1 class="page__title">Кабинет</h1>
+                        <ul class="menu-aside">
+                            <li><a href="" class="active">Личные данные</a></li>
+                            <li><a href="">Мои компании</a></li>
+                            <li><a href="">Мои заказы</a></li>
+                            <li><a href="">Сметы</a></li>
+                        </ul>
+                    </aside>
+                    <div class="page__content">
+                        <div>Личные данные</div>
+                        <form action="">
+                            <div>Персональные</div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Имя*" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Фамилия" value="Иванов">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Почта*" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Номер телефона*" required>
+                            </div>
+                            <div>Пароль</div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" placeholder="новый пароль">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" placeholder="Подтвердите новый пароль">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/brozex.js"></script>
+
+</body>
+
+</html>

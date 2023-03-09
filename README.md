@@ -32,3 +32,6 @@ https://maximum454.github.io/brozex/build/basket.html
 https://maximum454.github.io/brozex/build/order.html
 https://maximum454.github.io/brozex/build/order-ok.html
 
+### Личный кабинет
+https://maximum454.github.io/brozex/build/account-personal.html
+
