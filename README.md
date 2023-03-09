@@ -34,4 +34,6 @@ https://maximum454.github.io/brozex/build/order-ok.html
 
 ### Личный кабинет
 https://maximum454.github.io/brozex/build/account-personal.html
+https://maximum454.github.io/brozex/build/account-company.html
+https://maximum454.github.io/brozex/build/account-orders.html
 

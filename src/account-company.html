@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "Новости детальная - brozex",
+    "description": "brozex - Домострой ", })
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/brozex.css">
+</head>
+
+<body>
+<div class="wrp">
+    <div class="wrp__overlay"></div>
+    @@include('./template/_header.html')
+    <main>
+        <section class="page">
+            <div class="container">
+                <div class="page__body">
+                    <aside class="page__aside">
+                        <h1 class="page__title">Кабинет</h1>
+                        <ul class="menu-aside">
+                            <li><a href="">Личные данные</a></li>
+                            <li><a href="" class="active">Мои компании</a></li>
+                            <li><a href="">Мои заказы</a></li>
+                            <li><a href="">Сметы</a></li>
+                        </ul>
+                    </aside>
+                    <div class="page__content">
+                        <div>Мои компании</div>
+                        <label class="custom-radio">
+                            <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
+                            <span>ООО “ТК “БРОЗЕКС”</span>
+                            <div>ИНН: 6604017625, КПП: 667801001, 623704, Свердловская область, г. Березовский, тер. п.Первомайский, стр.24</div>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
+                            <span>АО "БМЗ"</span>
+                            <div>ИНН: 3525012202, КПП: 352501001, 160022, Вологодская обл, г Вологда, Пошехонское шоссе, д 18</div>
+                        </label>
+
+                        <button class="btn btn-outline-secondary text-uppercase js-open-org"><i class="icon icon-plus"></i>добавить компанию</button>
+
+                        <div class="order__search search-order">
+                            <div class="search-order__body">
+                                <input class="form-control js-input-org" type="text" placeholder="Введите ИНН, ИП или название организации*" required>
+                                <div class="search-order__icon"></div>
+                                <ul class="search-order__dropdown">
+                                    <li>ООО “ТК “БРОЗЕКС” ИНН: 6604017625, КПП: 667801001, 623704, Свердловская область, г. Березовский, тер. п.Первомайский, стр.24</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="search-order__btn btn btn-primary text-uppercase">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/brozex.js"></script>
+
+</body>
+
+</html>
