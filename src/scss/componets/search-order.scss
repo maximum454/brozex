@@ -1,13 +1,12 @@
 .search-order{
   position: relative;
-  display: none;
   &.active{
     display: block;
   }
   &__body{
     position: relative;
   }
-  &__submit{
+  &__icon{
     position: absolute;
     top: 50%;
     right: 20px;
@@ -42,5 +41,11 @@
   &__btn{
     width: 263px;
     margin-top: 20px;
+  }
+  &__row{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }

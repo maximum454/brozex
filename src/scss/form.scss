@@ -275,6 +275,11 @@
 }
 
 .custom-radio{
+    display: block;
+    margin: 0 0 16px 0;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
     &>input {
         position: absolute;
         z-index: -1;

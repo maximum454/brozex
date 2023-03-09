@@ -110,6 +110,14 @@ function menuCatalog(){
         menuCatalog.classList.add('active')
     }
 }
+const overlay = document.querySelector('.wrp__overlay');
+overlay.addEventListener('click', function (){
+    const target = this;
+    const menuCatalog = document.querySelector('.menu-catalog');
+    target.classList.remove('active')
+    menuCatalog.classList.remove('active')
+})
+
 function expand(){
     const showExpands = document.querySelectorAll('.show-expand');
 
@@ -155,7 +163,7 @@ $(function (){
 
     $('.js-open-org').on('click', function (){
         $(this).remove()
-        $('.order__search').addClass('active')
+       $(this).next('.order__search').addClass('active')
     })
 
     $('.js-input-org').on('keyup', function (){

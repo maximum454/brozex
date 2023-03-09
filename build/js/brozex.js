@@ -962,7 +962,7 @@ $(function (){
 
     $('.js-open-org').on('click', function (){
         $(this).remove()
-        $('.order__search').addClass('active')
+       $(this).next('.order__search').addClass('active')
     })
 
     $('.js-input-org').on('keyup', function (){

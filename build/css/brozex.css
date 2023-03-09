@@ -3052,6 +3052,17 @@ html.remodal-is-locked {
   opacity: 0.6;
 }
 
+.custom-radio {
+  display: block;
+  margin: 0 0 16px 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+}
+
 .custom-radio > input {
   position: absolute;
   z-index: -1;
@@ -7503,7 +7514,7 @@ a:hover {
   max-height: 159px;
 }
 
-.order .custom-radio {
+.order .custom-radio--order {
   border: 1px solid #000000;
   padding: 16px 20px 20px;
   height: 104px;
@@ -7515,7 +7526,7 @@ a:hover {
   cursor: pointer;
 }
 
-.order .custom-radio__icon {
+.order .custom-radio--order .custom-radio__icon {
   position: absolute;
   top: 16px;
   right: 20px;
@@ -7533,11 +7544,11 @@ a:hover {
           justify-content: center;
 }
 
-.order .custom-radio__icon .icon {
+.order .custom-radio--order .custom-radio__icon .icon {
   margin: auto;
 }
 
-.order .custom-radio__name {
+.order .custom-radio--order .custom-radio__name {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 15px;
@@ -7547,9 +7558,25 @@ a:hover {
   bottom: 13px;
 }
 
+.order .jq-selectbox {
+  border: 1px solid;
+}
+
+.order .jq-selectbox__select {
+  padding: 0 23px 0 15px;
+  height: 53px;
+}
+
+.order .jq-selectbox__select-text {
+  line-height: 53px;
+}
+
+.order .jq-selectbox__trigger {
+  right: 15px;
+}
+
 .search-order {
   position: relative;
-  display: none;
 }
 
 .search-order.active {
@@ -7560,7 +7587,7 @@ a:hover {
   position: relative;
 }
 
-.search-order__submit {
+.search-order__icon {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -7600,6 +7627,63 @@ a:hover {
 .search-order__btn {
   width: 263px;
   margin-top: 20px;
+}
+
+.search-order__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.order-success {
+  margin-bottom: 101px;
+}
+
+.order-success__status {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 42px;
+}
+
+.order-success__contact {
+  text-align: center;
+  margin-top: 41px;
+}
+
+.order-success__contact a {
+  display: block;
+  text-decoration: none;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.order-success__contact a:hover {
+  color: #FF0000;
+}
+
+.order-success p .small {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.order-success .btn {
+  display: block;
+  width: 285px;
+  margin: 0 auto 10px;
 }
 
 @media only screen and (min-width: 641px) {

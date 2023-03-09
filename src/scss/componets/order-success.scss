@@ -1,0 +1,44 @@
+.order-success{
+  margin-bottom: 101px;
+  &__status{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin: 0 0 42px;
+  }
+  &__contact{
+    text-align: center;
+    margin-top: 41px;
+    a{
+      display: block;
+      text-decoration: none;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 37px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 30px;
+      &:hover{
+        color: #FF0000;
+      }
+    }
+  }
+  p{
+    .small{
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  .btn{
+    display: block;
+    width: 285px;
+    margin: 0 auto 10px;
+  }
+
+}

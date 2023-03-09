@@ -34,36 +34,51 @@
         max-height: 159px;
     }
     .custom-radio{
-        border: 1px solid #000000;
-        padding:16px 20px 20px;
-        height: 104px;
-        flex: 1 0 calc(50% - 20px);
-        max-width: 50%;
-        position: relative;
-        cursor: pointer;
-        &__icon{
-            position: absolute;
-            top: 16px;
-            right: 20px;
-            background-color: #FFFFFF;
-            width: 43px;
-            height: 43px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .icon{
-                margin: auto;
+        &--order{
+            border: 1px solid #000000;
+            padding:16px 20px 20px;
+            height: 104px;
+            flex: 1 0 calc(50% - 20px);
+            max-width: 50%;
+            position: relative;
+            cursor: pointer;
+            .custom-radio__icon{
+                position: absolute;
+                top: 16px;
+                right: 20px;
+                background-color: #FFFFFF;
+                width: 43px;
+                height: 43px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon{
+                    margin: auto;
+                }
+            }
+            .custom-radio__name{
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 27px;
+                color: #000000;
+                position: absolute;
+                bottom: 13px;
+
             }
         }
-        &__name{
-            font-family: 'Roboto';
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 27px;
-            color: #000000;
-            position: absolute;
-            bottom: 13px;
-
+    }
+    .jq-selectbox{
+        border: 1px solid;
+        &__select{
+            padding: 0 23px 0 15px;
+            height: 53px;
+        }
+        &__select-text{
+            line-height: 53px;
+        }
+        &__trigger{
+            right: 15px;
         }
     }
 }
