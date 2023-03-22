@@ -285,6 +285,7 @@
 .custom-radio{
     display: block;
     margin: 0 0 16px 0;
+    padding-left: 34px;
     cursor: pointer;
     user-select: none;
     position: relative;
@@ -322,7 +323,9 @@
         user-select: none;
         &::before {
             content: '';
-            display: inline-block;
+            position: absolute;
+            left: 0;
+            display: block;
             width: 20px;
             height: 20px;
             flex-shrink: 0;

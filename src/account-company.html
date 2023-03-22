@@ -18,7 +18,7 @@
     <div class="wrp__overlay"></div>
     @@include('./template/_header.html')
     <main>
-        <section class="page">
+        <section class="page page--narrow">
             <div class="container">
                 <div class="page__body">
                     <aside class="page__aside">
@@ -31,29 +31,22 @@
                         </ul>
                     </aside>
                     <div class="page__content">
-                        <div>Мои компании</div>
-                        <label class="custom-radio">
-                            <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
-                            <span>ООО “ТК “БРОЗЕКС”</span>
-                            <div>ИНН: 6604017625, КПП: 667801001, 623704, Свердловская область, г. Березовский, тер. п.Первомайский, стр.24</div>
-                        </label>
-                        <label class="custom-radio">
-                            <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
-                            <span>АО "БМЗ"</span>
-                            <div>ИНН: 3525012202, КПП: 352501001, 160022, Вологодская обл, г Вологда, Пошехонское шоссе, д 18</div>
-                        </label>
-
-                        <button class="btn btn-outline-secondary text-uppercase js-open-org"><i class="icon icon-plus"></i>добавить компанию</button>
-
-                        <div class="order__search search-order">
-                            <div class="search-order__body">
-                                <input class="form-control js-input-org" type="text" placeholder="Введите ИНН, ИП или название организации*" required>
-                                <div class="search-order__icon"></div>
-                                <ul class="search-order__dropdown">
-                                    <li>ООО “ТК “БРОЗЕКС” ИНН: 6604017625, КПП: 667801001, 623704, Свердловская область, г. Березовский, тер. п.Первомайский, стр.24</li>
-                                </ul>
+                        <div class="account">
+                            <div class="account__header">
+                                <div class="account__title">Мои компании</div>
                             </div>
-                            <button type="button" class="search-order__btn btn btn-primary text-uppercase">Сохранить</button>
+                            <label class="custom-radio">
+                                <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
+                                <span>ООО “ТК “БРОЗЕКС”</span>
+                                <p>ИНН: 6604017625, КПП: 667801001, 623704, Свердловская область, г. Березовский, тер. п.Первомайский, стр.24</p>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
+                                <span>АО "БМЗ"</span>
+                                <div>ИНН: 3525012202, КПП: 352501001, 160022, Вологодская обл, г Вологда, Пошехонское шоссе, д 18</div>
+                            </label>
+
+                            <button class="btn btn-outline-primary text-uppercase"><i class="icon icon-plus"></i> <span>добавить компанию</span></button>
                         </div>
                     </div>
                 </div>

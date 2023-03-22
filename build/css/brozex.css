@@ -3064,6 +3064,7 @@ html.remodal-is-locked {
 .custom-radio {
   display: block;
   margin: 0 0 16px 0;
+  padding-left: 34px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -3123,7 +3124,9 @@ html.remodal-is-locked {
 
 .custom-radio > span::before {
   content: "";
-  display: inline-block;
+  position: absolute;
+  left: 0;
+  display: block;
   width: 20px;
   height: 20px;
   -ms-flex-negative: 0;
@@ -3420,6 +3423,8 @@ html.remodal-is-locked {
 
 .icon-plus {
   background-image: url("../img/icons-sprite.svg#plus");
+  width: 15px;
+  height: 15px;
 }
 
 .icon-telegram-light {
