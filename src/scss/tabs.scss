@@ -59,4 +59,15 @@
             display: block;
         }
     }
+    @include r(767){
+        &__caption {
+            margin-bottom: 17px;
+            gap: 25px;
+            li {
+                font-size: 15px;
+                line-height: 27px;
+                padding: 6px 0;
+            }
+        }
+    }
 }

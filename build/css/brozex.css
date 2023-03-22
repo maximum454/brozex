@@ -8285,6 +8285,17 @@ a:hover {
     margin-bottom: 45px;
   }
 
+  .tabs__caption {
+    margin-bottom: 17px;
+    gap: 25px;
+  }
+
+  .tabs__caption li {
+    font-size: 15px;
+    line-height: 27px;
+    padding: 6px 0;
+  }
+
   .d-desktop-none {
     display: block;
   }

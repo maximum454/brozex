@@ -1534,26 +1534,31 @@ overlay.addEventListener('click', function (){
 
 function expand(){
     const showExpands = document.querySelectorAll('.show-expand');
-
-    if(showExpands.length){
-        for (let showExpand of showExpands){
-            const more = showExpand.querySelector('.show-expand__more');
-            const body = showExpand.querySelector('.show-expand__body');
-            const bodyHeight = body.clientHeight;
-            console.log(bodyHeight)
-            if(bodyHeight > 248){
-                body.classList.add('height')
-            }else{
-                more.classList.add('d-none')
-            }
+    for (let showExpand of showExpands){
+        const more = showExpand.querySelector('.show-expand__more');
+        const body = showExpand.querySelector('.show-expand__body');
+        const bodyHeight = body.clientHeight;
+        console.log(more)
+        if(bodyHeight >= 248){
+            body.classList.add('height')
+            more.classList.remove('d-none')
             more.addEventListener('click', function (){
-                body.classList.remove('height')
-                more.classList.add('d-none')
+                body.classList.toggle('height')
+                if(more.classList.contains('active')){
+                    more.classList.remove('active')
+                    more.innerHTML = '<span>развернуть</span> <i class="icon icon-dropdown-bottom"></i>'
+                }else{
+                    more.classList.add('active')
+                    more.innerHTML = '<span>Свернуть</span> <i class="icon icon-dropdown-bottom"></i>'
+                }
             })
+        }else{
+            more.classList.add('d-none')
         }
+
     }
 }
-
+expand()
 /*Юоковое меню*/
 const menuAsides = document.querySelectorAll('.menu-aside')
 for (let menuAside of menuAsides){
@@ -1603,7 +1608,9 @@ $(function (){
 
             $('.tabs__content').removeClass('active');
             $(name).addClass('active');
+            expand()
         }
+
     });
 
     $('.menu-catalog-mobile__item').on('click', function (e){
