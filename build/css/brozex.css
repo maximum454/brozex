@@ -2560,7 +2560,7 @@ html.remodal-is-locked {
 
 .btn.btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #192864;
   background-color: transparent;
 }
 
@@ -7698,8 +7698,16 @@ a:hover {
   max-width: 487px;
 }
 
+.account__body {
+  margin-bottom: 40px;
+}
+
 .account__form {
   max-width: 744px;
+}
+
+.account__form .btn {
+  margin-top: 20px;
 }
 
 .account .form-label {
@@ -7727,25 +7735,38 @@ a:hover {
   padding: 17px 15px 18px;
 }
 
-.account .btn {
-  margin-top: 20px;
-}
-
 .table-account {
   display: table;
   width: 100%;
   border-collapse: collapse;
 }
 
+.table-account__th {
+  display: table-row;
+  width: auto;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.table-account__th .table-account__td {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.table-account__th .table-account__td:first-of-type {
+  padding-left: 0;
+}
+
 .table-account__tr {
   display: table-row;
   width: auto;
   clear: both;
+  margin-bottom: 10px;
 }
 
 .table-account__td {
   display: table-cell;
-  text-align: center;
   border: none;
   vertical-align: middle;
   padding: 20px 17px;
@@ -7753,6 +7774,21 @@ a:hover {
   font-size: 14px;
   line-height: 19px;
   color: #000000;
+}
+
+.table-account__td-head {
+  display: none;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #808080;
+}
+
+.table-account .btn-link {
+  color: #000000;
+  padding: 0;
 }
 
 @media only screen and (min-width: 641px) {
