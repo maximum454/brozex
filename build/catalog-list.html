@@ -358,16 +358,17 @@
             </div>
         </div>
 
-        <div class="catalog-list">
+        <div class="page page--catalog">
             <div class="container">
-                <div class="catalog-list__body">
-                    <aside class="catalog-list__aside">
+                <div class="page__body">
+                    <aside class="page__aside">
                         <div class="breadcrumb">
                             <a href="" class="breadcrumb__prev">Строительные материалы</a>
                             <div class="breadcrumb__title">Сухие строительные смеси</div>
                         </div>
 
-                        <details class="accordion" open>
+                        <div class="page__filter">
+                            <details class="accordion" open>
                             <summary class="accordion__header">
                                 <div class="accordion__title">Цена</div>
                             </summary>
@@ -383,7 +384,7 @@
                             </div>
                         </details>
 
-                        <details class="accordion" open>
+                            <details class="accordion" open>
                             <summary class="accordion__header">
                                 <div class="accordion__title">Бренд</div>
                             </summary>
@@ -486,615 +487,619 @@
                                 </label>
                             </div>
                         </details>
+                        </div>
                     </aside>
-                    <section class="catalog-list__section">
-                        <header class="catalog-list__header">
-                            <h1 class="catalog-list__title">Сухие строительные смеси оптом (280 товаров)</h1>
-                            <select class="js-select" name="SORT" id="select-sort">
-                                <option value="1">По популярности1</option>
-                                <option value="2">По популярности2</option>
-                                <option value="3">По популярности3</option>
-                                <option value="4">По популярности4</option>
-                            </select>
-                        </header>
-                        <div class="catalog-list__products">
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
+                    <section class="page__content">
+                        <div class="catalog-list">
+                            <header class="catalog-list__header">
+                                <h1 class="catalog-list__title">Сухие строительные смеси оптом (280 товаров)</h1>
+                                <select class="js-select" name="SORT" id="select-sort">
+                                    <option value="1">По популярности1</option>
+                                    <option value="2">По популярности2</option>
+                                    <option value="3">По популярности3</option>
+                                    <option value="4">По популярности4</option>
+                                </select>
+                            </header>
+                            <div class="catalog-list__products">
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
                                             </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
                                         </div>
                                     </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
-                                            </div>
-                                            <span class="product-counter__control plus"></span>
-                                        </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
+                                                <span class="product-counter__control plus"></span>
                                             </div>
-                                            <span class="product-counter__control plus"></span>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
                                         </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
                                             </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
                                         </div>
                                     </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
-                                            </div>
-                                            <span class="product-counter__control plus"></span>
-                                        </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
+                                                <span class="product-counter__control plus"></span>
                                             </div>
-                                            <span class="product-counter__control plus"></span>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
                                         </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
                                             </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
                                         </div>
                                     </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
-                                            </div>
-                                            <span class="product-counter__control plus"></span>
-                                        </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
+                                                <span class="product-counter__control plus"></span>
                                             </div>
-                                            <span class="product-counter__control plus"></span>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
                                         </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
                                             </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
                                         </div>
                                     </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
-                                            </div>
-                                            <span class="product-counter__control plus"></span>
-                                        </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
+                                                <span class="product-counter__control plus"></span>
                                             </div>
-                                            <span class="product-counter__control plus"></span>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
                                         </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="embed-responsive embed-responsive-9by16">
-                                    <div class="embed-responsive-item">
-                                        <div class="product-item__stick">
-                                            <span class="action">Скидка</span>
-                                            <span class="new">Новинка</span>
-                                        </div>
-                                        <div class="product-item__info">
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-favorites-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-compare-gray"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-link">
-                                                <i class="icon icon-estimate-gray"></i>
-                                            </button>
-                                        </div>
-                                        <figure class="product-item__figure">
-                                            <img class="img-fluid" src="https://placehold.co/217x217" width="217"
-                                                 height="217"
-                                                 alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="product-item__content">
-                                    <div class="product-item__articul">Артикул БТ236</div>
-                                    <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
-                                        20пог.м *1/180</a>
-                                    <div class="product-item__price">
-                                        <div>2 226.00 ₽ <span>/ уп.</span></div>
-                                    </div>
-                                    <div class="product-item__price">
-                                        <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
-                                        <div class="product-item__price-old">850.35 ₽</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__footer">
-                                    <div class="product-item__stock">
-                                        <div>3 шт. в упаковке</div>
-                                        <div class="product-stock">
-                                            <div class="product-stock__title">На складе</div>
-                                            <div class="product-stock__body">
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span class="active"></span>
-                                                <span></span>
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
                                             </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
                                         </div>
                                     </div>
-                                    <div class="product-item__basket">
-                                        <div class="product-counter">
-                                            <span class="product-counter__control minus"></span>
-                                            <div class="product-counter__num">
-                                                <!--TODO: шт-->
-                                                <div class="product-counter__wrp-input">
-                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
                                                 </div>
-                                                <span class="product-counter__unit">шт.</span>
                                             </div>
-                                            <span class="product-counter__control plus"></span>
                                         </div>
-                                        <button type="button" class="btn btn-primary">в корзину</button>
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
+                                                </div>
+                                                <span class="product-counter__control plus"></span>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
+                                            </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
+                                                </div>
+                                                <span class="product-counter__control plus"></span>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
+                                            </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
+                                                </div>
+                                                <span class="product-counter__control plus"></span>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
+                                            </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
+                                                </div>
+                                                <span class="product-counter__control plus"></span>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="embed-responsive embed-responsive-9by16">
+                                        <div class="embed-responsive-item">
+                                            <div class="product-item__stick">
+                                                <span class="action">Скидка</span>
+                                                <span class="new">Новинка</span>
+                                            </div>
+                                            <div class="product-item__info">
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-favorites-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-compare-gray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="icon icon-estimate-gray"></i>
+                                                </button>
+                                            </div>
+                                            <figure class="product-item__figure">
+                                                <img class="img-fluid" src="https://placehold.co/217x217" width="217"
+                                                     height="217"
+                                                     alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <div class="product-item__articul">Артикул БТ236</div>
+                                        <a href="" class="product-item__name">Гидроизоляция отсечная 200 ТехноНиколь
+                                            20пог.м *1/180</a>
+                                        <div class="product-item__price">
+                                            <div>2 226.00 ₽ <span>/ уп.</span></div>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-cur">742.00 ₽ <span>шт.</span></div>
+                                            <div class="product-item__price-old">850.35 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__footer">
+                                        <div class="product-item__stock">
+                                            <div>3 шт. в упаковке</div>
+                                            <div class="product-stock">
+                                                <div class="product-stock__title">На складе</div>
+                                                <div class="product-stock__body">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__basket">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
+                                                </div>
+                                                <span class="product-counter__control plus"></span>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">в корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
-                        <footer class="catalog-list__footer">
+                        <footer class="page__footer">
                             <div class="pagination">
                                 <div class="pagination__page">
                                     <a href="" class="pagination__prev"></a>
@@ -1108,7 +1113,7 @@
                                     <a href="" class="pagination__num">23</a>
                                     <a href="" class="pagination__next"></a>
                                 </div>
-                                <button type="button" class="pagination__more btn btn-outline-secondary">показать еще</button>
+                                <button type="button" class="pagination__more btn btn-outline-primary">показать еще</button>
                                 <select class="pagination__count js-select" name="SORT_PAGE" id="select-count-page">
                                     <option value="1">Показывать по 24</option>
                                     <option value="2">Показывать по 48</option>

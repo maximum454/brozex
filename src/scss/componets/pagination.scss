@@ -53,4 +53,11 @@
     text-transform: uppercase;
     color: #000000;
   }
+  @include r(1149){
+    &__num{
+      &:nth-of-type(n + 4):nth-of-type(-n + 6) {
+        display: none;
+      }
+    }
+  }
 }

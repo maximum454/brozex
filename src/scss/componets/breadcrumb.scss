@@ -46,4 +46,7 @@
         margin: 0 30px;
         width: 12px;
     }
+    @include r(1023){
+        display: none;
+    }
 }
