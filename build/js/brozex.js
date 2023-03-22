@@ -1469,15 +1469,20 @@ if(document.querySelector('.swiper-products')) {
 }
 if(document.querySelector('.swiper-products')){
     const swiperThumbs = new Swiper(".swiper-thumbs", {
-        direction: 'vertical',
+        direction: getDirection(),
         slidesPerView: 5,
         spaceBetween: 20,
         observer: true,
         slideToClickedSlide: true,
         watchSlidesProgress: true,
         watchSlidesVisibility: true,
-        watchOverflow:false,
-        virtualTranslate: true
+        watchOverflow:true,
+        virtualTranslate: true,
+        on: {
+            resize: function () {
+                swiperThumbs.changeDirection(getDirection());
+            }
+        }
     });
     const swiperMain = new Swiper(".swiper-main", {
         slidesPerView: 1,
@@ -1495,7 +1500,12 @@ if(document.querySelector('.swiper-products')){
         },
     });
 }
+function getDirection() {
+    let windowWidth = window.innerWidth;
+    let direction = window.innerWidth <= 1023 ? 'horizontal' : 'vertical';
 
+    return direction;
+}
 
 const menuCatalogBtn = document.getElementById('js-menu-catalog')
 menuCatalogBtn.addEventListener('click', menuCatalog)

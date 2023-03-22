@@ -44,4 +44,9 @@
         margin-left: 60%;
         width: 40%;
     }
+    @include r(1023){
+        &__list{
+            width: 100%;
+        }
+    }
 }

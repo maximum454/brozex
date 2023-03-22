@@ -73,4 +73,13 @@
       display: none;
     }
   }
+  @include r(767){
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    .swiper-products {
+      padding-bottom: 39px;
+    }
+  }
 }

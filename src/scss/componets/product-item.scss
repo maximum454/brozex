@@ -25,18 +25,20 @@
     z-index: 1;
     font-weight: 400;
     font-size: 13px;
-    line-height: 159.99%;
-    color: #000000;
-    padding-right: 50px;
+    line-height: 21px;
+    padding-right: 30px;
     span,a{
       text-decoration: none;
       margin-right: 5px;
+      color: #ffffff;
+      padding: 3px;
+      margin-bottom: 5px;
     }
     .action{
-      color: #C60505;
+      background-color: #C60505;
     }
     .new{
-      color: #000000;
+      background-color: #192864;
     }
   }
   &__info{
@@ -159,6 +161,57 @@
       max-width: 129px;
       padding: 20px;
       text-transform: uppercase;
+    }
+  }
+  @include r(767){
+    &__articul{
+      font-size: 11px;
+      line-height: 18px;
+    }
+    &__name{
+      font-size: 13px;
+      line-height: 19px;
+      margin: 0 0 12px;
+    }
+    &__stock{
+      font-size: 11px;
+      line-height: 18px;
+    }
+    &__price{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      span{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 159.99%;
+        color: #808080;
+      }
+      &-new{
+        font-size: 18px;
+        line-height: 27px;
+      }
+      &-old{
+        font-size: 12px;
+        line-height: 18px;
+      }
+      &-cur{
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    &__footer{
+      position: relative;
+      visibility: visible;
+      box-shadow: none;
+    }
+    &__basket{
+      .btn{
+        flex: 1 0 50%;
+        max-width: 129px;
+        padding: 12px 10px;
+        font-size: 11px;
+      }
     }
   }
 }

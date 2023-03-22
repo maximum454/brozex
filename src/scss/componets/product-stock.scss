@@ -24,4 +24,10 @@
       }
     }
   }
+  @include r(767){
+    &__title{
+      font-size: 11px;
+      line-height: 18px;
+    }
+  }
 }

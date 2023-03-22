@@ -1,7 +1,10 @@
 .catalog-detail-delivery{
-    background-color: #FAFAFA;
-    padding: 16px 23px;
     margin-bottom: 10px;
+    &__body{
+        background-color: #FAFAFA;
+        padding: 16px 23px;
+        margin-bottom: 10px;
+    }
     &__title{
         font-family: 'Roboto';
         font-style: normal;
@@ -35,6 +38,12 @@
     }
     &__price{
         flex-shrink: 0;
+    }
+    &__banner{
+        img{
+            width: 100%;
+            display: block;
+        }
     }
     .small{
         font-weight: 400;
