@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Новости детальная - brozex</title>
+<meta name="description" content="brozex - Домострой ">
+<meta name="keywords" content="">
+<meta name="author" content="Максим Карачёв">
+<!-- Twitter Card data -->
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="apple-mobile-web-app-title" content="Karachyov Maxim">
+<meta name="application-name" content="Karachyov Maxim">
+
+<!--FAVICON-->
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="apple-touch-icon" sizes="120x120" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/brozex.css">
+</head>
+
+<body>
+<div class="wrp">
+    <div class="wrp__overlay"></div>
+    <div class="panel-smart">
+    <div class="panel-smart__body">
+        <div class="panel-smart__item">
+            <i class="icon icon-burger-gray"></i>
+            <span>Каталог</span>
+        </div>
+        <div class="panel-smart__item">
+            <i class="icon icon-favorites-gray">
+                <span class="panel-smart__count">3</span>
+            </i>
+            <span>Избранное</span>
+        </div>
+        <div class="panel-smart__item">
+            <i class="icon icon-basket-gray">
+                <span class="panel-smart__count">3</span>
+            </i>
+            <span>Корзина</span>
+        </div>
+        <div class="panel-smart__item">
+            <i class="icon icon-login-gray"></i>
+            <span>Войти</span>
+        </div>
+        <div class="panel-smart__item">
+            <i class="icon icon-more-gray"></i>
+            <span>Еще</span>
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__top">
+                <a href="" class="header__logo">
+                    <img class="img-fluid" src="../img/logo-brozex-color.svg" width="103" height="36" alt="Logo Brozex">
+                </a>
+                <div class="header__search main-search">
+                    <form action="" class="main-search__form">
+                        <input type="text" class="form-control" placeholder="Поиск в каталоге">
+                        <input class="main-search__submit" type="submit" value="">
+                    </form>
+                    <div class="main-search__dropdown"></div>
+                </div>
+                <div class="header__info">
+                    <div class="header__select-city select-city" data-remodal-target="modal-city">
+                        Екатеринбург <i class="icon icon-dropdown-bottom"></i>
+                    </div>
+
+                    <a href="tel:+73433452000" class="header__phone"><i class="icon icon-phone"></i><span>+7 (343) 345 20 00</span></a>
+                </div>
+                <div class="header__menu header-top-menu">
+                    <ul class="header-top-menu__list">
+                        <li class="header-top-menu__item">
+                            <a class="header-top-menu__link" href="#">О компании <i
+                                    class="icon icon-dropdown-bottom"></i></a>
+                            <div class="header-top-menu__dropdown">
+                                <a class="header-top-menu__link" href="#">Партнерам</a>
+                                <a class="header-top-menu__link" href="#">Новости</a>
+                                <a class="header-top-menu__link" href="#">Контакты</a>
+                            </div>
+                        </li>
+                        <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Партнерам</a></li>
+                        <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Новости</a></li>
+                        <li class="header-top-menu__item"><a class="header-top-menu__link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="header__retail">Розничным покупателям</a>
+            </div>
+            <div class="header__bottom">
+                <div id="js-menu-catalog" class="header__catalog header-catalog">
+                    <button type="button" class="header-catalog__btn"></button>
+                    <span class="header-catalog__name">Каталог товаров</span>
+                </div>
+                <div class="header__search main-search">
+                    <form action="" class="main-search__form">
+                        <input type="text" class="form-control" placeholder="Поиск в каталоге">
+                        <input class="main-search__submit" type="submit" value="">
+                    </form>
+                    <div class="main-search__dropdown"></div>
+                </div>
+
+                <div class="menu-control">
+                    <a class="menu-control__item" href="">
+                        <i class="icon icon-compare"></i>
+                        <span class="menu-control__name">Сравнить</span>
+                    </a>
+                    <a class="menu-control__item" href="">
+                        <i class="icon icon-estimate"></i>
+                        <span class="menu-control__name">Смета</span>
+                    </a>
+                    <a class="menu-control__item" href="">
+                        <i class="icon icon-favorites">
+                            <span class="menu-control__count">3</span>
+                        </i>
+                        <span class="menu-control__name">Избранное</span>
+                    </a>
+                    <a class="menu-control__item" href="">
+                        <div class="menu-control__icon">
+
+                            <i class="icon icon-basket">
+                                <span class="menu-control__count">1</span>
+                            </i>
+                        </div>
+                        <span class="menu-control__name">Корзина</span>
+                    </a>
+                    <a class="menu-control__item" href="" data-remodal-target="modal-login">
+                        <i class="icon icon-login"></i>
+                        <span class="menu-control__name">Войти</span>
+                    </a>
+                </div>
+            </div>
+            <!--TODO: если контента болльше настроить фиксированаю высоту-->
+
+            <div class="menu-catalog">
+                <div class="container">
+                <!--TODO: Сделать нормальное открыетие подменю-->
+                    <ul>
+                        <li>
+                            <a href="#">Строительные материалы</a>
+                            <ul>
+                                <li>
+                                    <a href="">Аэрозольные лакокрасочные материалы</a>
+                                    <ul>
+                                        <li><a href="">Антиплесень</a></li>
+                                        <li><a href="">Антисептики и пропитки для дерева</a></li>
+                                        <li><a href="">масла и воски</a></li>
+                                        <li><a href="">Морилки для дерева</a></li>
+                                        <li><a href="">Огнебиозащита</a></li>
+                                        <li><a href="">Отбеливатели для дерева</a></li>
+                                        <li><a href="">Пропитки для бань и саун</a></li>
+                                        <li><a href="">Специальные средства защиты</a></li>
+                                        <li><a href="">Шпатлевки по дереву</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Клей</a></li>
+                                <li><a href="">Колеры</a></li>
+                                <li><a href="">Краски и эмали</a></li>
+                                <li><a href="">Лаки</a></li>
+                                <li><a href="">Пена, герметики</a></li>
+                                <li><a href="">Подготовка поверхности к покраске</a></li>
+                                <li><a href="">Средства для защиты древесины и минеральных оснований</a></li>
+                                <li><a href="">Штукатурно-малярный инструмент</a></li>
+                                <li class="banner-menu-catalog">
+                                    <figure class="banner-menu-catalog__figure">
+                                        <img class="img-fluid" src="https://placehold.co/368x204" width="368"
+                                             height="204"
+                                             alt="">
+                                    </figure>
+                                    <div class="banner-menu-catalog__content">
+                                        <div class="banner-menu-catalog__name">BORK RAIN</div>
+                                        <div class="banner-menu-catalog__subname">Воздухоочиститель- <br>увлажнитель</div>
+                                        <div class="banner-menu-catalog__price">65 000.00 ₽</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Лакокрасочные материалы</a></li>
+                        <li><a href="">Напольные покрытия</a></li>
+                        <li><a href="">Декор</a></li>
+                        <li><a href="">Отопление водоснабжение</a></li>
+                        <li><a href="">Сантехника</a></li>
+                        <li><a href="">Освещение и электротовары</a></li>
+                        <li><a href="">Товары для дома</a></li>
+                        <li><a href="">Сад и отдых</a></li>
+                        <li><a href="">Инструменты</a></li>
+                        <li><a href="">Крепежные изделия</a></li>
+                        <li><a href="">Двери, окна, арки</a></li>
+                        <li><a href="">Плитка</a></li>
+                        <li><a href="">Гигиена и красота</a></li>
+                        <li><a href="">Автотовары</a></li>
+                        <li><a href="">Текстиль</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu-catalog-mobile">
+    <div class="menu-catalog-mobile__header">
+        <button class="menu-catalog-mobile__prev" type="button"></button>
+        <div class="menu-catalog-mobile__title">Каталог</div>
+        <button class="menu-catalog-mobile__close" type="button">
+            <i class="icon icon-close"></i>
+        </button>
+    </div>
+    <div class="menu-catalog-mobile__body">
+        <ul class="menu-catalog-mobile__list">
+            <li class="menu-catalog-mobile__item">
+                <a href="" class="menu-catalog-mobile__link">Строительные материалы</a>
+                <i class="icon icon-dropdown-bottom"></i>
+                <div class="menu-catalog-mobile__dropdown">
+                    <ul>
+                        <li>
+                            <a href="" class="menu-catalog-mobile__link">Аэрозольные лакокрасочные материалы</a>
+                            <i class="icon icon-dropdown-bottom"></i>
+                            <div class="menu-catalog-mobile__dropdown">
+                                <ul>
+                                    <li><a href="" class="menu-catalog-mobile__link">Антиплесень</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Антисептики и пропитки для дерева</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">масла и воски</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Морилки для дерева</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Огнебиозащита</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Отбеливатели для дерева</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Пропитки для бань и саун</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Специальные средства защиты</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Шпатлевки по дереву</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="" class="menu-catalog-mobile__link">Клей</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Колеры</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Краски и эмали</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Лаки</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Пена, герметики</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Подготовка поверхности к покраске</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Средства для защиты древесины и минеральных оснований</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Штукатурно-малярный инструмент</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Штукатурно-малярный инструмент</a></li>
+                    </ul>
+                    <div class="menu-catalog__banner banner-menu-catalog">
+                        <figure class="banner-menu-catalog__figure">
+                            <img class="img-fluid" src="https://placehold.co/368x204" width="368"
+                                 height="204"
+                                 alt="">
+                        </figure>
+                        <div class="banner-menu-catalog__content">
+                            <div class="banner-menu-catalog__name">BORK RAIN</div>
+                            <div class="banner-menu-catalog__subname">Воздухоочиститель- <br>увлажнитель</div>
+                            <div class="banner-menu-catalog__price">65 000.00 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-catalog-mobile__item">
+                <span>Лакокрасочные материалы</span>
+                <i class="icon icon-dropdown-bottom"></i>
+                <div class="menu-catalog-mobile__dropdown">
+                    <ul>
+                        <li>
+                            <a href="" class="menu-catalog-mobile__link">Аэрозольные лакокрасочные материалы</a>
+                            <div class="menu-catalog__dropdown">
+                                <ul>
+                                    <li><a href="" class="menu-catalog-mobile__link">Антиплесень</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Антисептики и пропитки для дерева</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">масла и воски</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Морилки для дерева</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Огнебиозащита</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Отбеливатели для дерева</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Пропитки для бань и саун</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Специальные средства защиты</a></li>
+                                    <li><a href="" class="menu-catalog-mobile__link">Шпатлевки по дереву</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="" class="menu-catalog-mobile__link">Клей</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Колеры</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Краски и эмали</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Лаки</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Пена, герметики</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Подготовка поверхности к покраске</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Средства для защиты древесины и минеральных оснований</a></li>
+                        <li><a href="" class="menu-catalog-mobile__link">Штукатурно-малярный инструмент</a></li>
+                    </ul>
+                    <div class="menu-catalog__banner banner-menu-catalog">
+                        <figure class="banner-menu-catalog__figure">
+                            <img class="img-fluid" src="https://placehold.co/368x204" width="368"
+                                 height="204"
+                                 alt="">
+                        </figure>
+                        <div class="banner-menu-catalog__content">
+                            <div class="banner-menu-catalog__name">BORK RAIN</div>
+                            <div class="banner-menu-catalog__subname">Воздухоочиститель- <br>увлажнитель</div>
+                            <div class="banner-menu-catalog__price">65 000.00 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Напольные покрытия</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Декор</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Отопление водоснабжение</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Сантехника</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Освещение и электротовары</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Товары для дома</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Сад и отдых</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Инструменты</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Крепежные изделия</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Двери, окна, арки</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Плитка</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Гигиена и красота</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Автотовары</a></li>
+            <li class="menu-catalog-mobile__item"><a href="" class="menu-catalog-mobile__link">Текстиль</a></li>
+        </ul>
+    </div>
+</div>
+    <main>
+        <section class="page">
+            <div class="container">
+                <div class="page__body">
+                    <aside class="page__aside">
+                        <h1 class="page__title">Кабинет</h1>
+                        <ul class="menu-aside">
+                            <li><a href="">Личные данные</a></li>
+                            <li><a href="" class="active">Мои компании</a></li>
+                            <li><a href="">Мои заказы</a></li>
+                            <li><a href="">Сметы</a></li>
+                        </ul>
+                    </aside>
+                    <div class="page__content">
+                        <div>Мои компании</div>
+                        <label class="custom-radio">
+                            <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
+                            <span>ООО “ТК “БРОЗЕКС”</span>
+                            <div>ИНН: 6604017625, КПП: 667801001, 623704, Свердловская область, г. Березовский, тер. п.Первомайский, стр.24</div>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
+                            <span>АО "БМЗ"</span>
+                            <div>ИНН: 3525012202, КПП: 352501001, 160022, Вологодская обл, г Вологда, Пошехонское шоссе, д 18</div>
+                        </label>
+
+                        <button class="btn btn-outline-secondary text-uppercase js-open-org"><i class="icon icon-plus"></i>добавить компанию</button>
+
+                        <div class="order__search search-order">
+                            <div class="search-order__body">
+                                <input class="form-control js-input-org" type="text" placeholder="Введите ИНН, ИП или название организации*" required>
+                                <div class="search-order__icon"></div>
+                                <ul class="search-order__dropdown">
+                                    <li>ООО “ТК “БРОЗЕКС” ИНН: 6604017625, КПП: 667801001, 623704, Свердловская область, г. Березовский, тер. п.Первомайский, стр.24</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="search-order__btn btn btn-primary text-uppercase">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+    <div class="container">
+        <div class="footer-advantage">
+            <div class="footer-advantage__item">Самые низкие оптовые<br> цены на рынке</div>
+            <div class="footer-advantage__item">Централизованность,<br> стабильность с 1996 года</div>
+            <div class="footer-advantage__item">Быстрая, экономичная<br> доставка</div>
+            <div class="footer-advantage__item">Собственные<br> производства</div>
+        </div>
+        <div class="footer__body">
+            <div class="footer__about">
+                <a href="" class="footer__logo">
+                    <img class="img-fluid" src="./img/logo-brozex-white.svg" width="143" height="66" alt="">
+                </a>
+                <p class="small">
+                    * Цены, указанные на&nbsp;сайте, не&nbsp;являются публичной офертой! Обращаем ваше внимание на&nbsp;то, что данный интернет-сайт носит исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой положениями п.2&nbsp;ст.&nbsp;437 Гражданского кодекса РФ. Статья 437. Приглашение делать оферты. Публичная оферта: 1. Реклама и&nbsp;иные предложения, адресованные неопределенному кругу лиц, рассматриваются как приглашение делать оферты, если иное прямо не&nbsp;указано в&nbsp;предложении.&nbsp;2. Содержащее все существенные условия договора предложение, из&nbsp;которого усматривается воля лица, делающего предложение, заключить договор на&nbsp;указанных в&nbsp;предложении условиях с&nbsp;любым, кто отзовется, признается офертой (публичная оферта). Существенными условиями договора купли-продажи являются предмет договора, т.е. наименование и&nbsp;количество товара (ст.454-491&nbsp;ГК РФ), срок поставки (ст.506&nbsp;ГК РФ).
+                </p>
+            </div>
+            <div class="footer__menu area1">
+                <div class="footer__title">О компании</div>
+                <a class="footer__link" href="">История</a>
+                <a class="footer__link" href="">Вакансии</a>
+                <a class="footer__link" href="">Торговля</a>
+                <a class="footer__link" href="">Производство</a>
+                <a class="footer__link" href="">Логистика</a>
+                <a class="footer__link" href="">Девелопмент</a>
+            </div>
+            <div class="footer__menu area2">
+                <div class="footer__title">Навигация</div>
+                <a class="footer__link" href="">Партнерам</a>
+                <a class="footer__link" href="">Новости</a>
+                <a class="footer__link" href="">Контакты</a>
+
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__title">Контакты</div>
+                <a class="footer__link white" href="tel:+73433452000">+7 (343) 345 20 00</a>
+                <a class="footer__link white" href="mailto:brozex@brozex.ru">brozex@brozex.ru</a>
+                <p>623000, Россия,<br>
+                    г. Екатеринбург, ул.Блюхера 88
+                </p>
+                <div class="subscribe">
+                    <div class="subscribe__title">Хотите узнавать о скидках первыми?</div>
+                    <form action="" class="subscribe__form">
+                        <input class="form-control" type="text" placeholder="Введите e-mail">
+                        <input class="subscribe__submit" type="submit" value="">
+                    </form>
+                    <div class="subscribe__agree">Нажимая &laquo;Подписаться&raquo; вы&nbsp;соглашаетесь c&nbsp;пользовательским соглашением и&nbsp;политикой конфиденциальности</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__footer">
+            <div class="footer__copy">&copy; 1996&ndash;2022 <nobr>ООО &laquo;Торговая компания &laquo;БРОЗЭКС&raquo;</nobr>. Все права защищены.</div>
+            <div class="footer__links">
+                <a href="">Политика конфидециальности</a>
+                <a href="">Оферта</a>
+                <a href="">Пользовательское соглашение</a>
+            </div>
+            <div class="footer__social">
+                <a href="" target="_blank">
+                    <i class="icon icon-telegram-light"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="icon icon-whatsapp-light"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="icon icon-vkontakte-light"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="icon icon-youtube-light"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--TODO: после верстки всех модалок добавить:  data-remodal-options="hashTracking: false, closeOnOutsideClick: false"-->
+<div class="remodal" data-remodal-id="modal-city">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Выбор города</div>
+        </div>
+        <div class="remodal__body">
+
+            <form class="select-city__form" action="">
+                <input class="form-control" type="text" value="" placeholder="Поиск">
+            </form>
+            <div class="select-city__col">
+                <a href="#">г. Москва</a>
+                <a href="#">г. Санкт-Петербург</a>
+                <a href="#">г. Барнаул г. Владивосток</a>
+                <a href="#">г. Волгоград</a>
+                <a href="#">г Воронеж</a>
+                <a href="#">г. Екатеринбург</a>
+                <a href="#">г. Ижевск</a>
+                <a href="#">г. Иркутск</a>
+                <a href="#">г. Казань</a>
+                <a href="#">г. Кемерово</a>
+                <a href="#">г. Краснодар</a>
+                <a href="#">г. Красноярск г. Махачкала</a>
+                <a href="#">г. Нижний Новгород</a>
+
+                <a href="#">г. Новосибирск</a>
+                <a href="#">г. Омск г. Оренбург</a>
+                <a href="#">г. Премь</a>
+                <a href="#">г. Ростов-на-Дону</a>
+                <a href="#">г. Самара</a>
+                <a href="#">г. Саратов</a>
+                <a href="#">г. Тольятти</a>
+                <a href="#">г. Томск</a>
+                <a href="#">г. Тюмень</a>
+                <a href="#">г. Ульяновск</a>
+                <a href="#">г. Уфа</a>
+                <a href="#">г. Хабаровск</a>
+                <a href="#">г. Челябинск</a>
+                <a href="#">г. Ярославль</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="remodal form-auth" data-remodal-id="modal-login">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Вход в личный кабинет</div>
+            <a href="" class="remodal__link" data-remodal-target="modal-reg">регистрация</a>
+        </div>
+        <div class="remodal__body">
+            <form class="form-auth__form" action="">
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Логин">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Пароль">
+                </div>
+                <div class="remodal__btn">
+                    <button type="button" class="btn btn-primary">Войти</button>
+                    <a href="" class="remodal__link" data-remodal-target="modal-password-reset">восстановить пароль</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="remodal form-auth" data-remodal-id="modal-password-reset">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Восстановление пароля</div>
+        </div>
+        <div class="remodal__body">
+            <form class="form-auth__form" action="">
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Почта указанная при регистрации">
+                </div>
+                <div class="remodal__btn">
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="remodal form-auth" data-remodal-id="modal-reg">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Регистрация</div>
+        </div>
+        <div class="remodal__body">
+            <form class="form-auth__form" action="">
+                <div class="form-label">Персональные данные</div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Имя *">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Фамлия">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Почта *">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Номер телефона*">
+                </div>
+
+                <div class="form-label">Пароль</div>
+
+                <div class="form-group">
+                    <input class="form-control" type="password" value="" placeholder="Пароль *">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="password" value="" placeholder="Повторите пароль">
+                </div>
+                <div class="remodal__btn">
+                    <button type="button" class="btn btn-primary">Зарегистрироваться</button>
+                    <span class="small">Нажимая «Зарегистрироваться» вы соглашаетесь c пользовательским соглашением и политикой конфиденциальности</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/brozex.js"></script>
+
+</body>
+
+</html>

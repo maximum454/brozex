@@ -21,7 +21,7 @@
 	box-sizing: border-box;
 }
 html{
-	scroll-behavior: smooth;
+	/*scroll-behavior: smooth;*/
 }
 body{
 	background-color: #fff;
@@ -238,7 +238,6 @@ a{
 @import "componets/accordion";
 @import "componets/seo-text";
 @import "componets/review-star";
-@import "componets/product-calc";
 @import "componets/questions";
 @import "componets/rate";
 @import "componets/reviews";
@@ -247,6 +246,8 @@ a{
 @import "componets/order";
 @import "componets/search-order";
 @import "componets/order-success";
+@import "componets/account";
+@import "componets/table-account";
 
 
 

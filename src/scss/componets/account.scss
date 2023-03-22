@@ -1,0 +1,27 @@
+.account{
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    gap: 10px;
+  }
+  &__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 45px;
+    color: #000000;
+    margin: 0;
+  }
+  &__sort{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex: 1 0 100%;
+    max-width: 487px;
+  }
+  &__body{}
+}
