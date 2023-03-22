@@ -13,7 +13,7 @@
     font-size: 25px;
     line-height: 45px;
     color: #000000;
-    margin: 0;
+    margin: 0 0 30px;
   }
   &__sort{
     display: flex;
@@ -24,4 +24,33 @@
     max-width: 487px;
   }
   &__body{}
+  &__form{
+    max-width: 744px;
+  }
+  .form-label{
+    display: block;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 16px;
+      right: 15px;
+      background-image: url("../img/icons-sprite.svg#form-edit");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      display: none;
+    }
+    &.focus{
+      &:after{
+        display: block;
+      }
+    }
+  }
+  .form-control{
+    padding: 17px 15px 18px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
 }

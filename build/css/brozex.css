@@ -2596,16 +2596,16 @@ html.remodal-is-locked {
 }
 
 .btn.btn-outline-primary {
-  color: #192864;
+  color: #000000;
   background-color: transparent;
   background-image: none;
-  border-color: #192864;
+  border-color: #000000;
 }
 
 .btn.btn-outline-primary:hover {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #192864;
+  border-color: #192864;
 }
 
 .btn.btn-outline-secondary {
@@ -2755,6 +2755,15 @@ html.remodal-is-locked {
   margin: 0 5px;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.form-subtitle {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
 }
 
 .form-label {
@@ -3531,6 +3540,12 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#map-pin-red");
   width: 17px;
   height: 21px;
+}
+
+.icon-edit {
+  background-image: url("../img/icons-sprite.svg#form-edit");
+  width: 20px;
+  height: 20px;
 }
 
 .table {
@@ -6227,9 +6242,10 @@ a:hover {
 }
 
 .page__title {
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 25px;
-  line-height: 29px;
+  line-height: 45px;
   color: #000000;
   margin: 0 0 30px;
 }
@@ -7657,7 +7673,7 @@ a:hover {
   font-size: 25px;
   line-height: 45px;
   color: #000000;
-  margin: 0;
+  margin: 0 0 30px;
 }
 
 .account__sort {
@@ -7675,6 +7691,39 @@ a:hover {
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
   max-width: 487px;
+}
+
+.account__form {
+  max-width: 744px;
+}
+
+.account .form-label {
+  display: block;
+  position: relative;
+}
+
+.account .form-label:after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  background-image: url("../img/icons-sprite.svg#form-edit");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.account .form-label.focus:after {
+  display: block;
+}
+
+.account .form-control {
+  padding: 17px 15px 18px;
+}
+
+.account .btn {
+  margin-top: 20px;
 }
 
 .table-account {

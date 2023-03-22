@@ -133,15 +133,14 @@
 	}
 
 	&.btn-outline-primary{
-		color: #192864;
+		color: #000000;
 		background-color: transparent;
 		background-image: none;
-		border-color: #192864;
-        
+		border-color: #000000;
 		&:hover {
 			color: #fff;
-			background-color: #007bff;
-			border-color: #007bff;
+			background-color: #192864;
+			border-color: #192864;
 		}
 	}
 	&.btn-outline-secondary{

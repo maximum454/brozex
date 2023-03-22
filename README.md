@@ -22,6 +22,19 @@ https://maximum454.github.io/brozex/build/basket.html
 ### Оформление заказа
 https://maximum454.github.io/brozex/build/order.html
 https://maximum454.github.io/brozex/build/order-ok.html
+#### Оформление заказа компания
+https://maximum454.github.io/brozex/build/order-list-company.html
+https://maximum454.github.io/brozex/build/order-search-company.html
+
+https://maximum454.github.io/brozex/build/order-add-adress.html
+https://maximum454.github.io/brozex/build/order-list-adress.html
+https://maximum454.github.io/brozex/build/order-list-company.html
+https://maximum454.github.io/brozex/build/order-search-adress.html
+https://maximum454.github.io/brozex/build/order-search-company.html
+https://maximum454.github.io/brozex/build/order-sam-adress.html
+
+
+
 
 ### Личный кабинет
 https://maximum454.github.io/brozex/build/account-personal.html

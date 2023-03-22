@@ -162,10 +162,10 @@ $(function (){
         $('.js-select').styler();
     }, 100)
 
-    $('.js-open-org').on('click', function (){
+    /*$('.js-open-org').on('click', function (){
         $(this).remove()
        $(this).next('.order__search').addClass('active')
-    })
+    })*/
 
     $('.js-input-org').on('keyup', function (){
         if($(this).val()){
@@ -173,6 +173,13 @@ $(function (){
         }else{
             $('.search-order__dropdown').removeClass('active')
         }
+    })
+
+    $('.form-control').on('focus', function (){
+        $(this).parent('.form-label').addClass('focus')
+    })
+    $('.form-control').on('blur', function (){
+        $(this).parent('.form-label').removeClass('focus')
     })
 
     $('.tabs .tabs__caption li').on('click', function(){

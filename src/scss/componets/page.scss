@@ -10,15 +10,17 @@
             max-width: none;
         }
     }
+
     &__body{
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
     }
     &__title{
+        font-family: 'Roboto';
         font-weight: 400;
         font-size: 25px;
-        line-height: 29px;
+        line-height: 45px;
         color: #000000;
         margin: 0 0 30px;
     }
