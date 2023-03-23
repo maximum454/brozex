@@ -7544,6 +7544,43 @@ a:hover {
           align-items: center;
 }
 
+.basket__oglav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.basket__oglav .basket__txt {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.basket__oglav .basket__figure,
+.basket__oglav .basket__name,
+.basket__oglav .basket__price,
+.basket__oglav .basket__counter,
+.basket__oglav .basket__sum {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #000000;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  min-width: 70px;
+}
+
 .order {
   max-width: 793px;
 }
@@ -8477,6 +8514,10 @@ a:hover {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+
+  .basket__oglav {
+    display: none;
   }
 
   .account__form {

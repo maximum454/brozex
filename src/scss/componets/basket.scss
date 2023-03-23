@@ -153,6 +153,33 @@
         display: flex;
         align-items: center;
     }
+    &__oglav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        background-color: transparent;
+        margin-bottom: 10px;
+        .basket__txt{
+            align-items: flex-start;
+        }
+        .basket__figure,
+        .basket__name,
+        .basket__price,
+        .basket__counter,
+        .basket__sum{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 21px;
+            color: #000000;
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            min-width: 70px;
+        }
+    }
     @include r(1023){
         &__txt{
             align-items: flex-end;
@@ -175,6 +202,9 @@
             border: none;
             padding: 4px 0;
             order: 4;
+        }
+        &__oglav{
+            display: none;
         }
     }
     @include r(767){
