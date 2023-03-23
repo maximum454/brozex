@@ -18,80 +18,10 @@
     <div class="wrp__overlay"></div>
     @@include('./template/_header.html')
     <main>
-        <section class="basket">
+        <div class="page page--right">
             <div class="container">
-                <header class="basket__header">
-                    <h1 class="basket__title">Корзина</h1>
-                </header>
-                <div class="basket__body">
-                    <div class="basket__section">
-
-                        <div class="basket__item">
-                            <figure class="basket__figure">
-                                <img class="img-fluid" src="https://placehold.co/94x120" width="94" height="120" alt="">
-                            </figure>
-                            <div class="basket__info">
-                                <div class="basket__articul">Артикул БП298</div>
-                                <div class="basket__name">Эмаль алкидная 2,7 л Tikkurila Miranol База А тиксотропная *1/120</div>
-                            </div>
-                            <div class="basket__price">
-                                200.00 ₽
-                            </div>
-                            <div class="basket__counter">
-                                <div class="product-counter">
-                                    <span class="product-counter__control minus"></span>
-                                    <div class="product-counter__num">
-                                        <!--TODO: шт-->
-                                        <div class="product-counter__wrp-input">
-                                            <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
-                                        </div>
-                                        <span class="product-counter__unit">шт.</span>
-                                    </div>
-                                    <span class="product-counter__control plus"></span>
-                                </div>
-                            </div>
-                            <div class="basket__sum">
-                                2 000.00 ₽
-                            </div>
-                            <div class="basket__del">
-                                <button class="btn btn-link" type="button"><i class="icon icon-close-gray"></i></button>
-                            </div>
-                        </div>
-                        <div class="basket__item">
-                            <figure class="basket__figure">
-                                <img class="img-fluid" src="https://placehold.co/78x78" width="78" height="78" alt="">
-                            </figure>
-                            <div class="basket__info">
-                                <div class="basket__articul">Артикул БП298</div>
-                                <div class="basket__name">Эмаль алкидная 2,7 л Tikkurila Miranol База А тиксотропная *1/120</div>
-                            </div>
-                            <div class="basket__price">
-                                200.00 ₽
-                            </div>
-                            <div class="basket__counter">
-                                <div class="product-counter">
-                                    <span class="product-counter__control minus"></span>
-                                    <div class="product-counter__num">
-                                        <!--TODO: шт-->
-                                        <div class="product-counter__wrp-input">
-                                            <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
-                                        </div>
-                                        <span class="product-counter__unit">шт.</span>
-                                    </div>
-                                    <span class="product-counter__control plus"></span>
-                                </div>
-                            </div>
-                            <div class="basket__sum">
-                                2 000.00 ₽
-                            </div>
-                            <div class="basket__del">
-                                <button class="btn btn-link" type="button"><i class="icon icon-close-gray"></i></button>
-                            </div>
-                        </div>
-
-                        <button type="button" class="basket__clear btn "><i class="icon icon-clear"></i> очистить корзину</button>
-                    </div>
-                    <aside class="basket__aside">
+                <div class="page__body">
+                    <aside class="page__aside">
                         <div class="order-total">
                             <div class="order-total__title">Итого по заказу</div>
                             <div class="order-total__price">7 600.00 ₽</div>
@@ -99,9 +29,93 @@
                             <button class="btn btn-primary text-uppercase" type="button">перейти к оформлению</button>
                         </div>
                     </aside>
+                    <section class="page__content">
+                        <div class="basket">
+                            <header class="basket__header">
+                                <h1 class="basket__title">Корзина</h1>
+                            </header>
+                            <div class="basket__body">
+                                <div class="basket__item">
+                                    <button class="basket__del" type="button"></button>
+                                    <figure class="basket__figure">
+                                        <a href="">
+                                            <img class="img-fluid" src="https://placehold.co/94x120" width="94" height="120" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="basket__txt">
+                                        <div class="basket__name">
+                                            <div class="basket__articul">Артикул БП298</div>
+                                            <a href="">Эмаль алкидная 2,7 л Tikkurila Miranol База А тиксотропная *1/120</a>
+                                        </div>
+                                        <div class="basket__price">
+                                            <div class="basket__label">Цена</div>
+                                            200.00 ₽
+                                        </div>
+                                        <div class="basket__counter">
+                                        <div class="product-counter">
+                                            <span class="product-counter__control minus"></span>
+                                            <div class="product-counter__num">
+                                                <!--TODO: шт-->
+                                                <div class="product-counter__wrp-input">
+                                                    <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                </div>
+                                                <span class="product-counter__unit">шт.</span>
+                                            </div>
+                                            <span class="product-counter__control plus"></span>
+                                        </div>
+                                    </div>
+
+                                        <div class="basket__sum">
+                                            <div class="basket__label">Сумма</div>
+                                            2 000.00 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket__item">
+                                    <button class="basket__del" type="button"></button>
+                                    <figure class="basket__figure">
+                                        <a href="">
+                                            <img class="img-fluid" src="https://placehold.co/94x120" width="94" height="120" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="basket__txt">
+                                        <div class="basket__name">
+                                            <div class="basket__articul">Артикул БП298</div>
+                                            <a href="">Эмаль алкидная 2,7 л Tikkurila Miranol База А тиксотропная *1/120</a>
+                                        </div>
+                                        <div class="basket__price">
+                                            <div class="basket__label">Цена</div>
+                                            200.00 ₽
+                                        </div>
+                                        <div class="basket__counter">
+                                            <div class="product-counter">
+                                                <span class="product-counter__control minus"></span>
+                                                <div class="product-counter__num">
+                                                    <!--TODO: шт-->
+                                                    <div class="product-counter__wrp-input">
+                                                        <input class="product-counter__input" data-step="1" data-shop_id="one" data-id="" type="text" value="311">
+                                                    </div>
+                                                    <span class="product-counter__unit">шт.</span>
+                                                </div>
+                                                <span class="product-counter__control plus"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket__sum">
+                                            <div class="basket__label">Сумма</div>
+                                            2 000.00 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="basket__footer">
+                                <button type="button" class="basket__clear btn "><i class="icon icon-clear"></i> очистить корзину</button>
+                            </footer>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     @@include('./template/_footer.html')
     @@include('./template/_modal.html')
