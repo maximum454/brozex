@@ -1559,8 +1559,8 @@ function expand(){
     }
 }
 expand()
-/*Юоковое меню*/
-const menuAsides = document.querySelectorAll('.menu-aside')
+/*Боковое меню*/
+const menuAsides = document.querySelectorAll('.menu-aside__list')
 for (let menuAside of menuAsides){
     menuAside.addEventListener('click', function (e){
         const target = e.target;
@@ -1569,11 +1569,26 @@ for (let menuAside of menuAsides){
             e.preventDefault();
             target.classList.toggle('active')
             dropdown.classList.toggle('active')
-            console.log(target, dropdown)
         }
     })
 }
 /*Конец бокоое меню*/
+
+/*Боковое меню на мобиле*/
+const menuAsidesCurrents = document.querySelectorAll('.menu-aside__current')
+for (let currents of menuAsidesCurrents){
+    currents.addEventListener('click', function (e){
+        e.preventDefault();
+        const target = e.target;
+        const parent = target.closest('.menu-aside');
+        if(parent){
+            parent.classList.toggle('open')
+        }
+    })
+}
+/*Конец бокоое меню*/
+
+
 
 $(function (){
     setTimeout(function() {

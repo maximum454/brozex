@@ -67,8 +67,6 @@
         }
     }
     &__article{
-        flex:1 0 calc(67% - 20px);
-        max-width: 66%;
         figure{
             margin: 0 0 26px;
             img{
@@ -122,6 +120,31 @@
         &__content{
             flex:1 0 100%;
             max-width: 100%;
+        }
+    }
+    @include r(767){
+        &__article{
+            flex:1 0 100%;
+            max-width: 100%;
+            figure{
+                margin: 0 0 26px;
+                img{
+                    display: block;
+                }
+            }
+            h1{}
+            h2{}
+            h3{
+                font-size: 18px;
+                line-height: 21px;
+                margin: 0 0 10px;
+            }
+            h4{}
+            p{
+                font-size: 13px;
+                line-height: 24px;
+                margin: 0 0 20px;
+            }
         }
     }
 }
