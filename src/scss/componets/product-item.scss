@@ -163,7 +163,7 @@
       text-transform: uppercase;
     }
   }
-  @include r(767){
+  @include r(1023){
     &__articul{
       font-size: 11px;
       line-height: 18px;
@@ -204,6 +204,7 @@
       position: relative;
       visibility: visible;
       box-shadow: none;
+      top: 0;
     }
     &__basket{
       .btn{
