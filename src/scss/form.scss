@@ -13,9 +13,6 @@
         line-height: 16px;
         color: #333333;
     }
-    @include r(767){
-        margin-bottom: 45px;
-    }
 }
 .form-column{
     width: 740px;

@@ -1,9 +1,10 @@
 .account{
   &__header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin: 0 0 30px;
     gap: 10px;
   }
   &__title{
@@ -13,14 +14,14 @@
     font-size: 25px;
     line-height: 45px;
     color: #000000;
-    margin: 0 0 30px;
+    margin: 0 20px 0 0;
   }
   &__sort{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    flex: 1 0 100%;
+    flex: 1;
     max-width: 487px;
   }
   &__body{
@@ -30,6 +31,44 @@
     max-width: 744px;
     .btn{
       margin-top: 20px;
+    }
+  }
+  &__company-item{
+    position: relative;
+    max-width: 820px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+  &__company-del{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: -6px;
+    left: auto;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #000000;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      margin-top: 0;
+      background-image: url("../img/icons-sprite.svg#close");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
     }
   }
   .form-label{
@@ -55,5 +94,25 @@
   .form-control{
     padding: 17px 15px 18px;
   }
+  @include r(1023){
+    &__form{
+      max-width: 100%;
+    }
+  }
+  @include r(767){
+    &__header{
+      margin: 0 0 10px;
+    }
+    &__sort{
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+    &__company-item{
+      .btn{
+        width: 100%;
+        display: block;
+      }
+    }
 
+  }
 }

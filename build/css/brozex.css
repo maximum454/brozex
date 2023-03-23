@@ -7738,13 +7738,15 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 5px;
+  margin: 0 0 30px;
   gap: 10px;
 }
 
@@ -7755,7 +7757,7 @@ a:hover {
   font-size: 25px;
   line-height: 45px;
   color: #000000;
-  margin: 0 0 30px;
+  margin: 0 20px 0 0;
 }
 
 .account__sort {
@@ -7770,8 +7772,8 @@ a:hover {
           justify-content: space-between;
   gap: 10px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
+      -ms-flex: 1;
+          flex: 1;
   max-width: 487px;
 }
 
@@ -7785,6 +7787,47 @@ a:hover {
 
 .account__form .btn {
   margin-top: 20px;
+}
+
+.account__company-item {
+  position: relative;
+  max-width: 820px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+.account__company-del {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: -6px;
+  left: auto;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.account__company-del:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 0;
+  background-image: url("../img/icons-sprite.svg#close");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
 }
 
 .account .form-label {
@@ -8352,13 +8395,52 @@ a:hover {
             flex: 1 1 100%;
     max-width: 100%;
   }
+
+  .account__form {
+    max-width: 100%;
+  }
+
+  .table-account__th {
+    display: none;
+  }
+
+  .table-account__tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 7px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .table-account__td {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(25% - 7px);
+            flex: 1 0 calc(25% - 7px);
+    max-width: calc(25% - 7px);
+    display: block;
+    vertical-align: top;
+    padding: 0;
+  }
+
+  .table-account__td:nth-of-type(6) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .table-account__td-head {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  .form-group {
-    margin-bottom: 45px;
-  }
-
   .tabs__caption {
     margin-bottom: 17px;
     gap: 25px;
@@ -8786,6 +8868,52 @@ a:hover {
   .catalog-detail__price span {
     font-size: 11px;
     line-height: 18px;
+  }
+
+  .account__header {
+    margin: 0 0 10px;
+  }
+
+  .account__sort {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .account__company-item .btn {
+    width: 100%;
+    display: block;
+  }
+
+  .table-account__tr {
+    gap: 15px;
+    margin-bottom: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .table-account__td {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .table-account__td:nth-of-type(6) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(25% - 7px);
+            flex: 1 0 calc(25% - 7px);
+    max-width: calc(25% - 7px);
+    margin-left: 0;
+  }
+
+  .table-account__td:last-of-type {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(25% - 7px);
+            flex: 1 0 calc(25% - 7px);
+    max-width: calc(25% - 7px);
   }
 }
 

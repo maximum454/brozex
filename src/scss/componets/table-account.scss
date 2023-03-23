@@ -45,4 +45,51 @@
     color: #000000;
     padding: 0;
   }
+  @include r(1023){
+    &__th{
+      display: none;
+    }
+    &__tr{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    &__td{
+      flex: 1 0 calc(25% - 7px);
+      max-width: calc(25% - 7px);
+      display: block;
+      vertical-align: top;
+      padding: 0;
+      &:nth-of-type(6){
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+    &__td-head{
+      display: block;
+    }
+  }
+  @include r(767){
+    &__tr{
+      gap: 15px;
+      margin-bottom: 50px;
+      justify-content: flex-start;
+    }
+    &__td{
+      flex: 1 0 100%;
+      max-width: 100%;
+      &:nth-of-type(6){
+        flex: 1 0 calc(25% - 7px);
+        max-width: calc(25% - 7px);
+        margin-left: 0;
+      }
+      &:last-of-type{
+        flex: 1 0 calc(25% - 7px);
+        max-width: calc(25% - 7px);
+      }
+    }
+  }
 }
