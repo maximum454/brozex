@@ -37,4 +37,15 @@
     &__form{
         margin-top: 20px;
     }
+    @include r(1023){
+        max-width: 100%;
+        textarea.form-control{
+            height: 159px;
+        }
+    }
+    @include r(767){
+        .btn{
+            width: 100%;
+        }
+    }
 }

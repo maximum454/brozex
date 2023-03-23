@@ -61,4 +61,15 @@
             max-width: 100%;
         }
     }
+    @include r(767){
+        &__title{
+            font-size: 18px;
+            line-height: 25px;
+            margin: 0 0 13px;
+        }
+        p{
+            font-size: 13px;
+            line-height: 24px;
+        }
+    }
 }

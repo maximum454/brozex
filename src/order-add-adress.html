@@ -18,26 +18,26 @@
     <div class="wrp__overlay"></div>
     @@include('./template/_header.html')
     <main>
-        <section class="basket">
+
+        <div class="page page--right">
             <div class="container">
-                <header class="basket__header">
-                    <h1 class="basket__title">Оформление заказа</h1>
-                </header>
-                <div class="basket__body">
-                    <div class="basket__section">
+                <div class="page__body">
+                    <aside class="page__aside">
+                        <div class="order-total">
+                            <div class="order-total__title">Итого по заказу</div>
+                            <div class="order-total__price">7 600.00 ₽</div>
+                            <div class="order-total__count">Товаров в корзине <span>2</span></div>
+                            <button class="btn btn-primary text-uppercase" type="button">Оформить заказ</button>
+                            <div class="order-total__text-small">Нажимая «Оформить заказ» вы соглашаетесь c
+                                пользовательским соглашением и политикой конфиденциальности
+                            </div>
+                        </div>
+                    </aside>
+                    <section class="page__content">
                         <div class="order">
                             <div class="order__item">
                                 <div class="order__title">Покупатель</div>
-
-                                <label class="custom-radio">
-                                    <input type="radio" name="org" value="ООО “ТК “БРОЗЕКС”" checked>
-                                    <span>ООО “ТК “БРОЗЕКС”</span>
-                                </label>
-
-                                <button class="btn btn-outline-primary text-uppercase js-open-org"><i
-                                        class="icon icon-plus"></i>добавить компанию
-                                </button>
-
+                                <button class="btn btn-outline-secondary text-uppercase js-open-org"><i class="icon icon-plus"></i>добавить компанию</button>
                             </div>
                             <div class="order__item">
                                 <div class="order__title">Способ получения</div>
@@ -58,14 +58,6 @@
                                         </div>
                                         <div class="custom-radio__name">Самовывоз</div>
                                     </label>
-                                </div>
-                            </div>
-                            <div class="order__item order__item--adress">
-                                <div class="order__delivery">
-                                    <div class="order__title">Адрес доставки</div>
-                                    <button class="btn btn-outline-secondary text-uppercase js-open-org"><i
-                                            class="icon icon-plus"></i>Добавить адрес
-                                    </button>
                                 </div>
                             </div>
                             <div class="order__item">
@@ -96,37 +88,22 @@
                                         <input class="form-control" type="text" placeholder="Номер телефона*" required>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" type="text"
-                                               placeholder="Дополнительный номер телефона">
+                                        <input class="form-control" type="text" placeholder="Дополнительный номер телефона">
                                     </div>
                                     <div class="form-group">
                                         <input class="form-control" type="text" placeholder="Email">
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" name="" id="" cols="30" rows="10"
-                                                  placeholder="Комментарий"></textarea>
+                                        <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
                                     </div>
 
                                 </form>
                             </div>
                         </div>
-                    </div>
-                    <aside class="basket__aside">
-                        <div class="order-total">
-                            <div class="order-total__title">Итого по заказу</div>
-                            <div class="order-total__price">7 600.00 ₽</div>
-                            <div class="order-total__count">Товаров в корзине <span>2</span></div>
-                            <button class="order-total__btn btn btn-primary text-uppercase" type="button">перейти к
-                                оформлению
-                            </button>
-                            <div class="order-total__text-small">Нажимая «Оформить заказ» вы соглашаетесь c
-                                пользовательским соглашением и политикой конфиденциальности
-                            </div>
-                        </div>
-                    </aside>
+                    </section>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     @@include('./template/_footer.html')
     @@include('./template/_modal.html')

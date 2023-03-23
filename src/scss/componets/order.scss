@@ -15,6 +15,7 @@
     }
     &__row{
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
     }
     &__add{
@@ -42,6 +43,9 @@
             max-width: 50%;
             position: relative;
             cursor: pointer;
+            span{
+                position: relative;
+            }
             .custom-radio__icon{
                 position: absolute;
                 top: 16px;
@@ -79,6 +83,31 @@
         }
         &__trigger{
             right: 15px;
+        }
+    }
+    @include r(1023){
+        &__title{
+            margin: 0 0 10px;
+        }
+    }
+    @include r(767){
+        &__item{
+            padding:13px 16px 26px;
+        }
+        &__title{
+            font-size: 16px;
+            line-height: 29px;
+            margin: 0 0 12px;
+        }
+        .custom-radio{
+            &--order{
+                padding:16px 20px 20px;
+                flex: 1 0 100%;
+                max-width: 100%;
+            }
+        }
+        .btn{
+            width: 100%;
         }
     }
 }

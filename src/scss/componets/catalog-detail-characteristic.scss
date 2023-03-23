@@ -49,4 +49,14 @@
             width: 100%;
         }
     }
+    @include r(767){
+        &__label{
+            margin-right: -50%;
+            width: 45%;
+        }
+        &__value{
+            margin-left: 50%;
+            width: 50%;
+        }
+    }
 }

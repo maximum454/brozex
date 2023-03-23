@@ -27,6 +27,9 @@
   }
   &__filter{
     display: none;
+    width: 100%;
+    max-width: 218px;
+    padding: 17px;
   }
   &__products{
     display: flex;
@@ -49,6 +52,10 @@
     }
   }
   @include r(767){
+    margin-bottom: 30px;
+    &__filter{
+      max-width: 138px;
+    }
     &__products{
       .product-item{
         flex: 1 0 calc(50% - 20px);

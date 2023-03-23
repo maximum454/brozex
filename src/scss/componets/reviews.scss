@@ -76,4 +76,12 @@
         color: #030303;
         margin-bottom: 20px;
     }
+    @include r(1023){
+        width: 100%;
+    }
+    @include r(767){
+        .btn{
+            width: 100%;
+        }
+    }
 }

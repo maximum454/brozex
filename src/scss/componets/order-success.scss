@@ -40,5 +40,11 @@
     width: 285px;
     margin: 0 auto 10px;
   }
-
+  @include r(767){
+    &__status{
+      font-size: 18px;
+      line-height: 25px;
+      margin: 0 0 37px;
+    }
+  }
 }
