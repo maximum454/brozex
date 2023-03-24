@@ -2,12 +2,12 @@
 Домострой
 
 
-###Плагины:
+### Плагины:
 
 swiper, formstyler, remodal, jquery.mask.js
 
 
-###Главная
+### Главная
 
 https://maximum454.github.io/brozex/build/
 
@@ -42,15 +42,15 @@ https://maximum454.github.io/brozex/build/account-personal.html
 https://maximum454.github.io/brozex/build/account-company.html
 https://maximum454.github.io/brozex/build/account-orders.html
 
-###Новости
+### Новости
 https://maximum454.github.io/brozex/build/news.html
 
 
-###Новости детальная 
+### Новости детальная 
 https://maximum454.github.io/brozex/build/news-detail.html
 
 
-###Страница
+### Страница
 https://maximum454.github.io/brozex/build/page.html
 
 
