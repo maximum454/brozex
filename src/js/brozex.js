@@ -156,6 +156,7 @@ function expand(){
     }
 }
 expand()
+
 /*Боковое меню*/
 const menuAsides = document.querySelectorAll('.menu-aside__list')
 for (let menuAside of menuAsides){
@@ -184,6 +185,69 @@ for (let currents of menuAsidesCurrents){
     })
 }
 /*Конец бокоое меню*/
+
+/*Мобильное меню меню*/
+const smartPanelCatalogBtn = document.querySelector('.js-menu-catalog-mobile')
+smartPanelCatalogBtn.addEventListener('click', function (){
+    let menu = document.querySelector('.menu-catalog-mobile');
+    let menuOther = document.querySelector('.menu-more-mobile');
+    menu.classList.toggle('active')
+    menuOther.classList.remove('active')
+    document.body.classList.toggle('lock')
+})
+
+const menuCatalogMobilesClose = document.querySelector('.menu-catalog-mobile__close')
+menuCatalogMobilesClose.addEventListener('click', function (){
+    let menu = document.querySelector('.menu-catalog-mobile');
+    menu.classList.remove('active')
+    document.body.classList.remove('lock')
+})
+
+const menuCatalogMobiles = document.querySelectorAll('.menu-catalog-mobile__list')
+for (let catMobile of menuCatalogMobiles){
+    catMobile.addEventListener('click', function (e){
+        const target = e.target;
+        const dropdown = target.nextElementSibling;
+        console.log(target)
+        console.log(dropdown)
+        if(dropdown){
+            e.preventDefault();
+            target.classList.toggle('active')
+            dropdown.classList.toggle('active')
+        }
+    })
+}
+
+/*Заголовок подменю назад*/
+const menuCatalogMobilesPrevs = document.querySelectorAll('.menu-catalog-mobile__prev')
+for (let prev of menuCatalogMobilesPrevs){
+    prev.addEventListener('click', function (e){
+        const target = e.target;
+        const dropdown = target.closest('.menu-catalog-mobile__dropdown');
+        if(dropdown){
+            e.preventDefault();
+            dropdown.classList.remove('active')
+        }
+    })
+}
+/*Конец мобильного меню*/
+
+/**/
+const smartPanelMoreBtn = document.querySelector('.js-menu-more-mobile')
+smartPanelMoreBtn.addEventListener('click', function (){
+    let menu = document.querySelector('.menu-more-mobile');
+    let menuOther = document.querySelector('.menu-catalog-mobile');
+    menu.classList.toggle('active')
+    menuOther.classList.remove('active')
+    document.body.classList.toggle('lock')
+})
+const menuMoreMobilesClose = document.querySelector('.menu-more-mobile__close')
+menuMoreMobilesClose.addEventListener('click', function (){
+    let menu = document.querySelector('.menu-more-mobile');
+    menu.classList.remove('active')
+    document.body.classList.remove('lock')
+})
+/**/
 
 
 

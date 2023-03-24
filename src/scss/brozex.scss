@@ -26,6 +26,9 @@ html{
 body{
 	background-color: #fff;
 	font-family: Arial, Helvetica, sans-serif;
+	&.lock{
+		overflow: hidden;
+	}
 }
 a{
 	text-decoration: none;
@@ -248,6 +251,7 @@ a{
 @import "componets/order-success";
 @import "componets/account";
 @import "componets/table-account";
+@import "componets/menu-more-mobile";
 
 
 

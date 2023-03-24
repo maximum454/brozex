@@ -1,0 +1,58 @@
+.menu-more-mobile{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
+  background-color: #ffffff;
+  padding: 28px 15px;
+  overflow: hidden;
+  transform: translate(0,100%);
+  transition: all .3s ease;
+  visibility: hidden;
+  opacity: 0;
+  &.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0,0);
+    transition: all .3s ease;
+  }
+  &__close{
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    position: absolute;
+    top: 26px;
+    right: 15px;
+    z-index: 20;
+    .icon{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+  &__body{
+    height: calc(100% - 85px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+  }
+  hr{
+    margin: 20px 0;
+    border: none;
+    background-color: #D7D7D7;
+    width: 100%;
+    height: 1px;
+  }
+  .select-city__col{
+    max-height: 1600px;
+    a{
+      margin-bottom: 20px;
+    }
+  }
+}
