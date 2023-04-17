@@ -1705,4 +1705,16 @@ $(function (){
         }
     })
 
+
+    $('.form-auth__form .form-control').on('focus', function (){
+        let input = $(this)
+        let label = input.parent('.form-group').find('.form-label')
+        label.addClass('d-none')
+    })
+    $('.form-auth__form .form-control').on('blur', function (){
+        let input = $(this)
+        let label = input.parent('.form-group').find('.form-label')
+        label.removeClass('d-none')
+    })
+
 })

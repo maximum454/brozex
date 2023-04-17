@@ -3755,6 +3755,28 @@ th {
   padding-bottom: 80px;
 }
 
+.remodal.form-auth .form-group {
+  position: relative;
+}
+
+.remodal.form-auth .form-group .form-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #9B9B9B;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 0 15px;
+}
+
+.remodal.form-auth .form-group .form-label span {
+  color: #000000;
+}
+
 .remodal__header {
   position: relative;
   margin-bottom: 16px;
