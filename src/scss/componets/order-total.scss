@@ -16,6 +16,27 @@
         letter-spacing: -0.03em;
         color: #000000;
     }
+    &__itogo{
+        padding: 0;
+        margin: 15px 0 10px;
+        list-style: none;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #000000;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__list{
+        margin: 0 0 28px;
+    }
     &__count{
         font-family: 'Arial';
         font-style: normal;
@@ -23,7 +44,6 @@
         font-size: 13px;
         line-height: 21px;
         color: #000000;
-        margin: 0 0 28px;
     }
     &__btn{
         width: 100%;

@@ -7456,6 +7456,37 @@ a:hover {
   color: #000000;
 }
 
+.order-total__itogo {
+  padding: 0;
+  margin: 15px 0 10px;
+  list-style: none;
+}
+
+.order-total__itogo li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.order-total__itogo li:last-of-type {
+  margin-bottom: 0;
+}
+
+.order-total__list {
+  margin: 0 0 28px;
+}
+
 .order-total__count {
   font-family: "Arial";
   font-style: normal;
@@ -7463,7 +7494,6 @@ a:hover {
   font-size: 13px;
   line-height: 21px;
   color: #000000;
-  margin: 0 0 28px;
 }
 
 .order-total__btn {
@@ -7729,6 +7759,18 @@ a:hover {
 
 .order {
   max-width: 793px;
+}
+
+.order__header {
+  margin-bottom: 20px;
+}
+
+.order__header .order__title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  margin: 0;
 }
 
 .order__item {
