@@ -5280,10 +5280,18 @@ a:hover {
   background-color: #F4F4F4;
 }
 
+.main-news--page .main-news__item:nth-child(2) .main-news__content {
+  padding: 26px 28px 40px;
+}
+
 .main-news--page .main-news__item:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main-news--page .main-news__content {
+  padding: 26px 0 40px;
 }
 
 .main-news__header {
