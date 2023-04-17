@@ -8004,6 +8004,7 @@ a:hover {
 
 .account__form .btn {
   margin-top: 20px;
+  width: 285px;
 }
 
 .account__company-item {
@@ -9453,6 +9454,15 @@ a:hover {
   .account__company-item .btn {
     width: 100%;
     display: block;
+  }
+
+  .account__form {
+    max-width: 744px;
+  }
+
+  .account__form .btn {
+    margin-top: 20px;
+    width: 100%;
   }
 
   .table-account__tr {

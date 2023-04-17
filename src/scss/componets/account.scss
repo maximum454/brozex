@@ -31,6 +31,7 @@
     max-width: 744px;
     .btn{
       margin-top: 20px;
+      width: 285px;
     }
   }
   &__company-item{
@@ -113,6 +114,12 @@
         display: block;
       }
     }
-
+    &__form{
+      max-width: 744px;
+      .btn{
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
   }
 }
