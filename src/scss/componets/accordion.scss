@@ -1,5 +1,7 @@
 .accordion{
-  margin-bottom: 32px;
+  margin-bottom: 5px;
+  background-color: #FAFAFA;
+  padding: 14px 20px;
   &[open] .accordion__header:before {
     transform: rotate(180deg);
   }

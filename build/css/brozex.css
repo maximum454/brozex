@@ -6232,6 +6232,12 @@ a:hover {
   line-height: 12px;
 }
 
+.breadcrumb--aside {
+  background-color: #FAFAFA;
+  padding: 14px 20px;
+  margin-bottom: 5px;
+}
+
 .breadcrumb__title {
   font-family: "Arial";
   font-weight: 400;
@@ -7057,7 +7063,9 @@ a:hover {
 }
 
 .accordion {
-  margin-bottom: 32px;
+  margin-bottom: 5px;
+  background-color: #FAFAFA;
+  padding: 14px 20px;
 }
 
 .accordion[open] .accordion__header:before {

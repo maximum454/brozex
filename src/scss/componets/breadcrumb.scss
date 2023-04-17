@@ -3,6 +3,11 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+    &--aside{
+        background-color: #FAFAFA;
+        padding: 14px 20px;
+        margin-bottom: 5px;
+    }
     &__title{
         font-family: 'Arial';
         font-weight: 400;
