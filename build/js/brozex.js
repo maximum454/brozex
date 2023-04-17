@@ -1705,16 +1705,31 @@ $(function (){
         }
     })
 
+    if ($('.form-auth__form .form-control').length > 0){
+        formLabel($('.form-auth__form .form-control'))
+    }
 
-    $('.form-auth__form .form-control').on('focus', function (){
-        let input = $(this)
-        let label = input.parent('.form-group').find('.form-label')
-        label.addClass('d-none')
-    })
-    $('.form-auth__form .form-control').on('blur', function (){
-        let input = $(this)
-        let label = input.parent('.form-group').find('.form-label')
-        label.removeClass('d-none')
-    })
+    if ($('.account__form .form-control').length > 0){
+        formLabel($('.account__form .form-control'))
+    }
+
 
 })
+
+function formLabel(formInput){
+    formInput.each( function (){
+        if(!$(this).val() == ''){
+            $(this).parent('.form-group').find('.form-label').addClass('d-none')
+        }
+        let input = $(this)
+        let label = input.parent('.form-group').find('.form-label')
+        $(this).on('focus', function (){
+            label.addClass('d-none')
+        })
+        $(this).on('blur', function (){
+            if(!input.val()>0){
+                label.removeClass('d-none')
+            }
+        })
+    })
+}
