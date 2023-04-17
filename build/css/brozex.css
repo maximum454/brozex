@@ -4128,7 +4128,7 @@ a:hover {
 }
 
 .show-expand__body.height {
-  max-height: 248px;
+  max-height: 239px;
 }
 
 .show-expand__body.show {
@@ -4156,6 +4156,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 .show-expand__more .icon {
@@ -6773,7 +6774,6 @@ a:hover {
   font-size: 15px;
   line-height: 27px;
   color: #000000;
-  margin-bottom: 20px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;

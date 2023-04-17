@@ -1406,7 +1406,7 @@
 }, window.jQuery, window.Zepto));
 
 
-if(document.querySelector('.swiper-main')) {
+if(document.querySelector('.swiper-main')){
     const swiperMain = new Swiper('.swiper-main', {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -1532,33 +1532,7 @@ overlay.addEventListener('click', function (){
     menuCatalog.classList.remove('active')
 })
 
-function expand(){
-    const showExpands = document.querySelectorAll('.show-expand');
-    for (let showExpand of showExpands){
-        const more = showExpand.querySelector('.show-expand__more');
-        const body = showExpand.querySelector('.show-expand__body');
-        const bodyHeight = body.clientHeight;
-        console.log(more)
-        if(bodyHeight >= 248){
-            body.classList.add('height')
-            more.classList.remove('d-none')
-            more.addEventListener('click', function (){
-                body.classList.toggle('height')
-                if(more.classList.contains('active')){
-                    more.classList.remove('active')
-                    more.innerHTML = '<span>развернуть</span> <i class="icon icon-dropdown-bottom"></i>'
-                }else{
-                    more.classList.add('active')
-                    more.innerHTML = '<span>Свернуть</span> <i class="icon icon-dropdown-bottom"></i>'
-                }
-            })
-        }else{
-            more.classList.add('d-none')
-        }
 
-    }
-}
-expand()
 
 /*Боковое меню*/
 const menuAsides = document.querySelectorAll('.menu-aside__list')
@@ -1713,8 +1687,40 @@ $(function (){
         formLabel($('.account__form .form-control'))
     }
 
-
+    if($('.show-expand').length > 0) {
+        expand()
+    }
 })
+
+
+function expand(){
+    let showExpands = $('.show-expand');
+
+    showExpands.each(function (){
+        let parent = $(this)
+        let more = parent.find('.show-expand__more');
+        let body = parent.find('.show-expand__body');
+        let bodyH = body.height();
+        console.log(bodyH)
+        if(bodyH >= 238){
+            body.addClass('height')
+            more.removeClass('d-none')
+            more.on('click', function (){
+                body.toggleClass('height')
+                if(more.hasClass('active')){
+                    more.removeClass('active')
+                    more.html('<span>развернуть</span> <i class="icon icon-dropdown-bottom"></i>')
+                }else{
+                    more.addClass('active')
+                    more.html('<span>Свернуть</span> <i class="icon icon-dropdown-bottom"></i>')
+                }
+            })
+        }else{
+
+        }
+    })
+}
+
 
 function formLabel(formInput){
     formInput.each( function (){

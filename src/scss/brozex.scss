@@ -176,7 +176,7 @@ a{
 	&__body{
 		overflow: hidden;
 		&.height{
-			max-height: 248px;
+			max-height: 239px;
 		}
 		&.show{
 			height: auto;
@@ -197,6 +197,7 @@ a{
 		cursor: pointer;
 		display: flex;
 		align-items: center;
+		margin-top: 20px;
 		.icon{
 			width: 10px;
 			height: 8px;
