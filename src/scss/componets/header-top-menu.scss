@@ -28,7 +28,9 @@
         line-height: 15px;
         color: #000000;
         text-decoration: none;
-
+        &:hover{
+            color: #ff0000;
+        }
         .icon{
             width: 9px;
             height: 6px;

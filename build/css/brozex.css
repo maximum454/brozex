@@ -3990,6 +3990,7 @@ a:hover {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: #ff0000;
 }
 
 .wrp {
@@ -4466,6 +4467,30 @@ a:hover {
   margin-right: 0;
 }
 
+.menu-control__item:hover .menu-control__name {
+  color: #ff0000;
+}
+
+.menu-control__item:hover .icon-login {
+  background-image: url("../img/icons-sprite.svg#login-red");
+}
+
+.menu-control__item:hover .icon-basket {
+  background-image: url("../img/icons-sprite.svg#basket-red");
+}
+
+.menu-control__item:hover .icon-favorites {
+  background-image: url("../img/icons-sprite.svg#favorites-red");
+}
+
+.menu-control__item:hover .icon-estimate {
+  background-image: url("../img/icons-sprite.svg#estimate-red");
+}
+
+.menu-control__item:hover .icon-compare {
+  background-image: url("../img/icons-sprite.svg#compare-red");
+}
+
 .menu-control__item .icon {
   margin: 0 auto 7px;
 }
@@ -4605,6 +4630,10 @@ a:hover {
   line-height: 15px;
   color: #000000;
   text-decoration: none;
+}
+
+.header-top-menu__link:hover {
+  color: #ff0000;
 }
 
 .header-top-menu__link .icon {
@@ -4989,11 +5018,15 @@ a:hover {
           flex: 1 0 285px;
   max-width: 285px;
   margin-left: 20px;
+  display: block;
+  text-decoration: none;
 }
 
 .slider-main__item {
   position: relative;
   height: 100%;
+  text-decoration: none;
+  display: block;
 }
 
 .slider-main__figure {
@@ -5477,6 +5510,8 @@ a:hover {
 .main-news__figure {
   margin: 0;
   height: 100%;
+  text-decoration: none;
+  display: block;
 }
 
 .main-news__figure img {
@@ -5668,7 +5703,7 @@ a:hover {
 
 .product-item__img,
 .product-item .embed-responsive-item {
-  padding: 15px;
+  padding: 5px;
   border: 0.5px solid #B1B1B1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5735,12 +5770,15 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-decoration: none;
+  width: 100%;
 }
 
 .product-item__figure img {
   display: block;
   margin: 0 auto;
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .product-item__content {
@@ -5828,13 +5866,13 @@ a:hover {
   top: 100%;
   overflow: hidden;
   width: 100%;
-  opacity: 1;
-  height: auto;
+  opacity: 0;
+  height: 0;
   visibility: hidden;
   padding: 0 11px 11px;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
-  background-color: #FFFFFF;
 }
 
 .product-item__stock {

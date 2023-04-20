@@ -101,6 +101,8 @@
   &__figure{
     margin: 0;
     height: 100%;
+    text-decoration: none;
+    display: block;
     img{
       display: block;
       object-fit: cover;

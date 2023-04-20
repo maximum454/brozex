@@ -8,9 +8,30 @@
     &:last-of-type{
       margin-right: 0;
     }
+    &:hover{
+      .menu-control__name{
+        color: #ff0000;
+      }
+      .icon-login{
+        background-image: url("../img/icons-sprite.svg#login-red");
+      }
+      .icon-basket{
+        background-image: url("../img/icons-sprite.svg#basket-red");
+      }
+      .icon-favorites{
+        background-image: url("../img/icons-sprite.svg#favorites-red");
+      }
+      .icon-estimate{
+        background-image: url("../img/icons-sprite.svg#estimate-red");
+      }
+      .icon-compare{
+        background-image: url("../img/icons-sprite.svg#compare-red");
+      }
+    }
     .icon{
       margin: 0 auto 7px;
     }
+
   }
   &__name{
     display: block;

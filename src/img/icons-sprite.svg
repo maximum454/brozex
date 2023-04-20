@@ -34,6 +34,11 @@
               d="M1.699.804a.85.85 0 1 0 0 1.7h2.865l.747 3.733a.846.846 0 0 0 .014.073l1.488 7.432a2.63 2.63 0 0 0 2.622 2.118h8.64a2.63 2.63 0 0 0 2.621-2.118l.001-.007 1.425-7.47a.85.85 0 0 0-.835-1.009H6.848l-.754-3.769A.85.85 0 0 0 5.26.804H1.7ZM8.48 13.41 7.188 6.956H20.26l-1.231 6.455-.001.002a.93.93 0 0 1-.93.747H9.41a.93.93 0 0 1-.93-.75H8.48Zm.084 5.884a.09.09 0 1 0 0-.18.09.09 0 0 0 0 .18Zm-1.61-.09a1.61 1.61 0 1 1 3.22 0 1.61 1.61 0 0 1-3.22 0Zm12.08.09a.09.09 0 1 0 0-.18.09.09 0 0 0 0 .18Zm-1.61-.09a1.61 1.61 0 1 1 3.22 0 1.61 1.61 0 0 1-3.22 0Z"
               fill="#000"/>
     </svg>
+    <svg fill="none" viewBox="0 0 23 21" id="basket-red" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.699.804a.85.85 0 1 0 0 1.7h2.865l.747 3.733a.846.846 0 0 0 .014.073l1.488 7.432a2.63 2.63 0 0 0 2.622 2.118h8.64a2.63 2.63 0 0 0 2.621-2.118l.001-.007 1.425-7.47a.85.85 0 0 0-.835-1.009H6.848l-.754-3.769A.85.85 0 0 0 5.26.804H1.7ZM8.48 13.41 7.188 6.956H20.26l-1.231 6.455-.001.002a.93.93 0 0 1-.93.747H9.41a.93.93 0 0 1-.93-.75H8.48Zm.084 5.884a.09.09 0 1 0 0-.18.09.09 0 0 0 0 .18Zm-1.61-.09a1.61 1.61 0 1 1 3.22 0 1.61 1.61 0 0 1-3.22 0Zm12.08.09a.09.09 0 1 0 0-.18.09.09 0 0 0 0 .18Zm-1.61-.09a1.61 1.61 0 1 1 3.22 0 1.61 1.61 0 0 1-3.22 0Z"
+              fill="#FF0000"/>
+    </svg>
     <svg fill="none" viewBox="0 0 22 21" id="basket-gray" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
               d="M1.312.613a.85.85 0 1 0 0 1.7h2.865l.747 3.733a.85.85 0 0 0 .015.073l1.487 7.432a2.63 2.63 0 0 0 2.622 2.118h8.64a2.63 2.63 0 0 0 2.621-2.118l.002-.007 1.424-7.47a.85.85 0 0 0-.835-1.009H6.461l-.754-3.769a.85.85 0 0 0-.833-.683H1.312Zm6.781 12.605L6.802 6.765h13.07l-1.23 6.455v.002a.93.93 0 0 1-.93.747H9.023a.93.93 0 0 1-.93-.75Zm.084 5.884a.09.09 0 1 0 0-.18.09.09 0 0 0 0 .18Zm-1.61-.09a1.61 1.61 0 1 1 3.22 0 1.61 1.61 0 0 1-3.22 0Zm12.08.09a.09.09 0 1 0 0-.18.09.09 0 0 0 0 .18Zm-1.61-.09a1.61 1.61 0 1 1 3.22 0 1.61 1.61 0 0 1-3.22 0Z"
@@ -84,6 +89,12 @@
         <path d="M6.306 4.874H3.973v8.5h2.333v-8.5ZM11.75 4.874H9.417v4.722h2.333V4.874Z" stroke="#000"
               stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
+    <svg fill="none" viewBox="0 0 16 19" id="compare-red" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.306 1.097H2.416c-.858 0-1.555.845-1.555 1.889v13.222c0 1.043.697 1.889 1.556 1.889h10.889c.859 0 1.555-.846 1.555-1.89V2.987c0-1.044-.696-1.89-1.555-1.89Z"
+              stroke="#FF0000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.306 4.874H3.973v8.5h2.333v-8.5ZM11.75 4.874H9.417v4.722h2.333V4.874Z" stroke="#FF0000"
+              stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
     <svg fill="none" viewBox="0 0 16 19" id="compare-gray" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.306 1.129H2.416c-.858 0-1.555.846-1.555 1.889V16.24c0 1.043.697 1.889 1.556 1.889h10.889c.859 0 1.555-.846 1.555-1.889V3.018c0-1.043-.696-1.889-1.555-1.889Z"
               stroke="gray" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -100,6 +111,12 @@
         <path d="M10.11 1.597v5.25h5.25M11.86 11.222h-7M11.86 14.722h-7M6.61 7.722H4.86" stroke="#000"
               stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
+    <svg fill="none" viewBox="0 0 17 20" id="estimate-red" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.11 1.597h-7a1.75 1.75 0 0 0-1.75 1.75v14a1.75 1.75 0 0 0 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75v-10.5l-5.25-5.25Z"
+              stroke="#FF0000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10.11 1.597v5.25h5.25M11.86 11.222h-7M11.86 14.722h-7M6.61 7.722H4.86" stroke="#FF0000"
+              stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
     <svg fill="none" viewBox="0 0 16 20" id="estimate-gray" xmlns="http://www.w3.org/2000/svg">
         <path d="M9.611 1.52h-7a1.75 1.75 0 0 0-1.75 1.75v14a1.75 1.75 0 0 0 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V6.77l-5.25-5.25Z"
               stroke="gray" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -108,6 +125,10 @@
     </svg>
     <svg fill="none" viewBox="0 0 16 21" id="favorites" xmlns="http://www.w3.org/2000/svg">
         <path d="m14.86 19.597-7-5-7 5v-16a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16Z" stroke="#000" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg fill="none" viewBox="0 0 16 21" id="favorites-red" xmlns="http://www.w3.org/2000/svg">
+        <path d="m14.86 19.597-7-5-7 5v-16a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16Z" stroke="#FF0000" stroke-width="1.7"
               stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     <svg fill="none" viewBox="0 0 16 21" id="favorites-gray" xmlns="http://www.w3.org/2000/svg">
@@ -131,6 +152,11 @@
         <path fill-rule="evenodd" clip-rule="evenodd"
               d="M5.863 5.357a2.711 2.711 0 1 1 5.423 0 2.711 2.711 0 0 1-5.423 0ZM8.574.946a4.411 4.411 0 1 0 0 8.823 4.411 4.411 0 0 0 0-8.823ZM5.013 11.63A4.412 4.412 0 0 0 .6 16.043v1.78a.85.85 0 0 0 1.7 0v-1.78a2.711 2.711 0 0 1 2.712-2.712h7.123a2.712 2.712 0 0 1 2.711 2.712v1.78a.85.85 0 0 0 1.7 0v-1.78a4.411 4.411 0 0 0-4.411-4.412H5.013Z"
               fill="#000"/>
+    </svg>
+    <svg fill="none" viewBox="0 0 17 19" id="login-red" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.863 5.357a2.711 2.711 0 1 1 5.423 0 2.711 2.711 0 0 1-5.423 0ZM8.574.946a4.411 4.411 0 1 0 0 8.823 4.411 4.411 0 0 0 0-8.823ZM5.013 11.63A4.412 4.412 0 0 0 .6 16.043v1.78a.85.85 0 0 0 1.7 0v-1.78a2.711 2.711 0 0 1 2.712-2.712h7.123a2.712 2.712 0 0 1 2.711 2.712v1.78a.85.85 0 0 0 1.7 0v-1.78a4.411 4.411 0 0 0-4.411-4.412H5.013Z"
+              fill="#FF0000"/>
     </svg>
     <svg fill="none" viewBox="0 0 17 19" id="login-gray" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"

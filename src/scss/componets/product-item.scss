@@ -13,7 +13,7 @@
   }
   &__img,
   .embed-responsive-item{
-    padding: 15px;
+    padding: 5px;
     border: 0.5px solid #B1B1B1;
     display: flex;
     justify-content: center;
@@ -61,10 +61,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    width: 100%;
     img{
       display: block;
       margin: 0 auto;
-      height: 100%;
+      object-fit: cover;
     }
   }
   &__content{
@@ -135,12 +137,12 @@
     top: 100%;
     overflow: hidden;
     width: 100%;
-    opacity: 1;
-    height: auto;
-    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    visibility:hidden;
     padding: 0 11px 11px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
     background-color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
   }
   &__stock{
     display: flex;
