@@ -1468,7 +1468,7 @@ if(document.querySelector('.swiper-products')) {
     });
 }
 if(document.querySelector('.swiper-products')){
-    const swiperThumbs = new Swiper(".swiper-thumbs", {
+    const swiperThumbs = new Swiper(".swiper-detail-thumbs", {
         direction: getDirection(),
         slidesPerView: 5,
         spaceBetween: 20,
@@ -1484,7 +1484,7 @@ if(document.querySelector('.swiper-products')){
             }
         }
     });
-    const swiperMain = new Swiper(".swiper-main", {
+    const swiperMain = new Swiper(".swiper-detail-main", {
         slidesPerView: 1,
         spaceBetween: 20,
         watchOverflow: true,
@@ -1507,23 +1507,6 @@ function getDirection() {
     return direction;
 }
 
-const menuCatalogBtn = document.getElementById('js-menu-catalog')
-menuCatalogBtn.addEventListener('click', menuCatalog)
-
-function menuCatalog(){
-    const target = this;
-    const overlay = document.querySelector('.wrp__overlay');
-    const menuCatalog = document.querySelector('.menu-catalog');
-    if(this.classList.contains('active')){
-        this.classList.remove('active')
-        overlay.classList.remove('active')
-        menuCatalog.classList.remove('active')
-    }else{
-        this.classList.add('active')
-        overlay.classList.add('active')
-        menuCatalog.classList.add('active')
-    }
-}
 const overlay = document.querySelector('.wrp__overlay');
 overlay.addEventListener('click', function (){
     const target = this;
@@ -1663,7 +1646,7 @@ $(function (){
             $(name).addClass('active');
             expand()
         }
-
+        return false;
     });
 
     $('.menu-catalog-mobile__item').on('click', function (e){
@@ -1690,8 +1673,36 @@ $(function (){
     if($('.show-expand').length > 0) {
         expand()
     }
+
+
+
+    $('.js-menu-catalog').on('click', function (){
+        console.log('111')
+        let overlay = $('.wrp__overlay');
+        let menuCatalog = $('.menu-catalog');
+        $(this).toggleClass('active')
+        overlay.toggleClass('active')
+        menuCatalog.toggleClass('active')
+    })
+
+
 })
 
+function menuCatalog(){
+    const target = this;
+    const overlay = document.querySelector('.wrp__overlay');
+    const menuCatalog = document.querySelector('.menu-catalog');
+
+    if(this.classList.contains('active')){
+        this.classList.remove('active')
+        overlay.classList.remove('active')
+        menuCatalog.classList.remove('active')
+    }else{
+        this.classList.add('active')
+        overlay.classList.add('active')
+        menuCatalog.classList.add('active')
+    }
+}
 
 function expand(){
     let showExpands = $('.show-expand');
