@@ -108,8 +108,10 @@ const overlay = document.querySelector('.wrp__overlay');
 overlay.addEventListener('click', function (){
     const target = this;
     const menuCatalog = document.querySelector('.menu-catalog');
+    const headerCatalog = document.querySelector('.header-catalog');
     target.classList.remove('active')
     menuCatalog.classList.remove('active')
+    headerCatalog.classList.remove('active')
 })
 
 
@@ -274,7 +276,6 @@ $(function (){
 
 
     $('.js-menu-catalog').on('click', function (){
-        console.log('111')
         let overlay = $('.wrp__overlay');
         let menuCatalog = $('.menu-catalog');
         $(this).toggleClass('active')
