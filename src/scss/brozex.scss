@@ -85,11 +85,19 @@ a{
 }
 
 .container {
-	max-width: 1236px;
+	max-width: 1284px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: 40px;
+	padding-right: 40px;
+	@include r(1023){
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	@include r(767){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 .main{

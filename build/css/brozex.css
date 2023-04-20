@@ -4037,11 +4037,11 @@ a:hover {
 }
 
 .container {
-  max-width: 1236px;
+  max-width: 1284px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .main {
@@ -8304,6 +8304,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 1023px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .header__top .header__search {
     display: block;
   }
@@ -8972,6 +8977,11 @@ a:hover {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .main-search__form {
