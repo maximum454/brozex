@@ -17,15 +17,18 @@
     &__figure{
         flex: 1 0 125px;
         max-width: 125px;
-        padding: 10px;
+        padding: 0;
         margin: 0;
         background-color: #F4F4F4;
         display: flex;
         align-items: center;
         align-self: stretch;
         justify-content: center;
+        text-decoration: none;
         img{
             display: block;
+            object-fit: cover;
+            width: 100%;
         }
         a{
             text-decoration: none;
@@ -139,6 +142,11 @@
             width: 15px;
             height: 15px;
         }
+        &:hover{
+            &:before{
+                background-image: url("../img/icons-sprite.svg#close-red");
+            }
+        }
     }
     &__clear{
         margin-top: 20px;
@@ -152,6 +160,13 @@
         background-color: transparent;
         display: flex;
         align-items: center;
+        &:hover{
+            color: #FF0000;
+            .icon-clear{
+                background-image: url("../img/icons-sprite.svg#clear-red");
+                transition: all .3s ease;
+            }
+        }
     }
     &__oglav{
         display: flex;
