@@ -13,6 +13,7 @@
     .subscribe__form{
       .form-control{
         border: 1px solid #192864;
+        color: #192864;
         &::placeholder{
           color: #ABABAB;
         }
@@ -40,6 +41,7 @@
       background-color: transparent;
       border: 1px solid #FFFFFF;
       padding: 10px 15px;
+      color: #ffffff;
       &::placeholder{
         color: #8791BB;
       }

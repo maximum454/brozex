@@ -88,6 +88,11 @@
       width: 15px;
       height: 15px;
     }
+    &:hover{
+      &:before{
+        background-image: url("../img/icons-sprite.svg#close-red");
+      }
+    }
   }
   .form-label{
     display: block;

@@ -5115,6 +5115,20 @@ a:hover {
   margin: 42px 0 49px;
 }
 
+.slider-brands__item {
+  text-decoration: none;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .slider-brands .swiper-brands {
   overflow: hidden;
   position: relative;
@@ -6133,11 +6147,6 @@ a:hover {
   color: #C6C6C6;
 }
 
-.footer__footer a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
 .footer__social .icon {
   margin: auto;
 }
@@ -6157,6 +6166,15 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+}
+
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ff0000;
 }
 
 .footer-advantage {
@@ -6211,6 +6229,7 @@ a:hover {
 
 .subscribe--page .subscribe__form .form-control {
   border: 1px solid #192864;
+  color: #192864;
 }
 
 .subscribe--page .subscribe__form .form-control::-webkit-input-placeholder {
@@ -6260,6 +6279,7 @@ a:hover {
   background-color: transparent;
   border: 1px solid #FFFFFF;
   padding: 10px 15px;
+  color: #ffffff;
 }
 
 .subscribe__form .form-control::-webkit-input-placeholder {
@@ -6846,6 +6866,14 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 31px;
+  cursor: pointer;
+}
+
+.catalog-detail__favorites:hover,
+.catalog-detail__favorites.active {
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+  background-image: url("../img/icons-sprite.svg#favorites-red");
 }
 
 .catalog-detail__delivery {
@@ -6911,17 +6939,21 @@ a:hover {
   overflow: hidden;
 }
 
+.catalog-detail .swiper-detail-thumbs .swiper-slide {
+  border: 1px solid #B1B1B1;
+}
+
 .catalog-detail .swiper-detail-main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   max-width: 490px;
   overflow: hidden;
+  border: 1px solid #B1B1B1;
 }
 
 .catalog-detail .swiper-slide {
   background: #FFFFFF;
-  border: 1px solid #B1B1B1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6934,7 +6966,9 @@ a:hover {
 }
 
 .catalog-detail .swiper-slide img {
-  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .catalog-detail-delivery {
@@ -8197,6 +8231,10 @@ a:hover {
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;
+}
+
+.account__company-del:hover:before {
+  background-image: url("../img/icons-sprite.svg#close-red");
 }
 
 .account .form-label {

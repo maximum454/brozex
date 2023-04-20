@@ -61,10 +61,7 @@
     font-size: 12px;
     line-height: 149.99%;
     color: #C6C6C6;
-    a{
-      color: #FFFFFF;
-      text-decoration: none;
-    }
+
   }
   &__social{
     .icon{
@@ -77,6 +74,13 @@
     justify-content: space-evenly;
     align-items: center;
     flex: auto;
+  }
+  a{
+    color: #FFFFFF;
+    text-decoration: none;
+    &:hover{
+      color: #ff0000;
+    }
   }
   @include r(1023){
     &__body{

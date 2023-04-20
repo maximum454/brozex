@@ -1421,8 +1421,7 @@ if(document.querySelector('.swiper-brands')) {
     const swiperBrands = new Swiper('.swiper-brands', {
         slidesPerView: 7.8,
         centeredSlides: true,
-        freeMode: true,
-        initialSlide: 3,
+        loop: true,
         spaceBetween: 53,
         breakpoints: {
             320: {
