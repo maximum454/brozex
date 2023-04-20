@@ -4633,18 +4633,14 @@ a:hover {
 
 .menu-catalog {
   position: absolute;
-  left: -40px;
   z-index: 20;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   width: 100%;
   display: none;
 }
 
 .menu-catalog.active {
   display: block;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .menu-catalog ul {
@@ -4653,6 +4649,19 @@ a:hover {
   padding: 10px 0;
   position: relative;
   width: 273px;
+  left: -40px;
+  background-color: #ffffff;
+}
+
+.menu-catalog ul:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #ffffff;
+  width: calc(100% + 40px);
+  height: 100%;
+  z-index: -1;
 }
 
 .menu-catalog ul li:last-of-type {
@@ -4700,6 +4709,11 @@ a:hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.menu-catalog ul li > ul ul:before {
+  left: 100%;
+  width: 100vw;
 }
 
 .banner-menu-catalog {

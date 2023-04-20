@@ -1,14 +1,12 @@
 .menu-catalog {
   position: absolute;
-  left: -40px;
   z-index: 20;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   width: 100%;
   display: none;
 
   &.active {
     display: block;
-    width: max-content;
   }
 
   ul{
@@ -17,6 +15,18 @@
     padding: 10px 0;
     position: relative;
     width: 273px;
+    left: -40px;
+    background-color: #ffffff;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      background-color: #ffffff;
+      width: calc(100% + 40px);
+      height: 100%;
+      z-index: -1;
+    }
     li {
       &:last-of-type {
         margin-bottom: 0;
@@ -57,6 +67,10 @@
         }
         ul{
           width: max-content;
+          &:before{
+            left: 100%;
+            width: 100vw;
+          }
         }
 
       }
