@@ -4657,9 +4657,9 @@ a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: -100%;
+  left: calc(-100% - 140px);
   background-color: #ffffff;
-  width: calc(100% + 40px);
+  width: calc(100% + 140px);
   height: 100%;
   z-index: -1;
 }
