@@ -1,25 +1,44 @@
 .header-catalog{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  &__btn{
-    width: 18px;
-    height: 16px;
-    margin-right: 13px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  padding: 0 0 0 32px;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
     background-image: url("../img/icons-sprite.svg#burger");
     background-repeat: no-repeat;
     background-size: 100%;
-    border: none;
-    padding: 0;
+    width: 18px;
+    height: 18px;
+  }
+  &:hover{
+    &:before{
+      background-image: url("../img/icons-sprite.svg#burger-red");
+    }
+    .header-catalog__name{
+      color: #ff0000;
+    }
+  }
+  &.active{
+    &:before{
+      background-image: url("../img/icons-sprite.svg#close");
+    }
   }
   &__name{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    margin: auto;
   }
 }
