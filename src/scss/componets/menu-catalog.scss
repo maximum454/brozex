@@ -14,12 +14,10 @@
   ul{
     margin: 0;
     list-style: none;
-    padding: 20px 0;
+    padding: 10px 0;
     position: relative;
     width: 273px;
     li {
-      margin-bottom: 10px;
-      padding: 0 40px;
       &:last-of-type {
         margin-bottom: 0;
       }
@@ -34,7 +32,8 @@
         line-height: 22px;
         color: #000000;
         text-decoration: none;
-
+        padding: 5px 20px 5px 40px;
+        display: block;
         &:hover,
         &.active {
           color: #FF0000;
@@ -48,9 +47,14 @@
         width: 430px;
         height: 100%;
         background-color: #fff;
-        padding: 20px 0;
+        padding: 10px 0;
         border-left: 1px solid #D7D7D7;
         display: none;
+        a {
+          padding: 5px 20px 5px 28px;
+          font-size: 13px;
+          line-height: 19px;
+        }
         ul{
           width: max-content;
         }
