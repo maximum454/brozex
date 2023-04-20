@@ -5885,8 +5885,8 @@ a:hover {
   visibility: hidden;
   padding: 0 11px 11px;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.13);
 }
 
 .product-item__stock {
