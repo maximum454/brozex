@@ -4469,6 +4469,15 @@ a:hover {
 
 .menu-control__item:hover .menu-control__name {
   color: #ff0000;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu-control__item:hover .icon {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .menu-control__item:hover .icon-login {
@@ -4493,6 +4502,9 @@ a:hover {
 
 .menu-control__item .icon {
   margin: 0 auto 7px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .menu-control__name {
@@ -4500,6 +4512,9 @@ a:hover {
   font-size: 13px;
   line-height: 15px;
   color: #000000;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .menu-control__icon {

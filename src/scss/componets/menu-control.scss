@@ -11,6 +11,10 @@
     &:hover{
       .menu-control__name{
         color: #ff0000;
+        transition: all .3s ease;
+      }
+      .icon{
+        transition: all .3s ease;
       }
       .icon-login{
         background-image: url("../img/icons-sprite.svg#login-red");
@@ -30,6 +34,7 @@
     }
     .icon{
       margin: 0 auto 7px;
+      transition: all .3s ease;
     }
 
   }
@@ -38,6 +43,7 @@
     font-size: 13px;
     line-height: 15px;
     color: #000000;
+    transition: all .3s ease;
   }
   &__icon{
     position: relative;
