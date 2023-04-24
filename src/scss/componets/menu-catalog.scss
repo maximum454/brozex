@@ -1,20 +1,29 @@
 .menu-catalog {
   position: absolute;
+  left: 0;
+  right: 0;
   z-index: 20;
   width: 100%;
   display: none;
-
+  max-width: 1284px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
   &.active {
     display: block;
   }
-
+  &__body{
+    background-color: #ffffff;
+    margin: 0 -40px;
+  }
   ul{
     margin: 0;
     list-style: none;
     padding: 10px 0;
     position: relative;
     width: 273px;
-    left: -40px;
+    left: 0;
     background-color: #ffffff;
     &:before{
       content: '';
@@ -25,12 +34,17 @@
       width: calc(100% + 140px);
       height: 100%;
       z-index: -1;
+      display: none;
     }
     li {
       &:last-of-type {
         margin-bottom: 0;
       }
-      &:hover {
+      &:hover,
+      &.active{
+        &>a{
+          color: #FF0000;
+        }
         & > ul {
           display: block;
         }
@@ -69,6 +83,7 @@
           &:before{
             left: 100%;
             width: 100vw;
+            display: none;
           }
         }
 

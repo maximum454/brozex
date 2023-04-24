@@ -4663,13 +4663,25 @@ a:hover {
 
 .menu-catalog {
   position: absolute;
+  left: 0;
+  right: 0;
   z-index: 20;
   width: 100%;
   display: none;
+  max-width: 1284px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .menu-catalog.active {
   display: block;
+}
+
+.menu-catalog__body {
+  background-color: #ffffff;
+  margin: 0 -40px;
 }
 
 .menu-catalog ul {
@@ -4678,7 +4690,7 @@ a:hover {
   padding: 10px 0;
   position: relative;
   width: 273px;
-  left: -40px;
+  left: 0;
   background-color: #ffffff;
 }
 
@@ -4691,13 +4703,20 @@ a:hover {
   width: calc(100% + 140px);
   height: 100%;
   z-index: -1;
+  display: none;
 }
 
 .menu-catalog ul li:last-of-type {
   margin-bottom: 0;
 }
 
-.menu-catalog ul li:hover > ul {
+.menu-catalog ul li:hover > a,
+.menu-catalog ul li.active > a {
+  color: #FF0000;
+}
+
+.menu-catalog ul li:hover > ul,
+.menu-catalog ul li.active > ul {
   display: block;
 }
 
@@ -4743,6 +4762,7 @@ a:hover {
 .menu-catalog ul li > ul ul:before {
   left: 100%;
   width: 100vw;
+  display: none;
 }
 
 .banner-menu-catalog {
@@ -6122,6 +6142,15 @@ a:hover {
   color: #FFFFFF;
 }
 
+.footer__contacts a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer__contacts a:hover {
+  color: #ff0000;
+}
+
 .footer__title {
   font-weight: 400;
   font-size: 15px;
@@ -6182,12 +6211,12 @@ a:hover {
           flex: auto;
 }
 
-.footer a {
+.footer__links a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.footer a:hover {
+.footer__links a:hover {
   color: #ff0000;
 }
 
