@@ -7558,6 +7558,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.order-total {
+  margin-top: 30px;
+}
+
 .order-total__title {
   font-family: "Roboto";
   font-style: normal;
