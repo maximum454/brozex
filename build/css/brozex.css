@@ -6009,8 +6009,22 @@ a:hover {
   background-image: url("../img/icons-sprite.svg#minus");
 }
 
+.product-counter__control.minus:hover {
+  background-image: url("../img/icons-sprite.svg#minus-red");
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .product-counter__control.plus {
   background-image: url("../img/icons-sprite.svg#plus");
+}
+
+.product-counter__control.plus:hover {
+  background-image: url("../img/icons-sprite.svg#plus-red");
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .product-counter__num {
@@ -6874,6 +6888,9 @@ a:hover {
   border: 1px solid #ff0000;
   background-color: #ff0000;
   background-image: url("../img/icons-sprite.svg#favorites-red");
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .catalog-detail__delivery {

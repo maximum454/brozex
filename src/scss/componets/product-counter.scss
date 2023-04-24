@@ -22,9 +22,17 @@
     cursor: pointer;
     &.minus{
       background-image: url("../img/icons-sprite.svg#minus");
+      &:hover{
+        background-image: url("../img/icons-sprite.svg#minus-red");
+        transition: all .3s ease;
+      }
     }
     &.plus{
       background-image: url("../img/icons-sprite.svg#plus");
+      &:hover{
+        background-image: url("../img/icons-sprite.svg#plus-red");
+        transition: all .3s ease;
+      }
     }
   }
   &__num{

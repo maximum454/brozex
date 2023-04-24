@@ -91,6 +91,7 @@
             border: 1px solid #ff0000;
             background-color: #ff0000;
             background-image: url("../img/icons-sprite.svg#favorites-red");
+            transition: all .3s ease;
         }
     }
     &__delivery{

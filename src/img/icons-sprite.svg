@@ -182,6 +182,9 @@
     <svg fill="none" viewBox="0 0 17 3" id="minus" xmlns="http://www.w3.org/2000/svg">
         <path d="M1.01 1.539h15" stroke="#000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
+    <svg fill="none" viewBox="0 0 17 3" id="minus-red" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.01 1.539h15" stroke="#FF0000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
     <svg fill="none" viewBox="0 0 21 5" id="more-gray" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
               d="M8.514 2.641a1.7 1.7 0 1 1 3.4 0 1.7 1.7 0 0 1-3.4 0Zm-8.391.036a1.7 1.7 0 1 1 3.4 0 1.7 1.7 0 0 1-3.4 0ZM18.605.94a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4Z"
@@ -201,6 +204,11 @@
         <path fill-rule="evenodd" clip-rule="evenodd"
               d="M9.36 1.539a.85.85 0 0 0-1.7 0v6.65H1.01a.85.85 0 1 0 0 1.7h6.65v6.65a.85.85 0 1 0 1.7 0v-6.65h6.65a.85.85 0 0 0 0-1.7H9.36v-6.65Z"
               fill="#000"/>
+    </svg>
+    <svg fill="none" viewBox="0 0 17 18" id="plus-red" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.36 1.539a.85.85 0 0 0-1.7 0v6.65H1.01a.85.85 0 1 0 0 1.7h6.65v6.65a.85.85 0 1 0 1.7 0v-6.65h6.65a.85.85 0 0 0 0-1.7H9.36v-6.65Z"
+              fill="#FF0000"/>
     </svg>
     <svg fill="none" viewBox="0 0 27 27" id="price" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
